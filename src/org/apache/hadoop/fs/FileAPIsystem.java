@@ -37,7 +37,7 @@ public class FileAPIsystem extends FileSystem {
 	private BufferedReader in = null;
 
 	FileAPIsystem() throws UnknownHostException, IOException {
-		//LOG.info("<AdamFS> AdamFileSystem constructor called");
+		LOG.info("<APIFS> APIileSystem to Hadoop constructor called");
 	}
 
 	@Override
@@ -49,23 +49,23 @@ public class FileAPIsystem extends FileSystem {
 	public void initialize(URI uri, Configuration conf) throws IOException {
 		setConf(conf);
 		fs_default_name = conf.get("fs.default.name", "file:///");
-		//LOG.info("<AdamFS> fs.default.name: " + fs_default_name);
+		LOG.info("<APIFS> fs.default.name: " + fs_default_name);
 		this.uri = URI.create(uri.getScheme() + "://" + uri.getAuthority());
-		//LOG.info("<AdamFS> uri at initialize: " + uri);
+		LOG.info("<APIFS> uri at initialize: " + uri);
 		// conf.set("mapred.system.dir", "/home/adam/hadoop/AdamFS/temp");
 		this.workingDir = new Path("/user", System.getProperty("user.name"))
 				.makeQualified(this);
-		//LOG.info("<AdamFS> workingDir: " + this.workingDir);
+		LOG.info("<APIFS> workingDir: " + this.workingDir);
 		statistics = getStatistics(uri.getScheme(), getClass());
 		initiate_connection();
-		out.println("AdamFS SAYS HI, URI: "+this.uri);
+		out.println("APIFS, URI: "+this.uri);
 		close_connection();
 	}
 
 	@Override
 	public FSDataInputStream open(Path f, int bufferSize) throws IOException {
-		//LOG.info("<AdamFS:open>");
-		//LOG.info("<AdamFS:open> opening stream for file: " + f);
+		LOG.info("<APIFS:open>");
+		LOG.info("<APIFS:open> opening stream for file: " + f);
 		Path abs_path = makeAbsolute(f);
 		// Tell file system api-server to stream data this way
 		initiate_connection();
@@ -78,8 +78,8 @@ public class FileAPIsystem extends FileSystem {
 		String data = response.substring(3, response.length()); // total file length
 		//log_response(resp_id, success_code, data, "open");
 		if (success_code.compareTo("1") == 0) {
-			//LOG.info("<AdamFS:open> "+f.toString()+" opened");
-			//LOG.info("<AdamFS:open> reading data in from AdamFSInputStream");
+			LOG.info("<APIFS:open> "+f.toString()+" opened");
+			LOG.info("<APIFS:open> reading data in from FSInputStream");
 			// Return the SocketInputStream
 			return new FSDataInputStream(
 					new APIFileInputSream(this.fs_default_name.toString(),
@@ -87,7 +87,7 @@ public class FileAPIsystem extends FileSystem {
 		} else {
 			// if the file system failed to open the file
 			close_connection();
-			throw new IOException("<AdamFS:open> file system failed to open file");
+			throw new IOException("<APIFS:open> file system failed to open file");
 		}
 	}
 
@@ -96,8 +96,8 @@ public class FileAPIsystem extends FileSystem {
 	public FSDataOutputStream create(Path f, FsPermission permission,
 			boolean overwrite, int bufferSize, short replication, long blockSize,
 			Progressable progress) throws IOException {
-		//LOG.info("<AdamFS:create>");
-		//LOG.info("<AdamFS:create> file: "+f);
+		LOG.info("<APIFS:create>");
+		LOG.info("<APIFS:create> file: "+f);
 		// What does a Progressable do?
 		
 		Path abs_path = makeAbsolute(f);
@@ -110,10 +110,10 @@ public class FileAPIsystem extends FileSystem {
 		if (exists) {
 			FileStatus fstat = getFileStatus(f);
 			if (fstat.isDir()) {
-				throw new IOException("<AdamFS:create> cannot overwrite directory: " + f.toString());
+				throw new IOException("<APIFS:create> cannot overwrite directory: " + f.toString());
 			}
 			else if (!overwrite) {
-				throw new IOException("<AdamFS:create> cannot overwrite file : " + f.toString() + 
+				throw new IOException("<APIFS:create> cannot overwrite file : " + f.toString() + 
 						"without overwrite flag set to true");
 			}
 		}
@@ -123,8 +123,8 @@ public class FileAPIsystem extends FileSystem {
 			// get the parent path
 			Path parent = abs_path.getParent();
 			if (parent != null) {
-				if (!this.mkdirs(new Path("adamfs", "localhost:9999", parent.toString()), permission)) {
-					throw new IOException("<AdamFS:create> error creating directory: " + f.toString());
+				if (!this.mkdirs(new Path("APIFS", "localhost:9999", parent.toString()), permission)) {
+					throw new IOException("<APIFS:create> error creating directory: " + f.toString());
 				}
 			}
 		}
@@ -163,11 +163,11 @@ public class FileAPIsystem extends FileSystem {
 						apiSocket.getOutputStream(), abs_path.toString()), statistics);
 			} else {
 				close_connection(); // Failed to open the file
-				throw new IOException("<AdamFS:create> failed to establish connection for socket stream");
+				throw new IOException("<APIFS:create> failed to establish connection for socket stream");
 			}
 		} else { // success_code 0
 			// Other file system failed to create the file
-			throw new IOException("<AdamFS:create> failed to create file: " + abs_path.toString() +
+			throw new IOException("<APIFS:create> failed to create file: " + abs_path.toString() +
 														" for OutputStream");
 		}
 	}

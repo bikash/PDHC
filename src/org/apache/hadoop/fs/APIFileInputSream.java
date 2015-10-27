@@ -13,7 +13,7 @@ import org.apache.hadoop.fs.Path;
 class APIFileInputSream extends FSInputStream {
 	public static final Log LOG = LogFactory.getLog(APIFileInputSream.class);
 	private long position = 0;
-	// private int buffersize;
+	private int buffersize;
 	private long fileLength;
 	private String defaultname;
 
@@ -28,13 +28,13 @@ class APIFileInputSream extends FSInputStream {
 		fileLength = flen;
 		in = apiSocket.getInputStream();
 		out = new PrintWriter(apiSocket.getOutputStream(), true);
-//		LOG.info("<AdamFS:INPUTSTREAM> Constructed!");
-//		LOG.info("<AdamFS:INPUTSTREAM> file size: "+fileLength);
+		LOG.info("<:INPUTSTREAM> Constructed!");
+		LOG.info("<APIFS:INPUTSTREAM> file size: "+fileLength);
 	}
 
 	@Override
 	public int read() throws IOException {
-//		LOG.info("<AdamFS:INPUTSTREAM:read>");
+		LOG.info("<APIFS:INPUTSTREAM:read>");
 		byte[] buf = new byte[1];
 		int ret;
 		if (getPos() >= fileLength)
@@ -47,13 +47,13 @@ class APIFileInputSream extends FSInputStream {
 
 	@Override
 	public int read(byte[] b) throws IOException {
-//		LOG.info("<AdamFS:INPUTSTREAM:read-b>");
+		LOG.info("<APIFS:INPUTSTREAM:read-b>");
 		return read(b, 0, b.length);
 	}
 
 	@Override
 	public int read(byte b[], int off, int length) throws IOException {
-//		LOG.info("<AdamFS:INPUTSTREAM:read-b-off-length>");
+		LOG.info("<APIFS:INPUTSTREAM:read-b-off-length>");
 		if (b == null) {
 			throw new NullPointerException();
 		} else if (off < 0 || length < 0 || length > b.length - off) {
@@ -78,14 +78,14 @@ class APIFileInputSream extends FSInputStream {
 			i += in.read(b, off, length);
 		}
 		position += i; // update position in file
-//		LOG.info("<AdamFS:INPUTSTREAM:read-b-off-length> read "+i+"bytes");
+		LOG.info("<APIFS:INPUTSTREAM:read-b-off-length> read "+i+"bytes");
 		return i;
 	}
 
 	@Override
 	public int read(long position, byte[] buffer, int offset, int length)
 			throws IOException {
-//		LOG.info("<AdamFS:INPUTSTREAM:read-pos-buffer-offset-length>");
+		LOG.info("<APIFS:INPUTSTREAM:read-pos-buffer-offset-length>");
 		this.position = position;
 		return read(buffer, offset, length);
 	}
@@ -97,18 +97,18 @@ class APIFileInputSream extends FSInputStream {
 
 	@Override
 	public void readFully(long position, byte[] buffer) throws IOException {
-//		LOG.info("<AdamFS:INPUTSTREAM:readFully-pos-buffer>");
+		LOG.info("<APIFS:INPUTSTREAM:readFully-pos-buffer>");
 	}
 
 	@Override
 	public void seek(long pos) throws IOException {
-//		LOG.info("<AdamFS:INPUTSTREAM:seek> to position: " + pos);
+		LOG.info("<APIFS:INPUTSTREAM:seek> to position: " + pos);
 		position = pos;
 	}
 
 	@Override
 	public long getPos() throws IOException {
-//		LOG.info("<AdamFS:INPUTSTREAM:getPos> returned: " + position);
+		LOG.info("<APIFS:INPUTSTREAM:getPos> returned: " + position);
 		return position;
 	}
 
