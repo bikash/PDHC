@@ -1,0 +1,2 @@
+2015-10-27 07:19:46,462 WARN  crypto.TestCryptoCodec (TestCryptoCodec.java:testOpensslAesCtrCryptoCodec(79)) - Skipping since test was not run with -Pnative flag
+2015-10-27 07:19:46,473 WARN  crypto.TestCryptoCodec (TestCryptoCodec.java:testJceAesCtrCryptoCodec(63)) - Skipping since test was not run with -Pnative flag

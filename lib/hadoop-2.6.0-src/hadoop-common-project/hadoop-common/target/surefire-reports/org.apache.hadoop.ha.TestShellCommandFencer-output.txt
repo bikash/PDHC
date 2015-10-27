@@ -1,0 +1,14 @@
+2015-10-27 07:26:36,165 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - Launched fencing command 'echo' with pid 17087
+2015-10-27 07:26:36,180 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - [PID 17087] echo: 
+2015-10-27 07:26:36,192 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - Launched fencing command 'exit 1' with pid 17088
+2015-10-27 07:26:36,205 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - Launched fencing command 'xxxxxxxxxxxx' with pid 17089
+2015-10-27 07:26:36,221 WARN  ha.ShellCommandFencer (<generated>:CGLIB$warn$18(?)) - [PID 17089] xxxxxxxxxxxx: bash: xxxxxxxxxxxx: command not found
+2015-10-27 07:26:36,285 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - Launched fencing command 'read' with pid 17090
+2015-10-27 07:26:36,412 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - Launched fencing command 'echo $target_host $target_port' with pid 17091
+2015-10-27 07:26:36,456 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - [PID 17091] echo $ta...rget_port: dummyhost 1234
+2015-10-27 07:26:36,586 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - Launched fencing command 'echo hello>&2' with pid 17092
+2015-10-27 07:26:36,588 WARN  ha.ShellCommandFencer (<generated>:CGLIB$warn$18(?)) - [PID 17092] echo hello>&2: hello
+2015-10-27 07:26:36,616 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - Launched fencing command 'echo hello' with pid 17093
+2015-10-27 07:26:36,618 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - [PID 17093] echo hello: hello
+2015-10-27 07:26:36,660 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - Launched fencing command 'echo $in_fencing_tests' with pid 17094
+2015-10-27 07:26:36,662 INFO  ha.ShellCommandFencer (<generated>:CGLIB$info$15(?)) - [PID 17094] echo $in...ing_tests: yessir

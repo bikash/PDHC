@@ -1,0 +1,20 @@
+2015-10-27 07:35:25,648 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:35:26,115 INFO  compress.CodecPool (CodecPool.java:getCompressor(151)) - Got brand-new compressor [.deflate]
+2015-10-27 07:35:26,149 INFO  compress.CodecPool (CodecPool.java:getCompressor(151)) - Got brand-new compressor [.deflate]
+2015-10-27 07:35:26,179 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:35:26,186 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:35:26,187 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:35:26,187 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:35:26,187 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:35:26,194 INFO  io.TestSetFile (TestSetFile.java:generate(91)) - generating 10000 records in memory
+2015-10-27 07:35:26,255 INFO  io.TestSetFile (TestSetFile.java:generate(98)) - sorting 10000 records
+2015-10-27 07:35:26,351 INFO  io.TestSetFile (TestSetFile.java:writeTest(107)) - creating with 10000 records
+2015-10-27 07:35:26,557 INFO  io.TestSetFile (TestSetFile.java:readTest(122)) - reading 100 records
+2015-10-27 07:35:26,766 INFO  io.TestSetFile (TestSetFile.java:readTest(129)) - done reading 10000
+2015-10-27 07:35:26,768 INFO  io.TestSetFile (TestSetFile.java:writeTest(107)) - creating with 10000 records
+2015-10-27 07:35:27,199 INFO  io.TestSetFile (TestSetFile.java:readTest(122)) - reading 100 records
+2015-10-27 07:35:27,203 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:35:27,208 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:35:27,208 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:35:27,209 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:35:30,271 INFO  io.TestSetFile (TestSetFile.java:readTest(129)) - done reading 10000

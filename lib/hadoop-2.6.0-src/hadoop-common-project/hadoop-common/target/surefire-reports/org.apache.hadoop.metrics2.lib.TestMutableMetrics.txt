@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.metrics2.lib.TestMutableMetrics
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.033 sec - in org.apache.hadoop.metrics2.lib.TestMutableMetrics

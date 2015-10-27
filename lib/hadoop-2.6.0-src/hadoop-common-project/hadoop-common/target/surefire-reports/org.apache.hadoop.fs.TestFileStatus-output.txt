@@ -1,0 +1,3 @@
+2015-10-27 07:22:11,541 INFO  fs.TestFileStatus (TestFileStatus.java:testFileStatusWritable(64)) - Writing FileStatuses to a ByteArrayOutputStream
+2015-10-27 07:22:11,671 INFO  fs.TestFileStatus (TestFileStatus.java:testFileStatusWritable(72)) - Creating ByteArrayInputStream object
+2015-10-27 07:22:11,672 INFO  fs.TestFileStatus (TestFileStatus.java:testFileStatusWritable(77)) - Testing if read objects are equal to written ones

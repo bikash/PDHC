@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.fs.TestSymlinkLocalFSFileSystem
+-------------------------------------------------------------------------------
+Tests run: 61, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 9.208 sec - in org.apache.hadoop.fs.TestSymlinkLocalFSFileSystem

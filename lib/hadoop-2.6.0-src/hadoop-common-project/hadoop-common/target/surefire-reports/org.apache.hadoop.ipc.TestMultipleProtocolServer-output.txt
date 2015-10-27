@@ -1,0 +1,60 @@
+2015-10-27 07:37:42,670 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:37:42,934 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 55946
+2015-10-27 07:37:43,269 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:37:43,300 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:37:43,301 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 55946: starting
+2015-10-27 07:37:43,911 INFO  ipc.Server (Server.java:run(2060)) - IPC Server handler 0 on 55946, call ping(), rpc version=2, client version=2, methodsFingerPrint=-1711067354 from 192.168.254.33:55948 Call#0 Retry#0
+org.apache.hadoop.ipc.RPC$VersionMismatch: Protocol Foo version mismatch. (client = 2, server = 1)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Server$WritableRpcInvoker.call(WritableRpcEngine.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-10-27 07:37:43,922 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 55946
+2015-10-27 07:37:43,933 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 55946
+2015-10-27 07:37:43,934 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:37:43,937 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:37:43,938 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 55949
+2015-10-27 07:37:43,944 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:37:43,944 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 55949: starting
+2015-10-27 07:37:44,268 INFO  ipc.Server (Server.java:run(2060)) - IPC Server handler 0 on 55949, call testProto.error from 192.168.254.33:55950 Call#3 Retry#0
+org.apache.hadoop.ipc.RpcServerException: error
+	at org.apache.hadoop.ipc.TestProtoBufRpc$PBServerImpl.error(TestProtoBufRpc.java:92)
+	at org.apache.hadoop.ipc.protobuf.TestRpcServiceProtos$TestProtobufRpcProto$2.callBlockingMethod(TestRpcServiceProtos.java:120)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Server$ProtoBufRpcInvoker.call(ProtobufRpcEngine.java:619)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-10-27 07:37:44,269 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 55949
+2015-10-27 07:37:44,273 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 55949
+2015-10-27 07:37:44,274 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:37:44,273 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:37:44,277 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 55951
+2015-10-27 07:37:44,281 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:37:44,281 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 55951: starting
+2015-10-27 07:37:44,283 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:37:44,283 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 55952
+2015-10-27 07:37:44,287 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 55951
+2015-10-27 07:37:44,294 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 55951
+2015-10-27 07:37:44,294 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:37:44,295 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:37:44,296 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 55953
+2015-10-27 07:37:44,299 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:37:44,300 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 55953: starting
+2015-10-27 07:37:44,322 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 55953
+2015-10-27 07:37:44,330 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 55953
+2015-10-27 07:37:44,330 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:37:44,331 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:37:44,332 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 55957
+2015-10-27 07:37:44,336 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:37:44,337 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 55957: starting
+2015-10-27 07:37:44,345 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 55957
+2015-10-27 07:37:44,370 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 55957
+2015-10-27 07:37:44,371 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder

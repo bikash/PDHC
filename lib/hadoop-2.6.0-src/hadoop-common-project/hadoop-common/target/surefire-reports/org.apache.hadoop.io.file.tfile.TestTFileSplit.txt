@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.io.file.tfile.TestTFileSplit
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.324 sec - in org.apache.hadoop.io.file.tfile.TestTFileSplit

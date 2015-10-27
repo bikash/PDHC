@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.ipc.TestMiniRPCBenchmark
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.216 sec - in org.apache.hadoop.ipc.TestMiniRPCBenchmark

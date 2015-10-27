@@ -1,0 +1,24 @@
+2015-10-27 07:42:51,527 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+2015-10-27 07:42:51,547 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:run(638)) - Starting expired delegation token remover thread, tokenRemoverScanInterval=0 min(s)
+2015-10-27 07:42:51,548 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+2015-10-27 07:42:51,561 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+2015-10-27 07:42:51,571 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+2015-10-27 07:42:51,576 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+2015-10-27 07:42:51,585 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:createPassword(385)) - Creating password for identifier: owner=owner, renewer=renewer, realUser=realUser, issueDate=1445946171584, maxDate=1445946171584, sequenceNumber=1, masterKeyId=5, currentKey: 5
+2015-10-27 07:42:51,589 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+2015-10-27 07:42:51,598 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+2015-10-27 07:42:51,602 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+2015-10-27 07:42:51,612 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+Input = 
+2015-10-27 07:42:51,622 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+Input = a
+Input = bb
+Input = ccc
+Input = dddd
+2015-10-27 07:42:51,632 INFO  delegation.AbstractDelegationTokenSecretManager (AbstractDelegationTokenSecretManager.java:updateCurrentKey(325)) - Updating the current master key for generating delegation tokens
+Input = eeeee
+Input = ffffff
+Input = ggggggg
+Input = hhhhhhhh
+Input = iiiiiiiii
+Input = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890!@#$%^&*()-=_+[]{}|;':,./<>?

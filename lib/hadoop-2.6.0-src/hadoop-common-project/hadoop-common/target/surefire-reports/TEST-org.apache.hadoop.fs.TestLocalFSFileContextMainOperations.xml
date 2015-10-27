@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="7.642" tests="62" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="24.75-b04"/>
+    <property name="user.country.format" value="NO"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src"/>
+    <property name="java.runtime.version" value="1.7.0_75-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/j3/bdpymcq1045gxk1mdtp_myvw0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.2.5/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/bikash/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.9.5"/>
+    <property name="http.nonProxyHosts" value="127.0.0.1"/>
+    <property name="user.home" value="/Users/bikash"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="bikash"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.2.5/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_75"/>
+    <property name="java.ext.dirs" value="/Users/bikash/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.2.5/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="socksNonProxyHosts" value="127.0.0.1"/>
+    <property name="ftp.nonProxyHosts" value="127.0.0.1"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testFileContextNoCache" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="1.572"/>
+  <testcase name="testDefaultFilePermission" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.261"/>
+  <testcase name="testCreateFlagAppendNonExistingFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.093"/>
+  <testcase name="testWorkingDirectory" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.169"/>
+  <testcase name="testEmptyCreateFlag" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.05"/>
+  <testcase name="testCreateFlagCreateAppendExistingFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.114"/>
+  <testcase name="testGlobStatusFilterWithNoMatchingPathsAndNonTrivialFilter" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.113"/>
+  <testcase name="testNullCreateFlag" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.045"/>
+  <testcase name="testRenameFileToNonExistentDirectory" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.122"/>
+  <testcase name="testDeleteEmptyDirectory" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.056"/>
+  <testcase name="testRenameDirectoryToNonExistentParent" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.094"/>
+  <testcase name="testCreateFlagAppendOverwrite" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.124"/>
+  <testcase name="testInputStreamClosedTwice" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.054"/>
+  <testcase name="testSetVerifyChecksum" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.11"/>
+  <testcase name="testWriteReadAndDeleteOneBlock" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.107"/>
+  <testcase name="testOpen2" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.157"/>
+  <testcase name="testGetFileStatusThrowsExceptionForNonExistentFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.077"/>
+  <testcase name="testMkdirsFailsForSubdirectoryOfExistingFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.337"/>
+  <testcase name="testCreateFlagAppendCreateOverwrite" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.035"/>
+  <testcase name="testListStatusFilterWithNoMatches" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.126"/>
+  <testcase name="testFileContextStatistics" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.199"/>
+  <testcase name="testWriteReadAndDeleteEmptyFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.125"/>
+  <testcase name="testGlobStatusFilterWithSomePathMatchesAndTrivialFilter" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.144"/>
+  <testcase name="testFsStatus" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.044"/>
+  <testcase name="testGetFileContext1" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.109"/>
+  <testcase name="testListStatus" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.083"/>
+  <testcase name="testRenameDirectoryAsEmptyDirectory" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.166"/>
+  <testcase name="testRenameFileAsExistingFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.127"/>
+  <testcase name="testWriteReadAndDeleteHalfABlock" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.083"/>
+  <testcase name="testListCorruptFileBlocks" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.06"/>
+  <testcase name="testRenameFileAsExistingDirectory" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.156"/>
+  <testcase name="testCreateFlagOverwriteNonExistingFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.063"/>
+  <testcase name="testWriteReadAndDeleteOneAndAHalfBlocks" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.083"/>
+  <testcase name="testRenameDirectoryAsNonExistentDirectory" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.384"/>
+  <testcase name="testGlobStatusSomeMatchesInDirectories" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.09"/>
+  <testcase name="testUnsupportedSymlink" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.039"/>
+  <testcase name="testGlobStatusFilterWithMultiplePathMatchesAndNonTrivialFilter" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.161"/>
+  <testcase name="testGlobStatusFilterWithMultipleWildCardMatchesAndTrivialFilter" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.075"/>
+  <testcase name="testWriteReadAndDeleteTwoBlocks" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.126"/>
+  <testcase name="testGlobStatusFilterWithEmptyPathResults" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.1"/>
+  <testcase name="testGlobStatusWithNoMatchesInPath" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.064"/>
+  <testcase name="testGlobStatusWithMultipleMatchesOfSingleChar" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.078"/>
+  <testcase name="testDeleteOnExitUnexisting" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.043"/>
+  <testcase name="testRenameDirectoryToItself" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.069"/>
+  <testcase name="testCreateFlagAppendExistingFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.058"/>
+  <testcase name="testWriteInNonExistentDirectory" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.113"/>
+  <testcase name="testGlobStatusWithMultipleWildCardMatches" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.058"/>
+  <testcase name="testRenameDirectoryAsFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.101"/>
+  <testcase name="testRenameFileToExistingParent" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.075"/>
+  <testcase name="testRenameFileToDestinationWithParentFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.086"/>
+  <testcase name="testDeleteRecursively" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.057"/>
+  <testcase name="testMkdirs" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.127"/>
+  <testcase name="testGlobStatusNonExistentFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.024"/>
+  <testcase name="testRenameDirectoryAsNonEmptyDirectory" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.122"/>
+  <testcase name="testDeleteNonExistentFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.018"/>
+  <testcase name="testRenameNonExistentPath" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.031"/>
+  <testcase name="testCreateFlagCreateAppendNonExistingFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.034"/>
+  <testcase name="testGlobStatusFilterWithMultiplePathWildcardsAndNonTrivialFilter" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.055"/>
+  <testcase name="testOutputStreamClosedTwice" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.041"/>
+  <testcase name="testCreateFlagOverwriteExistingFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.05"/>
+  <testcase name="testRenameFileToItself" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.068"/>
+  <testcase name="testCreateFlagCreateExistingFile" classname="org.apache.hadoop.fs.TestLocalFSFileContextMainOperations" time="0.037"/>
+</testsuite>

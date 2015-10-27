@@ -1,0 +1,223 @@
+2015-10-27 07:41:13,821 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:41:14,096 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:41:14,156 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56870
+2015-10-27 07:41:14,233 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:41:14,233 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56870: starting
+2015-10-27 07:41:14,555 INFO  ipc.Server (Server.java:authorizeConnection(1929)) - Connection from 192.168.254.33:56871 for protocol org.apache.hadoop.security.TestDoAsEffectiveUser$TestProtocol is unauthorized for user proxyUser (auth:PROXY) via realUser1@HADOOP.APACHE.ORG (auth:SIMPLE)
+2015-10-27 07:41:14,565 INFO  ipc.Server (Server.java:doRead(771)) - Socket Reader #1 for port 56870: readAndProcess from client 192.168.254.33 threw exception [org.apache.hadoop.security.authorize.AuthorizationException: Unauthorized connection for super-user: realUser1@HADOOP.APACHE.ORG from IP 192.168.254.33]
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.security.authorize.AuthorizationException): Unauthorized connection for super-user: realUser1@HADOOP.APACHE.ORG from IP 192.168.254.33
+	at org.apache.hadoop.ipc.Client.call(Client.java:1468)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Invoker.invoke(WritableRpcEngine.java:244)
+	at com.sun.proxy.$Proxy9.aMethod(Unknown Source)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser$4.run(TestDoAsEffectiveUser.java:324)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser$4.run(TestDoAsEffectiveUser.java:319)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser.testRealUserIPNotSpecified(TestDoAsEffectiveUser.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:41:14,568 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56870
+2015-10-27 07:41:14,572 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56870
+2015-10-27 07:41:14,572 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:41:14,578 INFO  security.TestDoAsEffectiveUser (TestDoAsEffectiveUser.java:configureSuperUserIPAddresses(103)) - Local Ip addresses: 192.168.56.1,192.168.254.33,127.0.0.1,127.0.1.1,bikash.netgear.com
+2015-10-27 07:41:14,608 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:41:14,608 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56872
+2015-10-27 07:41:14,628 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:41:14,633 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56872: starting
+2015-10-27 07:41:14,650 INFO  ipc.Server (Server.java:authorizeConnection(1929)) - Connection from 192.168.254.33:56873 for protocol org.apache.hadoop.security.TestDoAsEffectiveUser$TestProtocol is unauthorized for user proxyUser (auth:PROXY) via realUser1@HADOOP.APACHE.ORG (auth:SIMPLE)
+2015-10-27 07:41:14,654 INFO  ipc.Server (Server.java:doRead(771)) - Socket Reader #1 for port 56872: readAndProcess from client 192.168.254.33 threw exception [org.apache.hadoop.security.authorize.AuthorizationException: User: realUser1@HADOOP.APACHE.ORG is not allowed to impersonate proxyUser]
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.security.authorize.AuthorizationException): User: realUser1@HADOOP.APACHE.ORG is not allowed to impersonate proxyUser
+	at org.apache.hadoop.ipc.Client.call(Client.java:1468)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Invoker.invoke(WritableRpcEngine.java:244)
+	at com.sun.proxy.$Proxy9.aMethod(Unknown Source)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser$6.run(TestDoAsEffectiveUser.java:409)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser$6.run(TestDoAsEffectiveUser.java:404)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser.testRealUserGroupAuthorizationFailure(TestDoAsEffectiveUser.java:403)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:41:14,668 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56872
+2015-10-27 07:41:14,679 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56872
+2015-10-27 07:41:14,679 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:41:14,703 INFO  security.TestDoAsEffectiveUser (TestDoAsEffectiveUser.java:configureSuperUserIPAddresses(103)) - Local Ip addresses: 192.168.56.1,192.168.254.33,127.0.0.1,127.0.1.1,bikash.netgear.com
+2015-10-27 07:41:14,703 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:41:14,704 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56874
+2015-10-27 07:41:14,709 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:41:14,709 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56874: starting
+2015-10-27 07:41:14,717 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Call: aMethod(), rpc version=2, client version=1, metho...
+2015-10-27 07:41:14,718 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Return: realUser1@HADOOP.APACHE.ORG (auth:SIMPLE)
+2015-10-27 07:41:14,722 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Call: getServerRemoteUser(), rpc version=2, client vers...
+2015-10-27 07:41:14,723 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Return: realUser1@HADOOP.APACHE.ORG (auth:SIMPLE)
+2015-10-27 07:41:14,727 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Call: aMethod(), rpc version=2, client version=1, metho...
+2015-10-27 07:41:14,727 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Return: proxyUser (auth:PROXY) via realUser1@HADOOP.APA...
+2015-10-27 07:41:14,729 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Call: getServerRemoteUser(), rpc version=2, client vers...
+2015-10-27 07:41:14,729 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Return: proxyUser (auth:PROXY) via realUser1@HADOOP.APA...
+2015-10-27 07:41:14,729 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56874
+2015-10-27 07:41:14,740 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56874
+2015-10-27 07:41:14,741 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:41:14,744 INFO  security.TestDoAsEffectiveUser (TestDoAsEffectiveUser.java:configureSuperUserIPAddresses(103)) - Local Ip addresses: 192.168.56.1,192.168.254.33,127.0.0.1,127.0.1.1,bikash.netgear.com
+2015-10-27 07:41:14,764 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:41:14,765 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56877
+2015-10-27 07:41:14,770 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:41:14,771 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56877: starting
+2015-10-27 07:41:14,775 INFO  ipc.Server (Server.java:authorizeConnection(1929)) - Connection from 192.168.254.33:56878 for protocol org.apache.hadoop.security.TestDoAsEffectiveUser$TestProtocol is unauthorized for user proxyUser (auth:PROXY) via realUser1@HADOOP.APACHE.ORG (auth:SIMPLE)
+2015-10-27 07:41:14,775 INFO  ipc.Server (Server.java:doRead(771)) - Socket Reader #1 for port 56877: readAndProcess from client 192.168.254.33 threw exception [org.apache.hadoop.security.authorize.AuthorizationException: User: realUser1@HADOOP.APACHE.ORG is not allowed to impersonate proxyUser]
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.security.authorize.AuthorizationException): User: realUser1@HADOOP.APACHE.ORG is not allowed to impersonate proxyUser
+	at org.apache.hadoop.ipc.Client.call(Client.java:1468)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Invoker.invoke(WritableRpcEngine.java:244)
+	at com.sun.proxy.$Proxy9.aMethod(Unknown Source)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser$5.run(TestDoAsEffectiveUser.java:364)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser$5.run(TestDoAsEffectiveUser.java:359)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser.testRealUserGroupNotSpecified(TestDoAsEffectiveUser.java:358)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:41:14,778 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56877
+2015-10-27 07:41:14,787 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56877
+2015-10-27 07:41:14,788 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:41:15,205 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:41:15,303 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56879
+2015-10-27 07:41:15,325 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:41:15,326 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56879: starting
+2015-10-27 07:41:15,384 INFO  ipc.Server (Server.java:saslProcess(1306)) - Auth successful for realUser1@HADOOP.APACHE.ORG (auth:PROXY) via SomeSuperUser (auth:SIMPLE)
+2015-10-27 07:41:15,387 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Call: aMethod(), rpc version=2, client version=1, metho...
+2015-10-27 07:41:15,387 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Return: realUser1@HADOOP.APACHE.ORG (auth:TOKEN) via So...
+2015-10-27 07:41:15,388 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56879
+2015-10-27 07:41:15,393 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56879
+2015-10-27 07:41:15,393 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:41:15,396 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:41:15,396 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56881
+2015-10-27 07:41:15,401 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:41:15,401 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56881: starting
+2015-10-27 07:41:15,436 INFO  ipc.Server (Server.java:saslProcess(1306)) - Auth successful for realUser1@HADOOP.APACHE.ORG (auth:PROXY) via SomeSuperUser (auth:SIMPLE)
+2015-10-27 07:41:15,446 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Call: aMethod(), rpc version=2, client version=1, metho...
+2015-10-27 07:41:15,446 INFO  ipc.Server (WritableRpcEngine.java:log(442)) - Return: realUser1@HADOOP.APACHE.ORG (auth:TOKEN) via So...
+2015-10-27 07:41:15,447 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56881
+2015-10-27 07:41:15,458 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56881
+2015-10-27 07:41:15,458 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:41:15,481 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:41:15,482 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56883
+2015-10-27 07:41:15,487 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:41:15,487 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56883: starting
+2015-10-27 07:41:15,502 INFO  ipc.Server (Server.java:authorizeConnection(1929)) - Connection from 192.168.254.33:56884 for protocol org.apache.hadoop.security.TestDoAsEffectiveUser$TestProtocol is unauthorized for user proxyUser (auth:PROXY) via realUser1@HADOOP.APACHE.ORG (auth:SIMPLE)
+2015-10-27 07:41:15,502 INFO  ipc.Server (Server.java:doRead(771)) - Socket Reader #1 for port 56883: readAndProcess from client 192.168.254.33 threw exception [org.apache.hadoop.security.authorize.AuthorizationException: Unauthorized connection for super-user: realUser1@HADOOP.APACHE.ORG from IP 192.168.254.33]
+org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.security.authorize.AuthorizationException): Unauthorized connection for super-user: realUser1@HADOOP.APACHE.ORG from IP 192.168.254.33
+	at org.apache.hadoop.ipc.Client.call(Client.java:1468)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1399)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Invoker.invoke(WritableRpcEngine.java:244)
+	at com.sun.proxy.$Proxy9.aMethod(Unknown Source)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser$3.run(TestDoAsEffectiveUser.java:281)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser$3.run(TestDoAsEffectiveUser.java:276)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.security.TestDoAsEffectiveUser.testRealUserIPAuthorizationFailure(TestDoAsEffectiveUser.java:275)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:41:15,517 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56883
+2015-10-27 07:41:15,528 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56883
+2015-10-27 07:41:15,528 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:41:15,531 INFO  security.TestDoAsEffectiveUser (TestDoAsEffectiveUser.java:configureSuperUserIPAddresses(103)) - Local Ip addresses: 192.168.56.1,192.168.254.33,127.0.0.1,127.0.1.1,bikash.netgear.com
+2015-10-27 07:41:15,552 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:41:15,554 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56885
+2015-10-27 07:41:15,564 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:41:15,565 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56885: starting
+2015-10-27 07:41:15,577 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56885
+2015-10-27 07:41:15,578 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56885
+2015-10-27 07:41:15,578 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder

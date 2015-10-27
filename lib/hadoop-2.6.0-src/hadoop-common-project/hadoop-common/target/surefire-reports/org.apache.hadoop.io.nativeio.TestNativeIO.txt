@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.io.nativeio.TestNativeIO
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 18, Time elapsed: 0.53 sec - in org.apache.hadoop.io.nativeio.TestNativeIO

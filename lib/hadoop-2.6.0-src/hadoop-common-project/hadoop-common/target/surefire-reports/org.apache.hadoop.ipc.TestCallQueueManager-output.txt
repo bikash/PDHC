@@ -1,0 +1,8 @@
+2015-10-27 07:35:41,134 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:35:41,187 INFO  ipc.CallQueueManager (CallQueueManager.java:swapQueue(141)) - Old Queue: java.util.concurrent.LinkedBlockingQueue@5ca554da, Replacement: java.util.concurrent.LinkedBlockingQueue@6a65e3ba
+2015-10-27 07:35:42,196 INFO  ipc.CallQueueManager (CallQueueManager.java:swapQueue(141)) - Old Queue: java.util.concurrent.LinkedBlockingQueue@6a65e3ba, Replacement: java.util.concurrent.LinkedBlockingQueue@2ea7166f
+2015-10-27 07:35:43,219 INFO  ipc.CallQueueManager (CallQueueManager.java:swapQueue(141)) - Old Queue: java.util.concurrent.LinkedBlockingQueue@2ea7166f, Replacement: java.util.concurrent.LinkedBlockingQueue@14579515
+2015-10-27 07:35:44,218 INFO  ipc.CallQueueManager (CallQueueManager.java:swapQueue(141)) - Old Queue: java.util.concurrent.LinkedBlockingQueue@14579515, Replacement: java.util.concurrent.LinkedBlockingQueue@1fca022
+2015-10-27 07:35:45,220 INFO  ipc.CallQueueManager (CallQueueManager.java:swapQueue(141)) - Old Queue: java.util.concurrent.LinkedBlockingQueue@1fca022, Replacement: java.util.concurrent.LinkedBlockingQueue@17c95b4c
+2015-10-27 07:35:47,236 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:35:47,337 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue

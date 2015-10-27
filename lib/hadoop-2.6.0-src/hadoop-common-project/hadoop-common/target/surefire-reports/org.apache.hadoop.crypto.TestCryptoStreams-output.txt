@@ -1,0 +1,15 @@
+2015-10-27 07:19:47,178 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:19:47,266 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:19:48,093 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:19:48,183 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:19:53,029 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:19:54,776 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:19:56,478 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:19:56,772 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:19:58,229 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:19:59,882 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:20:01,362 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:20:01,411 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:20:07,671 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:20:07,730 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
+2015-10-27 07:20:08,705 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records

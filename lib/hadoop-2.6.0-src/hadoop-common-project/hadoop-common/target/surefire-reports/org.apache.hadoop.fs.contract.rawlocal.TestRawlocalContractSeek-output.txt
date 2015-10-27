@@ -1,0 +1,19 @@
+2015-10-27 07:21:14,530 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:21:14,602 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:14,616 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - Testing 1000 random seeks
+2015-10-27 07:21:14,743 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:14,746 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - verify that reading past the last bytes in the file returns -1
+2015-10-27 07:21:14,794 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:14,843 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:14,845 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - do a block read on a 0 byte file
+2015-10-27 07:21:14,886 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:14,888 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - do a seek past the EOF, then verify the stream recovers
+2015-10-27 07:21:14,925 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:14,966 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:14,969 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - verify that a positioned read does not change the getPos() value
+2015-10-27 07:21:15,008 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:15,010 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - Seek round a large file and verify the bytes are what is expected
+2015-10-27 07:21:15,044 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:15,048 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - basic seek operations
+2015-10-27 07:21:15,077 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by LocalFS
+2015-10-27 07:21:15,078 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - seek and read a 0 byte file

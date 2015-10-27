@@ -1,0 +1,5 @@
+2015-10-27 07:41:33,746 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+bikash:staff com.apple.sharepoint.group.1 everyone localaccounts _appserverusr admin _appserveradm _lpadmin _appstore _lpoperator _developer com.apple.access_screensharing com.apple.access_ssh
+2015-10-27 07:41:36,660 WARN  security.ShellBasedUnixGroupsMapping (ShellBasedUnixGroupsMapping.java:getUnixGroups(87)) - got exception trying to get groups for user foo.bar: id: foo.bar: no such user
+
+2015-10-27 07:41:36,661 WARN  security.UserGroupInformation (UserGroupInformation.java:getGroupNames(1492)) - No groups available for user foo.bar

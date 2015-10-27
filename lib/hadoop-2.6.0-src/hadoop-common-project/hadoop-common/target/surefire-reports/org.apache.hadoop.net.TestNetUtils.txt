@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.net.TestNetUtils
+-------------------------------------------------------------------------------
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.716 sec - in org.apache.hadoop.net.TestNetUtils

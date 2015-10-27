@@ -1,0 +1,26 @@
+2015-10-27 07:40:35,776 INFO  net.TestStaticMapping (TestStaticMapping.java:testAddResolveNodes(131)) - Mapping: static mapping with single switch = false
+Map:
+  n1 -> /r1
+Nodes: 1
+Switches: 1
+
+2015-10-27 07:40:36,061 INFO  Configuration.deprecation (Configuration.java:warnOnceIfDeprecated(1049)) - hadoop.configured.node.mapping is deprecated. Instead, use net.topology.configured.node.mapping
+2015-10-27 07:40:36,102 INFO  net.TestStaticMapping (TestStaticMapping.java:testCachingRelaysMultiSwitchQueries(193)) - Mapping: cached switch mapping relaying to static mapping with single switch = false
+Mapping: cached switch mapping relaying to static mapping with single switch = false
+Map:
+Nodes: 0
+Switches: 0
+
+2015-10-27 07:40:36,185 INFO  net.TestStaticMapping (TestStaticMapping.java:testReadNodesFromConfig(161)) - Mapping: static mapping with single switch = true
+Map:
+  n1 -> /r1
+  n2 -> /r2
+Nodes: 2
+Switches: 2
+
+2015-10-27 07:40:36,519 INFO  net.TestStaticMapping (TestStaticMapping.java:testCachingRelaysSingleSwitchQueries(179)) - Mapping: cached switch mapping relaying to static mapping with single switch = true
+Mapping: cached switch mapping relaying to static mapping with single switch = true
+Map:
+Nodes: 0
+Switches: 0
+

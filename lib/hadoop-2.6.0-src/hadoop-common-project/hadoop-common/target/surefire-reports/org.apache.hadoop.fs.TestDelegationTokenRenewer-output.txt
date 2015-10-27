@@ -1,0 +1,1 @@
+2015-10-27 07:21:35,076 ERROR fs.FileSystem (DelegationTokenRenewer.java:addRenewAction(226)) - does not have a token for renewal

@@ -1,0 +1,304 @@
+2015-10-27 07:24:47,072 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:24:47,409 INFO  mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-10-27 07:24:47,409 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:47,412 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:47,412 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:47,413 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:47,478 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:47,912 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:47,912 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:47,913 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:47,913 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:47,916 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:48,272 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:48,272 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:48,272 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:48,272 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:48,293 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:48,473 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:48,476 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:48,477 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:48,477 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:48,499 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:48,713 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:48,713 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:48,714 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:48,714 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:48,718 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:49,031 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:49,032 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:49,032 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:49,051 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:49,065 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:49,259 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:49,259 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:49,259 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:49,260 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:49,265 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:49,503 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:49,504 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:49,504 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:49,504 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:49,508 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:49,622 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:49,623 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:49,623 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:49,624 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:49,626 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:49,898 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:49,899 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:49,899 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:49,900 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:49,903 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:49,995 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:49,995 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:49,996 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:50,016 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:50,019 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:50,181 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:50,181 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:50,181 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:50,182 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:50,185 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:50,319 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:50,319 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:50,320 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:50,320 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:50,327 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:50,440 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:50,441 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:50,441 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:50,441 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:50,447 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:50,519 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:50,519 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:50,519 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:50,520 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:50,522 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:50,572 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:50,572 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:50,573 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:50,573 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:50,576 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:50,687 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:50,688 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:50,688 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:50,688 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:50,691 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:50,740 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:50,741 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:50,741 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:50,742 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:50,752 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:50,924 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:50,925 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:50,925 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:50,925 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:50,932 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+  FileSystem viewfs://null: 0 bytes read, 0 bytes written, 0 read ops, 0 large read ops, 0 write ops
+  FileSystem file://null: 2072 bytes read, 2072 bytes written, 0 read ops, 0 large read ops, 0 write ops
+2015-10-27 07:24:51,012 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,012 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,014 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,015 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,018 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:51,099 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,100 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,100 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,100 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,103 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:51,191 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,192 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,192 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,193 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,195 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:51,295 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,305 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,305 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,306 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,314 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:51,416 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,416 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,417 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,417 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,419 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:51,509 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,510 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,510 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,510 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,512 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:51,670 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,671 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,671 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,671 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,676 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:51,808 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,808 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,809 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,809 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,811 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:51,897 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,898 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,898 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,898 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,900 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:51,965 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:51,966 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:51,968 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:51,968 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:51,971 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:52,212 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:52,212 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:52,213 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:52,213 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:52,215 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:52,254 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:52,254 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:52,255 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:52,255 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:52,257 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:52,346 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:52,350 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:52,350 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:52,351 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:52,360 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:52,641 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:52,641 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:52,642 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:52,642 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:52,644 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:52,735 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:52,735 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:52,735 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:52,736 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:52,738 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:52,809 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:52,810 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:52,810 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:52,811 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:52,823 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:52,944 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:52,944 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:52,944 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:52,945 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:52,947 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,035 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,035 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,035 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,036 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,037 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,125 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,126 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,126 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,140 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,143 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,325 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,326 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,326 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,326 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,328 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,411 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,412 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,412 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,412 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,414 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,493 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,493 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,493 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,494 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,495 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,568 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,568 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,569 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,569 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,572 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,704 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,705 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,705 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,705 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,707 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,793 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,793 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,793 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,793 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,795 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,879 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,879 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,879 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,889 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,892 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:53,976 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:53,977 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:53,977 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:53,977 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:53,979 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:54,135 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:54,135 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:54,135 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:54,135 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:54,137 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:54,329 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:54,330 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:54,330 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:54,330 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:54,332 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:54,448 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:54,449 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:54,449 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:54,449 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:54,451 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:54,566 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:54,567 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:54,567 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:54,567 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:54,570 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:54,678 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:54,678 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:54,678 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:54,679 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:54,680 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:54,721 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:54,721 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:54,722 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:54,722 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:54,723 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:54,863 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:54,864 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:54,865 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:54,866 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:54,868 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:54,902 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:54,903 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:54,903 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:54,903 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:54,905 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:54,956 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:54,957 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:54,957 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:54,957 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:54,959 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:55,023 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:55,023 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:55,023 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:55,024 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:55,026 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:55,104 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:55,104 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:55,104 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:55,105 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:55,106 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:55,223 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:55,223 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:55,223 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:55,224 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:55,226 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:55,367 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:55,368 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:55,368 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:55,368 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:55,370 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:24:55,515 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:24:55,516 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:24:55,516 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:24:55,516 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:24:55,518 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common

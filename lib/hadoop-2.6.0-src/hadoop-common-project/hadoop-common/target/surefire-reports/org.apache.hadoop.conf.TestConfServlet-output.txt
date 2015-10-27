@@ -1,0 +1,306 @@
+xml key: ha.failover-controller.cli-check.rpc-timeout.ms
+xml key: ipc.client.connect.max.retries.on.timeouts
+xml key: hadoop.user.group.static.mapping.overrides
+xml key: hadoop.tmp.dir
+xml key: hadoop.security.java.secure.random.algorithm
+xml key: nfs.exports.allowed.hosts
+xml key: ha.health-monitor.check-interval.ms
+xml key: ipc.client.idlethreshold
+xml key: fs.trash.checkpoint.interval
+xml key: io.skip.checksum.errors
+xml key: hadoop.security.groups.negative-cache.secs
+xml key: test.fs.s3n.name
+xml key: fs.har.impl.disable.cache
+xml key: fs.defaultFS
+xml key: fs.client.resolve.remote.symlinks
+xml key: hadoop.rpc.socket.factory.class.default
+xml key: hadoop.security.kms.client.authentication.retry-count
+xml key: io.mapfile.bloom.size
+xml key: hadoop.rpc.protection
+xml key: net.topology.impl
+xml key: hadoop.ssl.require.client.cert
+xml key: io.bytes.per.checksum
+xml key: file.stream-buffer-size
+xml key: ha.failover-controller.new-active.rpc-timeout.ms
+xml key: ha.zookeeper.acl
+xml key: fs.ftp.host.port
+xml key: hadoop.security.group.mapping
+xml key: hadoop.ssl.keystores.factory.class
+xml key: s3.replication
+xml key: net.topology.node.switch.mapping.impl
+xml key: fs.s3.buffer.dir
+xml key: fs.ftp.password.localhost
+xml key: s3native.bytes-per-checksum
+xml key: fs.s3a.multipart.purge
+xml key: s3.client-write-packet-size
+xml key: io.mapfile.bloom.error.rate
+xml key: ftp.bytes-per-checksum
+xml key: hadoop.security.group.mapping.ldap.search.attr.group.name
+xml key: ha.health-monitor.rpc-timeout.ms
+xml key: hadoop.security.authorization
+xml key: s3.bytes-per-checksum
+xml key: fs.s3n.multipart.uploads.block.size
+xml key: ipc.client.fallback-to-simple-auth-allowed
+xml key: ipc.server.listen.queue.size
+xml key: hadoop.ssl.enabled.protocols
+xml key: hadoop.security.kms.client.encrypted.key.cache.low-watermark
+xml key: s3native.blocksize
+xml key: file.replication
+xml key: ftp.client-write-packet-size
+xml key: hadoop.work.around.non.threadsafe.getpwuid
+xml key: fs.du.interval
+xml key: hadoop.http.authentication.type
+xml key: hadoop.http.staticuser.user
+xml key: hadoop.util.hash.type
+xml key: hadoop.security.instrumentation.requires.admin
+xml key: hadoop.security.kms.client.encrypted.key.cache.size
+xml key: fs.s3a.connection.maximum
+xml key: fs.s3a.attempts.maximum
+xml key: test.fs.s3.name
+xml key: io.map.index.interval
+xml key: hadoop.ssl.client.conf
+xml key: hadoop.security.kms.client.encrypted.key.cache.expiry
+xml key: hadoop.kerberos.kinit.command
+xml key: fs.AbstractFileSystem.hdfs.impl
+xml key: io.map.index.skip
+xml key: hadoop.http.authentication.token.validity
+xml key: hadoop.jetty.logs.serve.aliases
+xml key: ftp.replication
+xml key: io.compression.codec.bzip2.library
+xml key: ha.failover-controller.graceful-fence.connection.retries
+xml key: nfs3.server.port
+xml key: fs.swift.impl
+xml key: ha.health-monitor.sleep-after-disconnect.ms
+xml key: fs.s3a.connection.timeout
+xml key: file.client-write-packet-size
+xml key: fs.AbstractFileSystem.viewfs.impl
+xml key: hadoop.security.group.mapping.ldap.search.filter.group
+xml key: hadoop.security.crypto.codec.classes.aes.ctr.nopadding
+xml key: fs.s3n.block.size
+xml key: hadoop.security.crypto.cipher.suite
+xml key: net.topology.script.number.args
+xml key: dfs.ha.fencing.ssh.connect-timeout
+xml key: hadoop.security.authentication
+xml key: tfile.fs.output.buffer.size
+xml key: hadoop.security.groups.cache.secs
+xml key: ha.failover-controller.graceful-fence.rpc-timeout.ms
+xml key: fs.AbstractFileSystem.file.impl
+xml key: fs.s3a.impl
+xml key: testconfservlet.key
+xml key: fs.ftp.user.localhost
+xml key: ha.health-monitor.connect-retry-interval.ms
+xml key: fs.s3a.multipart.threshold
+xml key: fs.s3.maxRetries
+xml key: fs.s3n.multipart.uploads.enabled
+xml key: hadoop.security.group.mapping.ldap.directory.search.timeout
+xml key: file.blocksize
+xml key: fs.ftp.host
+xml key: file.bytes-per-checksum
+xml key: ha.zookeeper.parent-znode
+xml key: fs.s3a.multipart.size
+xml key: fs.s3a.multipart.purge.age
+xml key: fs.s3n.multipart.copy.block.size
+xml key: fs.trash.interval
+xml key: fs.s3.sleepTimeSeconds
+xml key: rpc.metrics.quantile.enable
+xml key: nfs3.mountd.port
+xml key: ftp.stream-buffer-size
+xml key: hadoop.http.authentication.signature.secret.file
+xml key: io.seqfile.sorter.recordlimit
+xml key: s3.blocksize
+xml key: fs.permissions.umask-mode
+xml key: hadoop.ssl.server.conf
+xml key: fs.s3a.connection.ssl.enabled
+xml key: fs.s3a.buffer.dir
+xml key: s3native.stream-buffer-size
+xml key: hadoop.security.groups.cache.warn.after.ms
+xml key: hadoop.http.authentication.kerberos.principal
+xml key: hadoop.security.kms.client.encrypted.key.cache.num.refill.threads
+xml key: hadoop.security.group.mapping.ldap.search.filter.user
+xml key: fs.automatic.close
+xml key: ipc.client.connect.retry.interval
+xml key: fs.s3a.paging.maximum
+xml key: s3.stream-buffer-size
+xml key: ha.zookeeper.session-timeout.ms
+xml key: fs.AbstractFileSystem.har.impl
+xml key: io.seqfile.compress.blocksize
+xml key: hadoop.http.filter.initializers
+xml key: fs.s3.block.size
+xml key: hadoop.http.authentication.simple.anonymous.allowed
+xml key: ftp.blocksize
+xml key: io.seqfile.lazydecompress
+xml key: hadoop.ssl.enabled
+xml key: hadoop.common.configuration.version
+xml key: hadoop.security.group.mapping.ldap.search.attr.member
+xml key: hadoop.security.random.device.file.path
+xml key: ipc.client.connection.maxidletime
+xml key: ipc.client.connect.timeout
+xml key: hadoop.security.uid.cache.secs
+xml key: ipc.client.kill.max
+xml key: ipc.client.connect.max.retries
+xml key: io.seqfile.local.dir
+xml key: hadoop.security.crypto.buffer.size
+xml key: io.native.lib.available
+xml key: io.file.buffer.size
+xml key: io.serializations
+xml key: tfile.fs.input.buffer.size
+xml key: hadoop.security.group.mapping.ldap.ssl
+xml key: fs.df.interval
+xml key: hadoop.http.authentication.kerberos.keytab
+xml key: s3native.client-write-packet-size
+xml key: s3native.replication
+xml key: tfile.io.chunk.size
+xml key: hadoop.ssl.hostname.verifier
+k: ha.failover-controller.cli-check.rpc-timeout.ms v: 20000 r: core-default.xml
+k: ipc.client.connect.max.retries.on.timeouts v: 45 r: core-default.xml
+k: hadoop.user.group.static.mapping.overrides v: dr.who=; r: core-default.xml
+k: hadoop.tmp.dir v: build/test r: core-site.xml
+k: hadoop.security.java.secure.random.algorithm v: SHA1PRNG r: core-default.xml
+k: nfs.exports.allowed.hosts v: * rw r: core-default.xml
+k: ha.health-monitor.check-interval.ms v: 1000 r: core-default.xml
+k: ipc.client.idlethreshold v: 4000 r: core-default.xml
+k: fs.trash.checkpoint.interval v: 0 r: core-default.xml
+k: io.skip.checksum.errors v: false r: core-default.xml
+k: hadoop.security.groups.negative-cache.secs v: 30 r: core-default.xml
+k: test.fs.s3n.name v: s3n:/// r: core-site.xml
+k: fs.har.impl.disable.cache v: true r: core-default.xml
+k: fs.defaultFS v: file:/// r: core-default.xml
+k: fs.client.resolve.remote.symlinks v: true r: core-default.xml
+k: hadoop.rpc.socket.factory.class.default v: org.apache.hadoop.net.StandardSocketFactory r: core-default.xml
+k: hadoop.security.kms.client.authentication.retry-count v: 1 r: core-default.xml
+k: io.mapfile.bloom.size v: 1048576 r: core-default.xml
+k: hadoop.rpc.protection v: authentication r: core-default.xml
+k: net.topology.impl v: org.apache.hadoop.net.NetworkTopology r: core-default.xml
+k: hadoop.ssl.require.client.cert v: false r: core-default.xml
+k: io.bytes.per.checksum v: 512 r: core-default.xml
+k: file.stream-buffer-size v: 4096 r: core-default.xml
+k: ha.failover-controller.new-active.rpc-timeout.ms v: 60000 r: core-default.xml
+k: ha.zookeeper.acl v: world:anyone:rwcda r: core-default.xml
+k: fs.ftp.host.port v: 21 r: core-default.xml
+k: hadoop.security.group.mapping v: org.apache.hadoop.security.JniBasedUnixGroupsMappingWithFallback r: core-default.xml
+k: hadoop.ssl.keystores.factory.class v: org.apache.hadoop.security.ssl.FileBasedKeyStoresFactory r: core-default.xml
+k: s3.replication v: 3 r: core-default.xml
+k: net.topology.node.switch.mapping.impl v: org.apache.hadoop.net.ScriptBasedMapping r: core-default.xml
+k: fs.s3.buffer.dir v: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/s3 r: core-default.xml
+k: fs.ftp.password.localhost v: password r: core-site.xml
+k: s3native.bytes-per-checksum v: 512 r: core-default.xml
+k: fs.s3a.multipart.purge v: false r: core-default.xml
+k: s3.client-write-packet-size v: 65536 r: core-default.xml
+k: io.mapfile.bloom.error.rate v: 0.005 r: core-default.xml
+k: ftp.bytes-per-checksum v: 512 r: core-default.xml
+k: hadoop.security.group.mapping.ldap.search.attr.group.name v: cn r: core-default.xml
+k: ha.health-monitor.rpc-timeout.ms v: 45000 r: core-default.xml
+k: hadoop.security.authorization v: false r: core-default.xml
+k: s3.bytes-per-checksum v: 512 r: core-default.xml
+k: fs.s3n.multipart.uploads.block.size v: 67108864 r: core-default.xml
+k: ipc.client.fallback-to-simple-auth-allowed v: false r: core-default.xml
+k: ipc.server.listen.queue.size v: 128 r: core-default.xml
+k: hadoop.ssl.enabled.protocols v: TLSv1 r: core-default.xml
+k: hadoop.security.kms.client.encrypted.key.cache.low-watermark v: 0.3f r: core-default.xml
+k: s3native.blocksize v: 67108864 r: core-default.xml
+k: file.replication v: 1 r: core-default.xml
+k: ftp.client-write-packet-size v: 65536 r: core-default.xml
+k: hadoop.work.around.non.threadsafe.getpwuid v: false r: core-default.xml
+k: fs.du.interval v: 600000 r: core-default.xml
+k: hadoop.http.authentication.type v: simple r: core-default.xml
+k: hadoop.http.staticuser.user v: dr.who r: core-default.xml
+k: hadoop.util.hash.type v: murmur r: core-default.xml
+k: hadoop.security.instrumentation.requires.admin v: false r: core-default.xml
+k: hadoop.security.kms.client.encrypted.key.cache.size v: 500 r: core-default.xml
+k: fs.s3a.connection.maximum v: 15 r: core-default.xml
+k: fs.s3a.attempts.maximum v: 10 r: core-default.xml
+k: test.fs.s3.name v: s3:/// r: core-site.xml
+k: io.map.index.interval v: 128 r: core-default.xml
+k: hadoop.ssl.client.conf v: ssl-client.xml r: core-default.xml
+k: hadoop.security.kms.client.encrypted.key.cache.expiry v: 43200000 r: core-default.xml
+k: hadoop.kerberos.kinit.command v: kinit r: core-default.xml
+k: fs.AbstractFileSystem.hdfs.impl v: org.apache.hadoop.fs.Hdfs r: core-default.xml
+k: io.map.index.skip v: 0 r: core-default.xml
+k: hadoop.http.authentication.token.validity v: 36000 r: core-default.xml
+k: hadoop.jetty.logs.serve.aliases v: true r: core-default.xml
+k: ftp.replication v: 3 r: core-default.xml
+k: io.compression.codec.bzip2.library v: system-native r: core-default.xml
+k: ha.failover-controller.graceful-fence.connection.retries v: 1 r: core-default.xml
+k: nfs3.server.port v: 2079 r: core-site.xml
+k: fs.swift.impl v: org.apache.hadoop.fs.swift.snative.SwiftNativeFileSystem r: core-default.xml
+k: ha.health-monitor.sleep-after-disconnect.ms v: 1000 r: core-default.xml
+k: fs.s3a.connection.timeout v: 5000 r: core-default.xml
+k: file.client-write-packet-size v: 65536 r: core-default.xml
+k: fs.AbstractFileSystem.viewfs.impl v: org.apache.hadoop.fs.viewfs.ViewFs r: core-default.xml
+k: hadoop.security.group.mapping.ldap.search.filter.group v: (objectClass=group) r: core-default.xml
+k: hadoop.security.crypto.codec.classes.aes.ctr.nopadding v: org.apache.hadoop.crypto.OpensslAesCtrCryptoCodec,org.apache.hadoop.crypto.JceAesCtrCryptoCodec r: core-default.xml
+k: fs.s3n.block.size v: 67108864 r: core-default.xml
+k: hadoop.security.crypto.cipher.suite v: AES/CTR/NoPadding r: core-default.xml
+k: net.topology.script.number.args v: 100 r: core-default.xml
+k: dfs.ha.fencing.ssh.connect-timeout v: 30000 r: core-default.xml
+k: hadoop.security.authentication v: simple r: core-site.xml
+k: tfile.fs.output.buffer.size v: 262144 r: core-default.xml
+k: hadoop.security.groups.cache.secs v: 300 r: core-default.xml
+k: ha.failover-controller.graceful-fence.rpc-timeout.ms v: 5000 r: core-default.xml
+k: fs.AbstractFileSystem.file.impl v: org.apache.hadoop.fs.local.LocalFs r: core-default.xml
+k: fs.s3a.impl v: org.apache.hadoop.fs.s3a.S3AFileSystem r: core-default.xml
+k: testconfservlet.key v: testval r: programatically
+k: fs.ftp.user.localhost v: user r: core-site.xml
+k: ha.health-monitor.connect-retry-interval.ms v: 1000 r: core-default.xml
+k: fs.s3a.multipart.threshold v: 2147483647 r: core-default.xml
+k: fs.s3.maxRetries v: 4 r: core-default.xml
+k: fs.s3n.multipart.uploads.enabled v: false r: core-default.xml
+k: hadoop.security.group.mapping.ldap.directory.search.timeout v: 10000 r: core-default.xml
+k: file.blocksize v: 67108864 r: core-default.xml
+k: fs.ftp.host v: 0.0.0.0 r: core-default.xml
+k: file.bytes-per-checksum v: 512 r: core-default.xml
+k: ha.zookeeper.parent-znode v: /hadoop-ha r: core-default.xml
+k: fs.s3a.multipart.size v: 104857600 r: core-default.xml
+k: fs.s3a.multipart.purge.age v: 86400 r: core-default.xml
+k: fs.s3n.multipart.copy.block.size v: 5368709120 r: core-default.xml
+k: fs.trash.interval v: 0 r: core-default.xml
+k: fs.s3.sleepTimeSeconds v: 10 r: core-default.xml
+k: rpc.metrics.quantile.enable v: false r: core-default.xml
+k: nfs3.mountd.port v: 4272 r: core-site.xml
+k: ftp.stream-buffer-size v: 4096 r: core-default.xml
+k: hadoop.http.authentication.signature.secret.file v: /Users/bikash/hadoop-http-auth-signature-secret r: core-default.xml
+k: io.seqfile.sorter.recordlimit v: 1000000 r: core-default.xml
+k: s3.blocksize v: 67108864 r: core-default.xml
+k: fs.permissions.umask-mode v: 022 r: core-default.xml
+k: hadoop.ssl.server.conf v: ssl-server.xml r: core-default.xml
+k: fs.s3a.connection.ssl.enabled v: true r: core-default.xml
+k: fs.s3a.buffer.dir v: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/s3a r: core-default.xml
+k: s3native.stream-buffer-size v: 4096 r: core-default.xml
+k: hadoop.security.groups.cache.warn.after.ms v: 5000 r: core-default.xml
+k: hadoop.http.authentication.kerberos.principal v: HTTP/_HOST@LOCALHOST r: core-default.xml
+k: hadoop.security.kms.client.encrypted.key.cache.num.refill.threads v: 2 r: core-default.xml
+k: hadoop.security.group.mapping.ldap.search.filter.user v: (&(objectClass=user)(sAMAccountName={0})) r: core-default.xml
+k: fs.automatic.close v: true r: core-default.xml
+k: ipc.client.connect.retry.interval v: 1000 r: core-default.xml
+k: fs.s3a.paging.maximum v: 5000 r: core-default.xml
+k: s3.stream-buffer-size v: 4096 r: core-default.xml
+k: ha.zookeeper.session-timeout.ms v: 5000 r: core-default.xml
+k: fs.AbstractFileSystem.har.impl v: org.apache.hadoop.fs.HarFs r: core-default.xml
+k: io.seqfile.compress.blocksize v: 1000000 r: core-default.xml
+k: hadoop.http.filter.initializers v: org.apache.hadoop.http.lib.StaticUserWebFilter r: core-default.xml
+k: fs.s3.block.size v: 128 r: core-site.xml
+k: hadoop.http.authentication.simple.anonymous.allowed v: true r: core-default.xml
+k: ftp.blocksize v: 67108864 r: core-default.xml
+k: io.seqfile.lazydecompress v: true r: core-default.xml
+k: hadoop.ssl.enabled v: false r: core-default.xml
+k: hadoop.common.configuration.version v: 0.23.0 r: core-default.xml
+k: hadoop.security.group.mapping.ldap.search.attr.member v: member r: core-default.xml
+k: hadoop.security.random.device.file.path v: /dev/urandom r: core-default.xml
+k: ipc.client.connection.maxidletime v: 10000 r: core-default.xml
+k: ipc.client.connect.timeout v: 20000 r: core-default.xml
+k: hadoop.security.uid.cache.secs v: 14400 r: core-default.xml
+k: ipc.client.kill.max v: 10 r: core-default.xml
+k: ipc.client.connect.max.retries v: 10 r: core-default.xml
+k: io.seqfile.local.dir v: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/io/local r: core-default.xml
+k: hadoop.security.crypto.buffer.size v: 8192 r: core-default.xml
+k: io.native.lib.available v: true r: core-default.xml
+k: io.file.buffer.size v: 4096 r: core-default.xml
+k: io.serializations v: org.apache.hadoop.io.serializer.WritableSerialization,org.apache.hadoop.io.serializer.avro.AvroSpecificSerialization,org.apache.hadoop.io.serializer.avro.AvroReflectSerialization r: core-default.xml
+k: tfile.fs.input.buffer.size v: 262144 r: core-default.xml
+k: hadoop.security.group.mapping.ldap.ssl v: false r: core-default.xml
+k: fs.df.interval v: 60000 r: core-default.xml
+k: hadoop.http.authentication.kerberos.keytab v: /Users/bikash/hadoop.keytab r: core-default.xml
+k: s3native.client-write-packet-size v: 65536 r: core-default.xml
+k: s3native.replication v: 3 r: core-default.xml
+k: tfile.io.chunk.size v: 1048576 r: core-default.xml
+k: hadoop.ssl.hostname.verifier v: DEFAULT r: core-default.xml

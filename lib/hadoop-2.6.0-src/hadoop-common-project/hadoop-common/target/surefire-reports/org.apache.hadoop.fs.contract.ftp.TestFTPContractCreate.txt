@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.fs.contract.ftp.TestFTPContractCreate
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.604 sec - in org.apache.hadoop.fs.contract.ftp.TestFTPContractCreate

@@ -1,0 +1,72 @@
+2015-10-27 07:38:33,715 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:38:33,988 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56097
+2015-10-27 07:38:34,355 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:38:34,412 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:38:34,416 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56097: starting
+2015-10-27 07:38:34,676 INFO  ipc.Server (Server.java:run(2060)) - IPC Server handler 0 on 56097, call echo(21), rpc version=2, client version=4, methodsFingerPrint=52327143 from 192.168.254.33:56098 Call#0 Retry#0
+org.apache.hadoop.ipc.RPC$VersionMismatch: Protocol org.apache.hadoop.ipc.TestRPCCompatibility$TestProtocol1 version mismatch. (client = 4, server = 0)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Server$WritableRpcInvoker.call(WritableRpcEngine.java:497)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-10-27 07:38:34,689 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56097
+2015-10-27 07:38:34,697 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56097
+2015-10-27 07:38:34,697 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:38:34,701 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:38:34,702 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56099
+2015-10-27 07:38:34,708 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:38:34,708 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56099: starting
+2015-10-27 07:38:34,728 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56099
+2015-10-27 07:38:34,735 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56099
+2015-10-27 07:38:34,735 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:38:34,735 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:38:34,739 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56100
+2015-10-27 07:38:34,745 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:38:34,745 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56100: starting
+2015-10-27 07:38:35,037 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56100
+2015-10-27 07:38:35,038 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56100
+2015-10-27 07:38:35,046 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:38:35,047 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:38:35,048 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56102
+2015-10-27 07:38:35,052 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:38:35,052 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56102: starting
+2015-10-27 07:38:35,062 INFO  ipc.Server (Server.java:run(2060)) - IPC Server handler 1 on 56102, call echo(hello), rpc version=2, client version=0, methodsFingerPrint=1300838174 from 192.168.254.33:56103 Call#4 Retry#0
+org.apache.hadoop.ipc.RpcServerException: Unknown protocol: org.apache.hadoop.ipc.TestRPCCompatibility$TestProtocol1
+	at org.apache.hadoop.ipc.WritableRpcEngine$Server$WritableRpcInvoker.call(WritableRpcEngine.java:495)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:962)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2039)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:2035)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1628)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:2033)
+2015-10-27 07:38:35,063 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56102
+2015-10-27 07:38:35,069 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56102
+2015-10-27 07:38:35,069 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:38:35,070 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:38:35,071 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56104
+2015-10-27 07:38:35,075 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:38:35,075 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56104: starting
+2015-10-27 07:38:35,083 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56104
+2015-10-27 07:38:35,093 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56104
+2015-10-27 07:38:35,094 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:38:35,094 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:38:35,095 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56106
+2015-10-27 07:38:35,102 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:38:35,102 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56106: starting
+echo int is NOT supported
+2015-10-27 07:38:35,112 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56106
+2015-10-27 07:38:35,122 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56106
+2015-10-27 07:38:35,123 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:38:35,124 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:38:35,125 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56108
+2015-10-27 07:38:35,129 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:38:35,129 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56108: starting
+echo int is supported
+2015-10-27 07:38:35,136 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56108
+2015-10-27 07:38:35,141 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56108
+2015-10-27 07:38:35,141 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder

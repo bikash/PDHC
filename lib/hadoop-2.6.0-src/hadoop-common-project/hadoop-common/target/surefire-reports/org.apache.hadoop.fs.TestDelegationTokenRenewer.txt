@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.fs.TestDelegationTokenRenewer
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.871 sec - in org.apache.hadoop.fs.TestDelegationTokenRenewer

@@ -1,0 +1,9 @@
+2015-10-27 07:43:00,941 ERROR test.MultithreadedTestUtil (MultithreadedTestUtil.java:threadFailed(141)) - Failed!
+java.io.IOException: my ioe
+	at org.apache.hadoop.test.TestMultithreadedTestUtil$3.doWork(TestMultithreadedTestUtil.java:94)
+	at org.apache.hadoop.test.MultithreadedTestUtil$TestingThread.run(MultithreadedTestUtil.java:189)
+2015-10-27 07:43:00,949 ERROR test.MultithreadedTestUtil (MultithreadedTestUtil.java:threadFailed(141)) - Failed!
+java.lang.AssertionError: Inner thread fails an assert
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.apache.hadoop.test.TestMultithreadedTestUtil$2.doWork(TestMultithreadedTestUtil.java:69)
+	at org.apache.hadoop.test.MultithreadedTestUtil$TestingThread.run(MultithreadedTestUtil.java:189)

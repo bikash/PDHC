@@ -1,0 +1,885 @@
+2015-10-27 07:43:39,304 INFO  util.GSet (TestGSet.java:testExceptionCases(53)) - GOOD: getting java.lang.NullPointerException: key == null
+java.lang.NullPointerException: key == null
+	at org.apache.hadoop.util.LightWeightGSet.get(LightWeightGSet.java:120)
+	at org.apache.hadoop.util.LightWeightGSet.contains(LightWeightGSet.java:136)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,323 INFO  util.GSet (TestGSet.java:testExceptionCases(66)) - GOOD: getting java.lang.NullPointerException: key == null
+java.lang.NullPointerException: key == null
+	at org.apache.hadoop.util.LightWeightGSet.get(LightWeightGSet.java:120)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,324 INFO  util.GSet (TestGSet.java:testExceptionCases(79)) - GOOD: getting java.lang.NullPointerException: Null element is not supported.
+java.lang.NullPointerException: Null element is not supported.
+	at org.apache.hadoop.util.LightWeightGSet.put(LightWeightGSet.java:143)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,326 INFO  util.GSet (TestGSet.java:testExceptionCases(86)) - GOOD: getting org.apache.hadoop.HadoopIllegalArgumentException: !(element instanceof LinkedElement), element.getClass()=class java.lang.Integer
+org.apache.hadoop.HadoopIllegalArgumentException: !(element instanceof LinkedElement), element.getClass()=class java.lang.Integer
+	at org.apache.hadoop.util.LightWeightGSet.put(LightWeightGSet.java:146)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,329 INFO  util.GSet (TestGSet.java:testExceptionCases(117)) - GOOD: getting java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.ensureNext(LightWeightGSet.java:264)
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.hasNext(LightWeightGSet.java:281)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,331 INFO  util.GSet (TestGSet.java:testExceptionCases(132)) - GOOD: getting java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.ensureNext(LightWeightGSet.java:264)
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.hasNext(LightWeightGSet.java:281)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,334 INFO  util.GSet (TestGSet.java:testExceptionCases(147)) - GOOD: getting java.util.ConcurrentModificationException: modification=6 != iterModification = 4
+java.util.ConcurrentModificationException: modification=6 != iterModification = 4
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.ensureNext(LightWeightGSet.java:264)
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.hasNext(LightWeightGSet.java:281)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,336 INFO  util.GSet (TestGSet.java:testExceptionCases(117)) - GOOD: getting java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.ensureNext(LightWeightGSet.java:264)
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.hasNext(LightWeightGSet.java:281)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,338 INFO  util.GSet (TestGSet.java:testExceptionCases(132)) - GOOD: getting java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.ensureNext(LightWeightGSet.java:264)
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.hasNext(LightWeightGSet.java:281)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,339 INFO  util.GSet (TestGSet.java:testExceptionCases(147)) - GOOD: getting java.util.ConcurrentModificationException: modification=6 != iterModification = 4
+java.util.ConcurrentModificationException: modification=6 != iterModification = 4
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.ensureNext(LightWeightGSet.java:264)
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.hasNext(LightWeightGSet.java:281)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,340 INFO  util.GSet (TestGSet.java:testExceptionCases(117)) - GOOD: getting java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.ensureNext(LightWeightGSet.java:264)
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.hasNext(LightWeightGSet.java:281)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:110)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,341 INFO  util.GSet (TestGSet.java:testExceptionCases(132)) - GOOD: getting java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+java.util.ConcurrentModificationException: modification=5 != iterModification = 4
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.ensureNext(LightWeightGSet.java:264)
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.hasNext(LightWeightGSet.java:281)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:43:39,342 INFO  util.GSet (TestGSet.java:testExceptionCases(147)) - GOOD: getting java.util.ConcurrentModificationException: modification=6 != iterModification = 4
+java.util.ConcurrentModificationException: modification=6 != iterModification = 4
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.ensureNext(LightWeightGSet.java:264)
+	at org.apache.hadoop.util.LightWeightGSet$SetIterator.hasNext(LightWeightGSet.java:281)
+	at org.apache.hadoop.util.TestGSet.testExceptionCases(TestGSet.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+GSetTestCase: tablelength=1, datasize=16, modulus=65537, denominator=1
+  check add .................. DONE  iterate=   24, contain=   24, time elapsed=    0.004s
+  check remove & add ......... DONE  iterate=  184, contain=  184, time elapsed=    0.026s
+  check remove ............... DONE  iterate=  200, contain=  200, time elapsed=    0.027s
+  check remove & add again ... DONE  iterate=  360, contain=  360, time elapsed=    0.042s
+total time elapsed=0s
+
+GSetTestCase: tablelength=17, datasize=65536, modulus=17, denominator=513
+  check add .................. DONE  iterate=  168, contain=  196, time elapsed=    0.523s
+  check remove & add ......... DONE  iterate= 1442, contain= 1514, time elapsed=    1.112s
+  check remove ............... DONE  iterate= 1584, contain= 1650, time elapsed=    1.133s
+  check remove & add again ... DONE  iterate= 2851, contain= 2954, time elapsed=    1.514s
+total time elapsed=1s
+
+GSetTestCase: tablelength=255, datasize=1024, modulus=65537, denominator=9
+  check add .................. DONE  iterate=  158, contain=  172, time elapsed=    0.043s
+  check remove & add ......... DONE  iterate= 1353, contain= 1314, time elapsed=    0.234s
+  check remove ............... DONE  iterate= 1455, contain= 1416, time elapsed=    0.251s
+  check remove & add again ... DONE  iterate= 2605, contain= 2522, time elapsed=    0.412s
+total time elapsed=2s
+
+2015-10-27 07:43:41,322 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 0 percent 0.0 returned capacity 0
+2015-10-27 07:43:41,322 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 100 percent 0.0 returned capacity 0
+2015-10-27 07:43:41,323 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 0 percent 100.0 returned capacity 0
+2015-10-27 07:43:41,326 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,326 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,368 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 36.0% max memory 520.9 MB = 187.5 MB
+2015-10-27 07:43:41,368 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,368 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 546235126 percent 36.0 returned capacity 33554432
+2015-10-27 07:43:41,369 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,369 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,369 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 12.0% max memory 1.9 GB = 233.7 MB
+2015-10-27 07:43:41,370 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,370 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 2041914252 percent 12.0 returned capacity 33554432
+2015-10-27 07:43:41,370 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,370 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,371 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 60.0% max memory 1.8 GB = 1.1 GB
+2015-10-27 07:43:41,371 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,371 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1946888477 percent 60.0 returned capacity 134217728
+2015-10-27 07:43:41,371 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,372 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,372 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 72.0% max memory 995.3 MB = 716.6 MB
+2015-10-27 07:43:41,372 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,372 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1043657531 percent 72.0 returned capacity 67108864
+2015-10-27 07:43:41,373 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,373 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,373 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 45.0% max memory 628.1 MB = 282.6 MB
+2015-10-27 07:43:41,374 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,374 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 658603745 percent 45.0 returned capacity 33554432
+2015-10-27 07:43:41,374 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,378 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,379 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 34.0% max memory 1.7 GB = 603.9 MB
+2015-10-27 07:43:41,379 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,379 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1862309990 percent 34.0 returned capacity 67108864
+2015-10-27 07:43:41,379 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,380 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,380 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 49.0% max memory 511.5 MB = 250.6 MB
+2015-10-27 07:43:41,380 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,380 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 536305501 percent 49.0 returned capacity 33554432
+2015-10-27 07:43:41,381 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,381 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,381 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 83.0% max memory 833.0 MB = 691.4 MB
+2015-10-27 07:43:41,384 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,384 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 873419978 percent 83.0 returned capacity 67108864
+2015-10-27 07:43:41,384 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,384 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,385 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 97.0% max memory 2.0 GB = 1.9 GB
+2015-10-27 07:43:41,385 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^28 = 268435456 entries
+2015-10-27 07:43:41,392 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 2120152583 percent 97.0 returned capacity 268435456
+2015-10-27 07:43:41,394 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,394 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,395 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 25.0% max memory 969.8 MB = 242.4 MB
+2015-10-27 07:43:41,395 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,395 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1016884738 percent 25.0 returned capacity 33554432
+2015-10-27 07:43:41,396 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,396 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,396 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 21.0% max memory 166.2 MB = 34.9 MB
+2015-10-27 07:43:41,396 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^22 = 4194304 entries
+2015-10-27 07:43:41,396 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 174232185 percent 21.0 returned capacity 4194304
+2015-10-27 07:43:41,397 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,397 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,397 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 20.0% max memory 1.3 GB = 276.4 MB
+2015-10-27 07:43:41,397 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,403 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1449081877 percent 20.0 returned capacity 33554432
+2015-10-27 07:43:41,403 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,403 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,406 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 64.0% max memory 143.3 MB = 91.7 MB
+2015-10-27 07:43:41,406 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,406 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 150230605 percent 64.0 returned capacity 16777216
+2015-10-27 07:43:41,406 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,407 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,408 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 70.0% max memory 588.3 MB = 411.8 MB
+2015-10-27 07:43:41,413 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,414 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 616845097 percent 70.0 returned capacity 67108864
+2015-10-27 07:43:41,414 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,414 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,416 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 5.0% max memory 1.6 GB = 83.8 MB
+2015-10-27 07:43:41,417 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,417 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1756864289 percent 5.0 returned capacity 8388608
+2015-10-27 07:43:41,417 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,417 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,418 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 81.0% max memory 916.9 MB = 742.7 MB
+2015-10-27 07:43:41,418 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,418 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 961412694 percent 81.0 returned capacity 134217728
+2015-10-27 07:43:41,418 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,418 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,419 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 16.0% max memory 991.0 MB = 158.6 MB
+2015-10-27 07:43:41,419 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,419 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1039126202 percent 16.0 returned capacity 16777216
+2015-10-27 07:43:41,419 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,420 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,420 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 21.0% max memory 785.4 MB = 164.9 MB
+2015-10-27 07:43:41,420 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,420 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 823513494 percent 21.0 returned capacity 16777216
+2015-10-27 07:43:41,420 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,421 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,421 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 17.0% max memory 1.2 GB = 210.7 MB
+2015-10-27 07:43:41,421 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,421 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1299723076 percent 17.0 returned capacity 33554432
+2015-10-27 07:43:41,421 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,422 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,422 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 100.0% max memory 1.6 GB = 1.6 GB
+2015-10-27 07:43:41,422 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^28 = 268435456 entries
+2015-10-27 07:43:41,422 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1682790616 percent 100.0 returned capacity 268435456
+2015-10-27 07:43:41,422 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,423 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,423 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 74.0% max memory 1.5 GB = 1.1 GB
+2015-10-27 07:43:41,423 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,423 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1606611383 percent 74.0 returned capacity 134217728
+2015-10-27 07:43:41,424 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,424 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,424 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 65.0% max memory 811.3 MB = 527.3 MB
+2015-10-27 07:43:41,424 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,424 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 850666035 percent 65.0 returned capacity 67108864
+2015-10-27 07:43:41,425 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,425 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,425 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 64.0% max memory 825.6 MB = 528.4 MB
+2015-10-27 07:43:41,425 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,426 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 865662038 percent 64.0 returned capacity 67108864
+2015-10-27 07:43:41,426 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,426 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,426 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 90.0% max memory 1.7 GB = 1.5 GB
+2015-10-27 07:43:41,426 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^28 = 268435456 entries
+2015-10-27 07:43:41,427 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1818337592 percent 90.0 returned capacity 268435456
+2015-10-27 07:43:41,427 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,427 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,427 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 35.0% max memory 1.0 GB = 373.5 MB
+2015-10-27 07:43:41,428 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,428 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1119027025 percent 35.0 returned capacity 67108864
+2015-10-27 07:43:41,428 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,428 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,428 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 91.0% max memory 321.8 MB = 292.8 MB
+2015-10-27 07:43:41,429 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,429 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 337443168 percent 91.0 returned capacity 33554432
+2015-10-27 07:43:41,429 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,429 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,430 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 55.0% max memory 1.9 GB = 1.0 GB
+2015-10-27 07:43:41,430 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,430 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 2019831179 percent 55.0 returned capacity 134217728
+2015-10-27 07:43:41,430 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,430 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,431 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 71.0% max memory 590.6 MB = 419.3 MB
+2015-10-27 07:43:41,431 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,431 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 619298212 percent 71.0 returned capacity 67108864
+2015-10-27 07:43:41,431 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,431 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,432 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 70.0% max memory 873.0 MB = 611.1 MB
+2015-10-27 07:43:41,432 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,432 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 915421046 percent 70.0 returned capacity 67108864
+2015-10-27 07:43:41,432 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,432 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,433 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 2.0% max memory 873.0 MB = 17.5 MB
+2015-10-27 07:43:41,433 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^21 = 2097152 entries
+2015-10-27 07:43:41,433 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 915396396 percent 2.0 returned capacity 2097152
+2015-10-27 07:43:41,433 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,433 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,434 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 8.0% max memory 1.2 GB = 96.2 MB
+2015-10-27 07:43:41,434 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,434 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1261176345 percent 8.0 returned capacity 16777216
+2015-10-27 07:43:41,434 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,434 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,435 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 42.0% max memory 989.4 MB = 415.5 MB
+2015-10-27 07:43:41,435 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,435 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1037427999 percent 42.0 returned capacity 67108864
+2015-10-27 07:43:41,435 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,436 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,436 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 18.0% max memory 618.8 MB = 111.4 MB
+2015-10-27 07:43:41,436 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,436 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 648885299 percent 18.0 returned capacity 16777216
+2015-10-27 07:43:41,436 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,437 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,437 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 90.0% max memory 256.5 MB = 230.9 MB
+2015-10-27 07:43:41,437 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,437 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 268994457 percent 90.0 returned capacity 33554432
+2015-10-27 07:43:41,438 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,438 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,438 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 81.0% max memory 1.4 GB = 1.1 GB
+2015-10-27 07:43:41,438 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,438 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1513439098 percent 81.0 returned capacity 134217728
+2015-10-27 07:43:41,439 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,439 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,439 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 64.0% max memory 821.9 MB = 526.0 MB
+2015-10-27 07:43:41,439 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,440 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 861808571 percent 64.0 returned capacity 67108864
+2015-10-27 07:43:41,440 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,440 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,440 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 52.0% max memory 593.0 MB = 308.3 MB
+2015-10-27 07:43:41,440 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,441 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 621759484 percent 52.0 returned capacity 33554432
+2015-10-27 07:43:41,441 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,441 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,441 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 72.0% max memory 2.0 GB = 1.4 GB
+2015-10-27 07:43:41,442 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^28 = 268435456 entries
+2015-10-27 07:43:41,442 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 2112745179 percent 72.0 returned capacity 268435456
+2015-10-27 07:43:41,442 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,442 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,442 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 68.0% max memory 646.2 MB = 439.4 MB
+2015-10-27 07:43:41,443 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,443 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 677608359 percent 68.0 returned capacity 67108864
+2015-10-27 07:43:41,443 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,443 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,443 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 72.0% max memory 70.6 MB = 50.8 MB
+2015-10-27 07:43:41,444 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,444 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 74039004 percent 72.0 returned capacity 8388608
+2015-10-27 07:43:41,444 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,444 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,445 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 65.0% max memory 1.4 GB = 956.2 MB
+2015-10-27 07:43:41,445 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,445 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1542519780 percent 65.0 returned capacity 134217728
+2015-10-27 07:43:41,445 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,445 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,446 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 6.0% max memory 1.1 GB = 65.0 MB
+2015-10-27 07:43:41,446 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,446 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1136008601 percent 6.0 returned capacity 8388608
+2015-10-27 07:43:41,446 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,446 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,447 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 45.0% max memory 2.0 GB = 916.7 MB
+2015-10-27 07:43:41,447 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,447 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 2135952221 percent 45.0 returned capacity 134217728
+2015-10-27 07:43:41,447 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,448 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,448 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 82.0% max memory 927.5 MB = 760.6 MB
+2015-10-27 07:43:41,448 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,448 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 972563835 percent 82.0 returned capacity 134217728
+2015-10-27 07:43:41,448 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,449 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,449 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 91.0% max memory 1.2 GB = 1.1 GB
+2015-10-27 07:43:41,449 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,449 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1255102943 percent 91.0 returned capacity 134217728
+2015-10-27 07:43:41,452 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,452 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,453 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 46.0% max memory 1.8 GB = 852.9 MB
+2015-10-27 07:43:41,453 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,453 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1944104234 percent 46.0 returned capacity 134217728
+2015-10-27 07:43:41,453 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,457 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,457 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 82.0% max memory 1.5 GB = 1.2 GB
+2015-10-27 07:43:41,458 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,458 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1569997915 percent 82.0 returned capacity 134217728
+2015-10-27 07:43:41,458 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,458 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,459 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 89.0% max memory 1.5 GB = 1.4 GB
+2015-10-27 07:43:41,459 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,459 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1660745824 percent 89.0 returned capacity 134217728
+2015-10-27 07:43:41,459 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,460 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,460 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 5.0% max memory 1.0 GB = 53.1 MB
+2015-10-27 07:43:41,460 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,460 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1113296647 percent 5.0 returned capacity 8388608
+2015-10-27 07:43:41,461 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,461 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,467 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 84.0% max memory 204.5 MB = 171.8 MB
+2015-10-27 07:43:41,467 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,467 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 214459353 percent 84.0 returned capacity 16777216
+2015-10-27 07:43:41,468 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,471 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,472 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 22.0% max memory 275.0 MB = 60.5 MB
+2015-10-27 07:43:41,472 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,472 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 288382882 percent 22.0 returned capacity 8388608
+2015-10-27 07:43:41,472 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,472 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,473 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 4.0% max memory 1.1 GB = 44.3 MB
+2015-10-27 07:43:41,474 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^22 = 4194304 entries
+2015-10-27 07:43:41,474 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1161797223 percent 4.0 returned capacity 4194304
+2015-10-27 07:43:41,474 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,475 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,475 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 68.0% max memory 1.1 GB = 748.4 MB
+2015-10-27 07:43:41,475 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,475 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1154046420 percent 68.0 returned capacity 134217728
+2015-10-27 07:43:41,476 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,479 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,479 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 78.0% max memory 1.5 GB = 1.2 GB
+2015-10-27 07:43:41,482 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,484 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1642930466 percent 78.0 returned capacity 134217728
+2015-10-27 07:43:41,484 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,484 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,484 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 55.0% max memory 1.5 GB = 863.2 MB
+2015-10-27 07:43:41,485 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,485 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1645731763 percent 55.0 returned capacity 134217728
+2015-10-27 07:43:41,485 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,485 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,486 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 93.0% max memory 591.0 MB = 549.6 MB
+2015-10-27 07:43:41,486 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,486 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 619690172 percent 93.0 returned capacity 67108864
+2015-10-27 07:43:41,486 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,487 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,487 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 28.0% max memory 1.1 GB = 313.9 MB
+2015-10-27 07:43:41,487 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,488 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1175689314 percent 28.0 returned capacity 33554432
+2015-10-27 07:43:41,488 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,488 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,489 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 97.0% max memory 2.0 GB = 1.9 GB
+2015-10-27 07:43:41,490 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^28 = 268435456 entries
+2015-10-27 07:43:41,490 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 2104955378 percent 97.0 returned capacity 268435456
+2015-10-27 07:43:41,490 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,490 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,493 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 64.0% max memory 1.1 GB = 748.0 MB
+2015-10-27 07:43:41,493 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,494 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1225555668 percent 64.0 returned capacity 134217728
+2015-10-27 07:43:41,494 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,494 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,494 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 100.0% max memory 668.0 MB = 668.0 MB
+2015-10-27 07:43:41,495 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,495 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 700406558 percent 100.0 returned capacity 67108864
+2015-10-27 07:43:41,495 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,495 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,496 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 25.0% max memory 1.0 GB = 263.7 MB
+2015-10-27 07:43:41,496 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,496 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1106238126 percent 25.0 returned capacity 33554432
+2015-10-27 07:43:41,496 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,498 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,498 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 54.0% max memory 2.0 GB = 1.1 GB
+2015-10-27 07:43:41,498 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,499 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 2094279913 percent 54.0 returned capacity 134217728
+2015-10-27 07:43:41,499 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,500 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,508 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 50.0% max memory 689.0 MB = 344.5 MB
+2015-10-27 07:43:41,510 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,510 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 722511179 percent 50.0 returned capacity 33554432
+2015-10-27 07:43:41,511 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,512 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,512 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 37.0% max memory 279.3 MB = 103.3 MB
+2015-10-27 07:43:41,512 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,512 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 292817951 percent 37.0 returned capacity 16777216
+2015-10-27 07:43:41,513 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,513 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,513 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 66.0% max memory 948.6 MB = 626.1 MB
+2015-10-27 07:43:41,513 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,513 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 994704601 percent 66.0 returned capacity 67108864
+2015-10-27 07:43:41,514 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,514 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,514 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 100.0% max memory 103.1 MB = 103.1 MB
+2015-10-27 07:43:41,514 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,516 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 108066459 percent 100.0 returned capacity 16777216
+2015-10-27 07:43:41,516 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,516 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,517 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 45.0% max memory 1.8 GB = 819.7 MB
+2015-10-27 07:43:41,517 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,517 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1910138784 percent 45.0 returned capacity 134217728
+2015-10-27 07:43:41,517 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,518 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,518 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 100.0% max memory 208.0 MB = 208.0 MB
+2015-10-27 07:43:41,518 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,518 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 218074465 percent 100.0 returned capacity 33554432
+2015-10-27 07:43:41,519 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,519 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,519 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 11.0% max memory 1.9 GB = 216.9 MB
+2015-10-27 07:43:41,522 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,523 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 2067843427 percent 11.0 returned capacity 33554432
+2015-10-27 07:43:41,526 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,526 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,526 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 4.0% max memory 1.3 GB = 54.8 MB
+2015-10-27 07:43:41,527 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,527 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1437437386 percent 4.0 returned capacity 8388608
+2015-10-27 07:43:41,527 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,527 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,527 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 79.0% max memory 477.0 MB = 376.8 MB
+2015-10-27 07:43:41,527 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,528 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 500174047 percent 79.0 returned capacity 67108864
+2015-10-27 07:43:41,528 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,528 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,530 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 100.0% max memory 1.3 GB = 1.3 GB
+2015-10-27 07:43:41,531 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,531 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1448176602 percent 100.0 returned capacity 134217728
+2015-10-27 07:43:41,531 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,531 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,532 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 11.0% max memory 1.2 GB = 133.3 MB
+2015-10-27 07:43:41,532 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,532 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1270653808 percent 11.0 returned capacity 16777216
+2015-10-27 07:43:41,532 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,532 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,533 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 36.0% max memory 2.0 GB = 721.8 MB
+2015-10-27 07:43:41,533 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,533 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 2102394797 percent 36.0 returned capacity 67108864
+2015-10-27 07:43:41,533 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,533 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,533 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 78.0% max memory 355.4 MB = 277.2 MB
+2015-10-27 07:43:41,534 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,534 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 372710611 percent 78.0 returned capacity 33554432
+2015-10-27 07:43:41,534 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,534 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,534 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 74.0% max memory 1.0 GB = 783.8 MB
+2015-10-27 07:43:41,534 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,535 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1110595600 percent 74.0 returned capacity 134217728
+2015-10-27 07:43:41,535 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,535 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,535 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 42.0% max memory 1.8 GB = 778.5 MB
+2015-10-27 07:43:41,535 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,535 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1943615750 percent 42.0 returned capacity 134217728
+2015-10-27 07:43:41,536 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,536 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,545 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 33.0% max memory 1.6 GB = 548.2 MB
+2015-10-27 07:43:41,545 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,545 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1742005293 percent 33.0 returned capacity 67108864
+2015-10-27 07:43:41,545 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,546 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,546 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 100.0% max memory 133.9 MB = 133.9 MB
+2015-10-27 07:43:41,546 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,546 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 140441164 percent 100.0 returned capacity 16777216
+2015-10-27 07:43:41,546 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,547 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,547 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 84.0% max memory 1.2 GB = 1002.7 MB
+2015-10-27 07:43:41,547 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,547 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1251624542 percent 84.0 returned capacity 134217728
+2015-10-27 07:43:41,547 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,548 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,548 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 47.0% max memory 1.7 GB = 800.7 MB
+2015-10-27 07:43:41,548 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,548 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1786461517 percent 47.0 returned capacity 134217728
+2015-10-27 07:43:41,548 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,548 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,549 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 79.0% max memory 1.1 GB = 911.6 MB
+2015-10-27 07:43:41,549 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,549 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1210008098 percent 79.0 returned capacity 134217728
+2015-10-27 07:43:41,549 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,550 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,550 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 66.0% max memory 363.0 MB = 239.6 MB
+2015-10-27 07:43:41,550 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,550 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 380628313 percent 66.0 returned capacity 33554432
+2015-10-27 07:43:41,550 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,550 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,551 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 12.0% max memory 1.2 GB = 144.1 MB
+2015-10-27 07:43:41,551 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^24 = 16777216 entries
+2015-10-27 07:43:41,551 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1259493165 percent 12.0 returned capacity 16777216
+2015-10-27 07:43:41,551 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,551 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,552 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 97.0% max memory 88.7 MB = 86.0 MB
+2015-10-27 07:43:41,552 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,552 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 93006541 percent 97.0 returned capacity 8388608
+2015-10-27 07:43:41,552 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,552 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,552 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 58.0% max memory 450.5 MB = 261.3 MB
+2015-10-27 07:43:41,553 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,553 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 472431513 percent 58.0 returned capacity 33554432
+2015-10-27 07:43:41,553 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,553 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,553 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 34.0% max memory 1.7 GB = 591.1 MB
+2015-10-27 07:43:41,553 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,553 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1822945678 percent 34.0 returned capacity 67108864
+2015-10-27 07:43:41,554 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,554 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,554 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 54.0% max memory 1.7 GB = 914.3 MB
+2015-10-27 07:43:41,554 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,554 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1775470395 percent 54.0 returned capacity 134217728
+2015-10-27 07:43:41,554 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,555 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,555 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 65.0% max memory 1.5 GB = 1023.7 MB
+2015-10-27 07:43:41,555 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,555 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1651379635 percent 65.0 returned capacity 134217728
+2015-10-27 07:43:41,555 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,555 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,556 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 24.0% max memory 359.2 MB = 86.2 MB
+2015-10-27 07:43:41,556 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,556 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 376635921 percent 24.0 returned capacity 8388608
+2015-10-27 07:43:41,556 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,556 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,556 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 72.0% max memory 78.9 MB = 56.8 MB
+2015-10-27 07:43:41,557 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,557 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 82689087 percent 72.0 returned capacity 8388608
+2015-10-27 07:43:41,557 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,557 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,557 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 95.0% max memory 1.7 GB = 1.6 GB
+2015-10-27 07:43:41,557 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^28 = 268435456 entries
+2015-10-27 07:43:41,558 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1836263383 percent 95.0 returned capacity 268435456
+2015-10-27 07:43:41,558 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,558 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,558 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 5.0% max memory 1.5 GB = 75.6 MB
+2015-10-27 07:43:41,558 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,558 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1584748043 percent 5.0 returned capacity 8388608
+2015-10-27 07:43:41,559 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,568 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,569 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 26.0% max memory 929.7 MB = 241.7 MB
+2015-10-27 07:43:41,569 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^25 = 33554432 entries
+2015-10-27 07:43:41,569 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 974885560 percent 26.0 returned capacity 33554432
+2015-10-27 07:43:41,569 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,570 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,570 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 14.0% max memory 172.2 MB = 24.1 MB
+2015-10-27 07:43:41,570 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^22 = 4194304 entries
+2015-10-27 07:43:41,570 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 180586178 percent 14.0 returned capacity 4194304
+2015-10-27 07:43:41,570 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,571 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,571 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 57.0% max memory 128.9 MB = 73.5 MB
+2015-10-27 07:43:41,571 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^23 = 8388608 entries
+2015-10-27 07:43:41,571 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 135143202 percent 57.0 returned capacity 8388608
+2015-10-27 07:43:41,571 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,571 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,572 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 77.0% max memory 833.9 MB = 642.1 MB
+2015-10-27 07:43:41,572 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,572 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 874426886 percent 77.0 returned capacity 67108864
+2015-10-27 07:43:41,572 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,572 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,573 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 48.0% max memory 777.2 MB = 373.0 MB
+2015-10-27 07:43:41,573 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,573 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 814922418 percent 48.0 returned capacity 67108864
+2015-10-27 07:43:41,573 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,573 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,573 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 57.0% max memory 1.0 GB = 586.0 MB
+2015-10-27 07:43:41,574 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^26 = 67108864 entries
+2015-10-27 07:43:41,574 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1078085809 percent 57.0 returned capacity 67108864
+2015-10-27 07:43:41,574 INFO  util.GSet (LightWeightGSet.java:computeCapacity(354)) - Computing capacity for map map
+2015-10-27 07:43:41,574 INFO  util.GSet (LightWeightGSet.java:computeCapacity(355)) - VM type       = 64-bit
+2015-10-27 07:43:41,574 INFO  util.GSet (LightWeightGSet.java:computeCapacity(356)) - 69.0% max memory 1.7 GB = 1.2 GB
+2015-10-27 07:43:41,574 INFO  util.GSet (LightWeightGSet.java:computeCapacity(361)) - capacity      = 2^27 = 134217728 entries
+2015-10-27 07:43:41,574 INFO  util.GSet (TestGSet.java:testCapacity(503)) - Validating - total memory 1845751886 percent 69.0 returned capacity 134217728

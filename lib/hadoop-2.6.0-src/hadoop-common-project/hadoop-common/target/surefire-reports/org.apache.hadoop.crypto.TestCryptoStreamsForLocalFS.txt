@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.crypto.TestCryptoStreamsForLocalFS
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 12.005 sec - in org.apache.hadoop.crypto.TestCryptoStreamsForLocalFS

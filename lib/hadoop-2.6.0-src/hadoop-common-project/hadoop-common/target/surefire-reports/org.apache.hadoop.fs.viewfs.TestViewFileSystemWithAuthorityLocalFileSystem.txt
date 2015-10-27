@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.fs.viewfs.TestViewFileSystemWithAuthorityLocalFileSystem
+-------------------------------------------------------------------------------
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.683 sec - in org.apache.hadoop.fs.viewfs.TestViewFileSystemWithAuthorityLocalFileSystem

@@ -1,0 +1,60 @@
+Starting run 0
+Expected 50000 with error 5000, estimated 50502
+Expected 75000 with error 2500, estimated 75136
+Expected 90000 with error 1000, estimated 90052
+Expected 95000 with error 500, estimated 95029
+Expected 99000 with error 100, estimated 98993
+Starting run 1
+Expected 50000 with error 5000, estimated 50796
+Expected 75000 with error 2500, estimated 75150
+Expected 90000 with error 1000, estimated 89978
+Expected 95000 with error 500, estimated 94993
+Expected 99000 with error 100, estimated 99000
+Starting run 2
+Expected 50000 with error 5000, estimated 50743
+Expected 75000 with error 2500, estimated 75299
+Expected 90000 with error 1000, estimated 90112
+Expected 95000 with error 500, estimated 95044
+Expected 99000 with error 100, estimated 99002
+Starting run 3
+Expected 50000 with error 5000, estimated 51313
+Expected 75000 with error 2500, estimated 75495
+Expected 90000 with error 1000, estimated 90003
+Expected 95000 with error 500, estimated 95048
+Expected 99000 with error 100, estimated 99002
+Starting run 4
+Expected 50000 with error 5000, estimated 50258
+Expected 75000 with error 2500, estimated 75208
+Expected 90000 with error 1000, estimated 90091
+Expected 95000 with error 500, estimated 94990
+Expected 99000 with error 100, estimated 99005
+Starting run 5
+Expected 50000 with error 5000, estimated 50718
+Expected 75000 with error 2500, estimated 75308
+Expected 90000 with error 1000, estimated 90028
+Expected 95000 with error 500, estimated 95020
+Expected 99000 with error 100, estimated 99007
+Starting run 6
+Expected 50000 with error 5000, estimated 50203
+Expected 75000 with error 2500, estimated 75368
+Expected 90000 with error 1000, estimated 90047
+Expected 95000 with error 500, estimated 95024
+Expected 99000 with error 100, estimated 99006
+Starting run 7
+Expected 50000 with error 5000, estimated 50423
+Expected 75000 with error 2500, estimated 75196
+Expected 90000 with error 1000, estimated 90064
+Expected 95000 with error 500, estimated 95005
+Expected 99000 with error 100, estimated 99010
+Starting run 8
+Expected 50000 with error 5000, estimated 50380
+Expected 75000 with error 2500, estimated 75311
+Expected 90000 with error 1000, estimated 90028
+Expected 95000 with error 500, estimated 95002
+Expected 99000 with error 100, estimated 98999
+Starting run 9
+Expected 50000 with error 5000, estimated 50548
+Expected 75000 with error 2500, estimated 75366
+Expected 90000 with error 1000, estimated 90079
+Expected 95000 with error 500, estimated 95010
+Expected 99000 with error 100, estimated 98994

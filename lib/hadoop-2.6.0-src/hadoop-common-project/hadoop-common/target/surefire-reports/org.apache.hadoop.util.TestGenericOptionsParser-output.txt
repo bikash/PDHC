@@ -1,0 +1,15 @@
+2015-10-27 07:43:35,708 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:43:36,246 WARN  util.GenericOptionsParser (GenericOptionsParser.java:parseGeneralOptions(487)) - options parsing failed: Missing argument for option: D
+usage: general options are:
+ -archives <paths>                  comma separated archives to be
+                                    unarchived on the compute machines.
+ -conf <configuration file>         specify an application configuration
+                                    file
+ -D <property=value>                use value for given property
+ -files <paths>                     comma separated files to be copied to
+                                    the map reduce cluster
+ -fs <local|namenode:port>          specify a namenode
+ -jt <local|resourcemanager:port>   specify a ResourceManager
+ -libjars <paths>                   comma separated jar files to include
+                                    in the classpath.
+ -tokenCacheFile <tokensFile>       name of the file with the tokens

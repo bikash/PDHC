@@ -1,0 +1,134 @@
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+2015-10-27 07:26:24,170 INFO  ha.NodeFencer (NodeFencer.java:fence(91)) - ====== Beginning Service Fencing Process... ======
+2015-10-27 07:26:24,176 INFO  ha.NodeFencer (NodeFencer.java:fence(94)) - Trying method 1/1: org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null)
+2015-10-27 07:26:24,177 INFO  ha.NodeFencer (NodeFencer.java:fence(98)) - ====== Fencing successful by method org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null) ======
+2015-10-27 07:26:24,179 ERROR ha.FailoverController (FailoverController.java:failover(230)) - Unable to make DummyHAService #2 active (Failed!). Failing back.
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+2015-10-27 07:26:24,533 WARN  ha.FailoverController (FailoverController.java:tryGracefulFence(175)) - Unable to gracefully make DummyHAService #5 standby (Failed!)
+2015-10-27 07:26:24,534 INFO  ha.NodeFencer (NodeFencer.java:fence(91)) - ====== Beginning Service Fencing Process... ======
+2015-10-27 07:26:24,534 INFO  ha.NodeFencer (NodeFencer.java:fence(94)) - Trying method 1/1: org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null)
+2015-10-27 07:26:24,534 INFO  ha.NodeFencer (NodeFencer.java:fence(98)) - ====== Fencing successful by method org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null) ======
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+2015-10-27 07:26:24,680 ERROR ha.FailoverController (FailoverController.java:failover(230)) - Unable to make DummyHAService #8 active (Failed!). Failing back.
+2015-10-27 07:26:24,683 INFO  ha.NodeFencer (NodeFencer.java:fence(91)) - ====== Beginning Service Fencing Process... ======
+2015-10-27 07:26:24,684 INFO  ha.NodeFencer (NodeFencer.java:fence(94)) - Trying method 1/1: org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null)
+2015-10-27 07:26:24,684 INFO  ha.NodeFencer (NodeFencer.java:fence(98)) - ====== Fencing successful by method org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null) ======
+2015-10-27 07:26:24,684 ERROR ha.FailoverController (FailoverController.java:failover(230)) - Unable to make DummyHAService #7 active (Failed!). Failing back.
+2015-10-27 07:26:24,685 FATAL ha.FailoverController (FailoverController.java:failover(255)) - Unable to failover to DummyHAService #8. Failback to DummyHAService #7 failed (Unable to failover to DummyHAService #7)
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+2015-10-27 07:26:24,877 WARN  ha.FailoverController (FailoverController.java:tryGracefulFence(178)) - Unable to gracefully make DummyHAService #9 standby (unable to connect)
+java.io.IOException: Could not connect to host
+	at org.apache.hadoop.ha.FailoverController.tryGracefulFence(FailoverController.java:172)
+	at org.apache.hadoop.ha.FailoverController.failover(FailoverController.java:210)
+	at org.apache.hadoop.ha.TestFailoverController.doFailover(TestFailoverController.java:431)
+	at org.apache.hadoop.ha.TestFailoverController.testFailoverFromNonExistantServiceWithFencer(TestFailoverController.java:250)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:26:24,882 INFO  ha.NodeFencer (NodeFencer.java:fence(91)) - ====== Beginning Service Fencing Process... ======
+2015-10-27 07:26:24,885 INFO  ha.NodeFencer (NodeFencer.java:fence(94)) - Trying method 1/1: org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null)
+2015-10-27 07:26:24,886 INFO  ha.NodeFencer (NodeFencer.java:fence(98)) - ====== Fencing successful by method org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null) ======
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+2015-10-27 07:26:25,268 WARN  ha.FailoverController (FailoverController.java:preFailoverChecks(142)) - Service is not ready to become active, but forcing: injected not ready
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+2015-10-27 07:26:25,618 ERROR ha.FailoverController (FailoverController.java:preFailoverChecks(126)) - Unable to get service state for DummyHAService #22: Failed to connect
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+2015-10-27 07:26:25,692 ERROR ha.FailoverController (FailoverController.java:preFailoverChecks(126)) - Unable to get service state for DummyHAService #24: Access denied
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+2015-10-27 07:26:25,775 ERROR ha.FailoverController (FailoverController.java:failover(230)) - Unable to make DummyHAService #26 active (Failed!). Failing back.
+2015-10-27 07:26:25,787 INFO  ha.NodeFencer (NodeFencer.java:fence(91)) - ====== Beginning Service Fencing Process... ======
+2015-10-27 07:26:25,787 INFO  ha.NodeFencer (NodeFencer.java:fence(94)) - Trying method 1/1: org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null)
+2015-10-27 07:26:25,788 INFO  ha.NodeFencer (NodeFencer.java:fence(98)) - ====== Fencing successful by method org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null) ======
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysFailFencer
+2015-10-27 07:26:25,846 WARN  ha.FailoverController (FailoverController.java:tryGracefulFence(175)) - Unable to gracefully make DummyHAService #27 standby (Failed!)
+2015-10-27 07:26:25,847 INFO  ha.NodeFencer (NodeFencer.java:fence(91)) - ====== Beginning Service Fencing Process... ======
+2015-10-27 07:26:25,847 INFO  ha.NodeFencer (NodeFencer.java:fence(94)) - Trying method 1/1: org.apache.hadoop.ha.TestNodeFencer.AlwaysFailFencer(null)
+2015-10-27 07:26:25,847 WARN  ha.NodeFencer (NodeFencer.java:fence(108)) - Fencing method org.apache.hadoop.ha.TestNodeFencer.AlwaysFailFencer(null) was unsuccessful.
+2015-10-27 07:26:25,848 ERROR ha.NodeFencer (NodeFencer.java:fence(111)) - Unable to fence service by any configured method.
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysSucceedFencer
+2015-10-27 07:26:25,900 ERROR ha.FailoverController (FailoverController.java:failover(230)) - Unable to make DummyHAService #30 active (Failed!). Failing back.
+2015-10-27 07:26:25,910 INFO  ha.NodeFencer (NodeFencer.java:fence(91)) - ====== Beginning Service Fencing Process... ======
+2015-10-27 07:26:25,910 INFO  ha.NodeFencer (NodeFencer.java:fence(94)) - Trying method 1/1: org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null)
+2015-10-27 07:26:25,910 INFO  ha.NodeFencer (NodeFencer.java:fence(98)) - ====== Fencing successful by method org.apache.hadoop.ha.TestNodeFencer.AlwaysSucceedFencer(null) ======
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysFailFencer
+2015-10-27 07:26:25,952 INFO  ha.NodeFencer (NodeFencer.java:fence(91)) - ====== Beginning Service Fencing Process... ======
+2015-10-27 07:26:25,953 INFO  ha.NodeFencer (NodeFencer.java:fence(94)) - Trying method 1/1: org.apache.hadoop.ha.TestNodeFencer.AlwaysFailFencer(null)
+2015-10-27 07:26:25,953 WARN  ha.NodeFencer (NodeFencer.java:fence(108)) - Fencing method org.apache.hadoop.ha.TestNodeFencer.AlwaysFailFencer(null) was unsuccessful.
+2015-10-27 07:26:25,953 ERROR ha.NodeFencer (NodeFencer.java:fence(111)) - Unable to fence service by any configured method.
+Testing configuration:
+org.apache.hadoop.ha.TestNodeFencer$AlwaysFailFencer
+2015-10-27 07:26:26,010 ERROR ha.FailoverController (FailoverController.java:failover(235)) - Unable to make DummyHAService #34 active (unable to connect). Failing back.
+java.io.IOException: Failed!
+	at org.apache.hadoop.ha.HAServiceProtocolHelper.transitionToActive(HAServiceProtocolHelper.java:48)
+	at org.apache.hadoop.ha.FailoverController.failover(FailoverController.java:226)
+	at org.apache.hadoop.ha.TestFailoverController.doFailover(TestFailoverController.java:431)
+	at org.apache.hadoop.ha.TestFailoverController.testFailureToFenceOnFailbackFailsTheFailback(TestFailoverController.java:365)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+2015-10-27 07:26:26,020 INFO  ha.NodeFencer (NodeFencer.java:fence(91)) - ====== Beginning Service Fencing Process... ======
+2015-10-27 07:26:26,021 INFO  ha.NodeFencer (NodeFencer.java:fence(94)) - Trying method 1/1: org.apache.hadoop.ha.TestNodeFencer.AlwaysFailFencer(null)
+2015-10-27 07:26:26,021 WARN  ha.NodeFencer (NodeFencer.java:fence(108)) - Fencing method org.apache.hadoop.ha.TestNodeFencer.AlwaysFailFencer(null) was unsuccessful.
+2015-10-27 07:26:26,021 ERROR ha.NodeFencer (NodeFencer.java:fence(111)) - Unable to fence service by any configured method.
+2015-10-27 07:26:26,022 FATAL ha.FailoverController (FailoverController.java:failover(255)) - Unable to failover to DummyHAService #34. Failback to DummyHAService #33 failed (Unable to fence DummyHAService #34. Fencing failed.)

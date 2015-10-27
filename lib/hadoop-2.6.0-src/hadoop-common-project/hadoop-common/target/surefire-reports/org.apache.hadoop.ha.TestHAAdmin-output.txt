@@ -1,0 +1,136 @@
+2015-10-27 07:26:27,471 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(103)) - Running: HAAdmin -help
+2015-10-27 07:26:27,532 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(107)) - Err_output:
+
+Output:
+Usage: HAAdmin
+    [-transitionToActive <serviceId> [--forceactive]]
+    [-transitionToStandby <serviceId>]
+    [-failover [--forcefence] [--forceactive] <serviceId> <serviceId>]
+    [-getServiceState <serviceId>]
+    [-checkHealth <serviceId>]
+    [-help <command>]
+
+Generic options supported are
+-conf <configuration file>     specify an application configuration file
+-D <property=value>            use value for given property
+-fs <local|namenode:port>      specify a namenode
+-jt <local|resourcemanager:port>    specify a ResourceManager
+-files <comma separated list of files>    specify comma separated files to be copied to the map reduce cluster
+-libjars <comma separated list of jars>    specify comma separated jar files to include in the classpath.
+-archives <comma separated list of archives>    specify comma separated archives to be unarchived on the compute machines.
+
+The general command line syntax is
+bin/hadoop command [genericOptions] [commandOptions]
+
+
+2015-10-27 07:26:27,532 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(103)) - Running: HAAdmin -help transitionToActive
+2015-10-27 07:26:27,533 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(107)) - Err_output:
+
+Output:
+-transitionToActive [<serviceId> [--forceactive]]: Transitions the service into Active state
+
+2015-10-27 07:26:27,644 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(103)) - Running: HAAdmin 
+2015-10-27 07:26:27,644 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(107)) - Err_output:
+Usage: HAAdmin
+    [-transitionToActive <serviceId> [--forceactive]]
+    [-transitionToStandby <serviceId>]
+    [-failover [--forcefence] [--forceactive] <serviceId> <serviceId>]
+    [-getServiceState <serviceId>]
+    [-checkHealth <serviceId>]
+    [-help <command>]
+
+Generic options supported are
+-conf <configuration file>     specify an application configuration file
+-D <property=value>            use value for given property
+-fs <local|namenode:port>      specify a namenode
+-jt <local|resourcemanager:port>    specify a ResourceManager
+-files <comma separated list of files>    specify comma separated files to be copied to the map reduce cluster
+-libjars <comma separated list of jars>    specify comma separated jar files to include in the classpath.
+-archives <comma separated list of archives>    specify comma separated archives to be unarchived on the compute machines.
+
+The general command line syntax is
+bin/hadoop command [genericOptions] [commandOptions]
+
+
+Output:
+
+2015-10-27 07:26:27,645 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(103)) - Running: HAAdmin badCommand
+2015-10-27 07:26:27,645 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(107)) - Err_output:
+Bad command 'badCommand': expected command starting with '-'
+Usage: HAAdmin
+    [-transitionToActive <serviceId> [--forceactive]]
+    [-transitionToStandby <serviceId>]
+    [-failover [--forcefence] [--forceactive] <serviceId> <serviceId>]
+    [-getServiceState <serviceId>]
+    [-checkHealth <serviceId>]
+    [-help <command>]
+
+Generic options supported are
+-conf <configuration file>     specify an application configuration file
+-D <property=value>            use value for given property
+-fs <local|namenode:port>      specify a namenode
+-jt <local|resourcemanager:port>    specify a ResourceManager
+-files <comma separated list of files>    specify comma separated files to be copied to the map reduce cluster
+-libjars <comma separated list of jars>    specify comma separated jar files to include in the classpath.
+-archives <comma separated list of archives>    specify comma separated archives to be unarchived on the compute machines.
+
+The general command line syntax is
+bin/hadoop command [genericOptions] [commandOptions]
+
+
+Output:
+
+2015-10-27 07:26:27,646 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(103)) - Running: HAAdmin -badCommand
+2015-10-27 07:26:27,647 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(107)) - Err_output:
+badCommand: Unknown command
+Usage: HAAdmin
+    [-transitionToActive <serviceId> [--forceactive]]
+    [-transitionToStandby <serviceId>]
+    [-failover [--forcefence] [--forceactive] <serviceId> <serviceId>]
+    [-getServiceState <serviceId>]
+    [-checkHealth <serviceId>]
+    [-help <command>]
+
+Generic options supported are
+-conf <configuration file>     specify an application configuration file
+-D <property=value>            use value for given property
+-fs <local|namenode:port>      specify a namenode
+-jt <local|resourcemanager:port>    specify a ResourceManager
+-files <comma separated list of files>    specify comma separated files to be copied to the map reduce cluster
+-libjars <comma separated list of jars>    specify comma separated jar files to include in the classpath.
+-archives <comma separated list of archives>    specify comma separated archives to be unarchived on the compute machines.
+
+The general command line syntax is
+bin/hadoop command [genericOptions] [commandOptions]
+
+
+Output:
+
+2015-10-27 07:26:27,647 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(103)) - Running: HAAdmin -transitionToActive
+2015-10-27 07:26:27,651 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(107)) - Err_output:
+transitionToActive: incorrect number of arguments
+Usage: HAAdmin [-transitionToActive <serviceId> [--forceactive]]
+
+Output:
+
+2015-10-27 07:26:27,651 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(103)) - Running: HAAdmin -transitionToActive x y
+2015-10-27 07:26:27,656 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(107)) - Err_output:
+transitionToActive: incorrect number of arguments
+Usage: HAAdmin [-transitionToActive <serviceId> [--forceactive]]
+
+Output:
+
+2015-10-27 07:26:27,657 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(103)) - Running: HAAdmin -failover
+2015-10-27 07:26:27,657 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(107)) - Err_output:
+failover: incorrect arguments
+Usage: HAAdmin [-failover [--forcefence] [--forceactive] <serviceId> <serviceId>]
+
+Output:
+
+2015-10-27 07:26:27,662 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(103)) - Running: HAAdmin -failover foo:1234
+2015-10-27 07:26:27,662 INFO  ha.TestHAAdmin (TestHAAdmin.java:runTool(107)) - Err_output:
+failover: incorrect arguments
+Usage: HAAdmin [-failover [--forcefence] [--forceactive] <serviceId> <serviceId>]
+
+Output:
+

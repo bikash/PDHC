@@ -1,0 +1,19 @@
+2015-10-27 07:21:05,899 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:21:05,955 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,001 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - Testing 1000 random seeks
+2015-10-27 07:21:06,115 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,138 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - verify that reading past the last bytes in the file returns -1
+2015-10-27 07:21:06,184 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,234 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,248 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - do a block read on a 0 byte file
+2015-10-27 07:21:06,281 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,293 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - do a seek past the EOF, then verify the stream recovers
+2015-10-27 07:21:06,326 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,375 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,391 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - verify that a positioned read does not change the getPos() value
+2015-10-27 07:21:06,434 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,447 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - Seek round a large file and verify the bytes are what is expected
+2015-10-27 07:21:06,484 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,501 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - basic seek operations
+2015-10-27 07:21:06,531 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@4ded1c32
+2015-10-27 07:21:06,545 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:describe(240)) - seek and read a 0 byte file

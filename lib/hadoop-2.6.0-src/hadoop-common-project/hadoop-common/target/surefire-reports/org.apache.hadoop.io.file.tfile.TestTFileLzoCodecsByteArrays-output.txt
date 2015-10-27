@@ -1,0 +1,27 @@
+2015-10-27 07:33:05,284 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:33:05,559 INFO  tfile.Compression (Compression.java:isSupported(90)) - Trying to load Lzo codec class: org.apache.hadoop.io.compress.LzoCodec
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped
+Skipped

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.fs.TestSymlinkLocalFSFileContext
+-------------------------------------------------------------------------------
+Tests run: 61, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 10.325 sec - in org.apache.hadoop.fs.TestSymlinkLocalFSFileContext

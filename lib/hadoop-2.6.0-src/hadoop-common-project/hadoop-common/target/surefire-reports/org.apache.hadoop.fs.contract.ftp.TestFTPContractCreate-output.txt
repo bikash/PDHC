@@ -1,0 +1,6 @@
+2015-10-27 07:20:52,879 INFO  contract.AbstractBondedFSContract (AbstractBondedFSContract.java:init(79)) - skipping tests as FS name is not defined in fs.contract.test.fs.ftp
+2015-10-27 07:20:52,951 INFO  contract.AbstractBondedFSContract (AbstractBondedFSContract.java:init(79)) - skipping tests as FS name is not defined in fs.contract.test.fs.ftp
+2015-10-27 07:20:53,011 INFO  contract.AbstractBondedFSContract (AbstractBondedFSContract.java:init(79)) - skipping tests as FS name is not defined in fs.contract.test.fs.ftp
+2015-10-27 07:20:53,054 INFO  contract.AbstractBondedFSContract (AbstractBondedFSContract.java:init(79)) - skipping tests as FS name is not defined in fs.contract.test.fs.ftp
+2015-10-27 07:20:53,088 INFO  contract.AbstractBondedFSContract (AbstractBondedFSContract.java:init(79)) - skipping tests as FS name is not defined in fs.contract.test.fs.ftp
+2015-10-27 07:20:53,120 INFO  contract.AbstractBondedFSContract (AbstractBondedFSContract.java:init(79)) - skipping tests as FS name is not defined in fs.contract.test.fs.ftp

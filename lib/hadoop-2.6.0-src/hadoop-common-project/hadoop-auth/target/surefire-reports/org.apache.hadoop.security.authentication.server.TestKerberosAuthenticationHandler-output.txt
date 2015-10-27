@@ -1,0 +1,105 @@
+2015-10-27 07:14:40,140 INFO  MiniKdc - Configuration:
+2015-10-27 07:14:40,141 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:40,144 INFO  MiniKdc -   debug: false
+2015-10-27 07:14:40,144 INFO  MiniKdc -   transport: TCP
+2015-10-27 07:14:40,144 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-10-27 07:14:40,144 INFO  MiniKdc -   org.name: EXAMPLE
+2015-10-27 07:14:40,144 INFO  MiniKdc -   kdc.port: 0
+2015-10-27 07:14:40,144 INFO  MiniKdc -   org.domain: COM
+2015-10-27 07:14:40,145 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-10-27 07:14:40,145 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-10-27 07:14:40,145 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-10-27 07:14:40,145 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:45,272 INFO  KdcServer - Kerberos service started.
+2015-10-27 07:14:45,279 INFO  MiniKdc - MiniKdc listening at port: 54019
+2015-10-27 07:14:45,279 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/1445944480140/krb5.conf
+2015-10-27 07:14:45,359 INFO  KerberosAuthenticationHandler - Login using keytab target/d73248e2-16d1-45a3-bede-ecbdabf6be1d, for principal HTTP/localhost@EXAMPLE.COM
+2015-10-27 07:14:45,540 INFO  KdcServer - Kerberos service stopped.
+2015-10-27 07:14:45,772 INFO  MiniKdc - Configuration:
+2015-10-27 07:14:45,772 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:45,772 INFO  MiniKdc -   debug: false
+2015-10-27 07:14:45,772 INFO  MiniKdc -   transport: TCP
+2015-10-27 07:14:45,772 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-10-27 07:14:45,772 INFO  MiniKdc -   org.name: EXAMPLE
+2015-10-27 07:14:45,772 INFO  MiniKdc -   kdc.port: 0
+2015-10-27 07:14:45,772 INFO  MiniKdc -   org.domain: COM
+2015-10-27 07:14:45,772 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-10-27 07:14:45,772 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-10-27 07:14:45,773 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-10-27 07:14:45,773 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:47,958 INFO  KdcServer - Kerberos service started.
+2015-10-27 07:14:47,959 INFO  MiniKdc - MiniKdc listening at port: 54022
+2015-10-27 07:14:47,959 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/1445944485772/krb5.conf
+2015-10-27 07:14:48,018 INFO  KerberosAuthenticationHandler - Login using keytab target/d73248e2-16d1-45a3-bede-ecbdabf6be1d, for principal HTTP/localhost@EXAMPLE.COM
+2015-10-27 07:14:48,022 INFO  KdcServer - Kerberos service stopped.
+2015-10-27 07:14:48,223 INFO  MiniKdc - Configuration:
+2015-10-27 07:14:48,223 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:48,223 INFO  MiniKdc -   debug: false
+2015-10-27 07:14:48,223 INFO  MiniKdc -   transport: TCP
+2015-10-27 07:14:48,223 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-10-27 07:14:48,223 INFO  MiniKdc -   org.name: EXAMPLE
+2015-10-27 07:14:48,223 INFO  MiniKdc -   kdc.port: 0
+2015-10-27 07:14:48,223 INFO  MiniKdc -   org.domain: COM
+2015-10-27 07:14:48,224 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-10-27 07:14:48,224 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-10-27 07:14:48,224 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-10-27 07:14:48,224 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:49,982 INFO  KdcServer - Kerberos service started.
+2015-10-27 07:14:49,983 INFO  MiniKdc - MiniKdc listening at port: 54023
+2015-10-27 07:14:49,983 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/1445944488223/krb5.conf
+2015-10-27 07:14:50,043 INFO  KerberosAuthenticationHandler - Login using keytab target/d73248e2-16d1-45a3-bede-ecbdabf6be1d, for principal HTTP/localhost@EXAMPLE.COM
+2015-10-27 07:14:50,046 INFO  KdcServer - Kerberos service stopped.
+2015-10-27 07:14:50,220 INFO  MiniKdc - Configuration:
+2015-10-27 07:14:50,220 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:50,220 INFO  MiniKdc -   debug: false
+2015-10-27 07:14:50,220 INFO  MiniKdc -   transport: TCP
+2015-10-27 07:14:50,220 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-10-27 07:14:50,220 INFO  MiniKdc -   org.name: EXAMPLE
+2015-10-27 07:14:50,220 INFO  MiniKdc -   kdc.port: 0
+2015-10-27 07:14:50,220 INFO  MiniKdc -   org.domain: COM
+2015-10-27 07:14:50,220 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-10-27 07:14:50,220 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-10-27 07:14:50,220 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-10-27 07:14:50,221 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:51,825 INFO  KdcServer - Kerberos service started.
+2015-10-27 07:14:51,825 INFO  MiniKdc - MiniKdc listening at port: 54024
+2015-10-27 07:14:51,825 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/1445944490220/krb5.conf
+2015-10-27 07:14:51,886 INFO  KerberosAuthenticationHandler - Login using keytab target/d73248e2-16d1-45a3-bede-ecbdabf6be1d, for principal HTTP/localhost@EXAMPLE.COM
+2015-10-27 07:14:51,925 INFO  KdcServer - Kerberos service stopped.
+2015-10-27 07:14:52,150 INFO  MiniKdc - Configuration:
+2015-10-27 07:14:52,150 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:52,150 INFO  MiniKdc -   debug: false
+2015-10-27 07:14:52,151 INFO  MiniKdc -   transport: TCP
+2015-10-27 07:14:52,151 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-10-27 07:14:52,151 INFO  MiniKdc -   org.name: EXAMPLE
+2015-10-27 07:14:52,151 INFO  MiniKdc -   kdc.port: 0
+2015-10-27 07:14:52,151 INFO  MiniKdc -   org.domain: COM
+2015-10-27 07:14:52,151 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-10-27 07:14:52,151 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-10-27 07:14:52,151 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-10-27 07:14:52,151 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:53,495 INFO  KdcServer - Kerberos service started.
+2015-10-27 07:14:53,496 INFO  MiniKdc - MiniKdc listening at port: 54025
+2015-10-27 07:14:53,496 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/1445944492150/krb5.conf
+2015-10-27 07:14:53,552 INFO  KerberosAuthenticationHandler - Login using keytab target/d73248e2-16d1-45a3-bede-ecbdabf6be1d, for principal HTTP/localhost@EXAMPLE.COM
+2015-10-27 07:14:53,663 INFO  KerberosAuthenticationHandler - Login using keytab target/d73248e2-16d1-45a3-bede-ecbdabf6be1d, for principal HTTP/host1@EXAMPLE.COM
+2015-10-27 07:14:53,665 INFO  KerberosAuthenticationHandler - Login using keytab target/d73248e2-16d1-45a3-bede-ecbdabf6be1d, for principal HTTP/host2@EXAMPLE.COM
+2015-10-27 07:14:53,668 INFO  KdcServer - Kerberos service stopped.
+2015-10-27 07:14:53,852 INFO  MiniKdc - Configuration:
+2015-10-27 07:14:53,852 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:53,852 INFO  MiniKdc -   debug: false
+2015-10-27 07:14:53,852 INFO  MiniKdc -   transport: TCP
+2015-10-27 07:14:53,852 INFO  MiniKdc -   max.ticket.lifetime: 86400000
+2015-10-27 07:14:53,852 INFO  MiniKdc -   org.name: EXAMPLE
+2015-10-27 07:14:53,852 INFO  MiniKdc -   kdc.port: 0
+2015-10-27 07:14:53,852 INFO  MiniKdc -   org.domain: COM
+2015-10-27 07:14:53,852 INFO  MiniKdc -   max.renewable.lifetime: 604800000
+2015-10-27 07:14:53,852 INFO  MiniKdc -   instance: DefaultKrbServer
+2015-10-27 07:14:53,852 INFO  MiniKdc -   kdc.bind.address: localhost
+2015-10-27 07:14:53,852 INFO  MiniKdc - ---------------------------------------------------------------
+2015-10-27 07:14:55,505 INFO  KdcServer - Kerberos service started.
+2015-10-27 07:14:55,506 INFO  MiniKdc - MiniKdc listening at port: 54026
+2015-10-27 07:14:55,506 INFO  MiniKdc - MiniKdc setting JVM krb5.conf to: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/1445944493852/krb5.conf
+2015-10-27 07:14:55,557 INFO  KerberosAuthenticationHandler - Login using keytab target/d73248e2-16d1-45a3-bede-ecbdabf6be1d, for principal HTTP/localhost@EXAMPLE.COM
+2015-10-27 07:14:55,560 INFO  KerberosAuthenticationHandler - Login using keytab target/d73248e2-16d1-45a3-bede-ecbdabf6be1d, for principal HTTP/localhost@EXAMPLE.COM
+2015-10-27 07:14:55,563 INFO  KdcServer - Kerberos service stopped.

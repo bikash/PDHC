@@ -1,0 +1,25 @@
+2015-10-27 07:34:36,854 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testStoreLoad(82)) - Testing DefaultStringifier#store() and #load()
+2015-10-27 07:34:37,332 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testStoreLoadArray(96)) - Testing DefaultStringifier#storeArray() and #loadArray()
+2015-10-27 07:34:37,359 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithJavaSerialization(67)) - Testing DefaultStringifier with Serializable Integer
+2015-10-27 07:34:37,360 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithJavaSerialization(75)) - String representation of the object: eXNyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5nLk51bWJlcoaslR0LlOCLAgAAeHAAAAAq
+2015-10-27 07:34:37,361 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(41)) - Testing DefaultStringifier with Text
+2015-10-27 07:34:37,362 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: wdyhdyelekxndotgqjjpchvqzsqlt
+2015-10-27 07:34:37,362 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: HXdkeWhkeWVsZWt4bmRvdGdxampwY2h2cXpzcWx0
+2015-10-27 07:34:37,363 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: padfugkbcenjnujsm
+2015-10-27 07:34:37,363 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: EXBhZGZ1Z2tiY2Vuam51anNt
+2015-10-27 07:34:37,364 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: ahu
+2015-10-27 07:34:37,364 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: A2FodQ==
+2015-10-27 07:34:37,364 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: tlrxklfjccnjcil
+2015-10-27 07:34:37,364 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: D3RscnhrbGZqY2NuamNpbA==
+2015-10-27 07:34:37,365 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: rimocdkdyxzab
+2015-10-27 07:34:37,365 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: DXJpbW9jZGtkeXh6YWI=
+2015-10-27 07:34:37,365 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: qwiqrgtey
+2015-10-27 07:34:37,370 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: CXF3aXFyZ3RleQ==
+2015-10-27 07:34:37,371 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: lptlwnttbqjvhlgkgpoqeqet
+2015-10-27 07:34:37,373 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: GGxwdGx3bnR0YnFqdmhsZ2tncG9xZXFldA==
+2015-10-27 07:34:37,374 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: sgbdvbkbhfiiwrhntvgbqnexiyvuenbqnnate
+2015-10-27 07:34:37,374 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: JXNnYmR2YmtiaGZpaXdyaG50dmdicW5leGl5dnVlbmJxbm5hdGU=
+2015-10-27 07:34:37,375 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: robjw
+2015-10-27 07:34:37,375 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: BXJvYmp3
+2015-10-27 07:34:37,375 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(58)) - Object: hafhzdtzuncsmgvonbfvjwzlif
+2015-10-27 07:34:37,376 INFO  io.TestDefaultStringifier (TestDefaultStringifier.java:testWithWritable(59)) - String representation of the object: GmhhZmh6ZHR6dW5jc21ndm9uYmZ2and6bGlm

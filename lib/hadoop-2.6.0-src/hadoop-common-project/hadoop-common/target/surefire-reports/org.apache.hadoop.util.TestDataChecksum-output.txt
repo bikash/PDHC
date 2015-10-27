@@ -1,0 +1,25 @@
+---- beginning tests with checksum type CRC32----
+Testing bulk checksums of length 1023 with array-backed buffers
+2015-10-27 07:43:11,489 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Testing bulk checksums of length 1024 with array-backed buffers
+Testing bulk checksums of length 1025 with array-backed buffers
+Testing bulk checksums of length 1023 with direct buffers
+Testing bulk checksums of length 1024 with direct buffers
+Testing bulk checksums of length 1025 with direct buffers
+---- beginning tests with checksum type CRC32C----
+Testing bulk checksums of length 1023 with array-backed buffers
+Testing bulk checksums of length 1024 with array-backed buffers
+Testing bulk checksums of length 1025 with array-backed buffers
+Testing bulk checksums of length 1023 with direct buffers
+Testing bulk checksums of length 1024 with direct buffers
+Testing bulk checksums of length 1025 with direct buffers
+Calculate run #0: 1330160us
+Verify run #0: 1112095us
+Calculate run #1: 1087664us
+Verify run #1: 1134745us
+Calculate run #2: 1061245us
+Verify run #2: 1048685us
+Calculate run #3: 1038500us
+Verify run #3: 1063885us
+Calculate run #4: 1016581us
+Verify run #4: 1023258us

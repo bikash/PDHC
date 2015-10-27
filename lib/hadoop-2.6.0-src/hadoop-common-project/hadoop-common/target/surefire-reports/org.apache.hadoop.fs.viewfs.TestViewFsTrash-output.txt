@@ -1,0 +1,65 @@
+2015-10-27 07:25:50,020 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:25:50,260 INFO  mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-10-27 07:25:50,261 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for test dir /Users->file:///Users
+2015-10-27 07:25:50,262 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for home dir /Users->file:///Users
+2015-10-27 07:25:50,262 INFO  mortbay.log (Slf4jLog.java:info(67)) - Home dir base for viewfs/Users
+2015-10-27 07:25:50,263 INFO  mortbay.log (Slf4jLog.java:info(67)) - Added link for working dir /Users->file:///Users
+2015-10-27 07:25:50,353 INFO  mortbay.log (Slf4jLog.java:info(67)) - Working dir is: /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common
+2015-10-27 07:25:50,532 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 0 minutes, Emptier interval = 0 minutes.
+2015-10-27 07:25:50,583 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+2015-10-27 07:25:50,727 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+2015-10-27 07:25:50,814 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:50,891 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+rmr: DEPRECATED: Please use 'rm -r' instead.
+2015-10-27 07:25:50,941 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs' to trash at: file:/Users/bikash/.Trash/Current
+rmr: DEPRECATED: Please use 'rm -r' instead.
+2015-10-27 07:25:51,026 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:51,066 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Deleted file:///Users/bikash/.Trash/Current/toErase
+2015-10-27 07:25:51,146 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+2015-10-27 07:25:51,152 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:createCheckpoint(189)) - Created trash checkpoint: /Users/bikash/.Trash/151027072551
+2015-10-27 07:25:51,227 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+rmr: DEPRECATED: Please use 'rm -r' instead.
+2015-10-27 07:25:51,343 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs' to trash at: file:/Users/bikash/.Trash/Current
+rmr: DEPRECATED: Please use 'rm -r' instead.
+2015-10-27 07:25:51,358 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+rmr: Cannot move "file:/Users/bikash" to the trash, as it contains the trash. Consider using -skipTrash option
+2015-10-27 07:25:51,425 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+2015-10-27 07:25:51,429 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:createCheckpoint(189)) - Created trash checkpoint: /Users/bikash/.Trash/151027072551-1
+Deleted viewfs:///Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile
+2015-10-27 07:25:51,659 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+rmr: DEPRECATED: Please use 'rm -r' instead.
+Deleted viewfs:///Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs
+2015-10-27 07:25:51,750 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+2015-10-27 07:25:51,789 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:51,841 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:51,970 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:52,022 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:52,138 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:52,238 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:52,268 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:52,299 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:52,334 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+2015-10-27 07:25:52,383 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+Moved: 'viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile' to trash at: file:/Users/bikash/.Trash/Current
+Deleting same myFile: myFile.parent=/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs; trashroot=/Users/bikash/.Trash/Current; trashDir=/Users/bikash/.Trash/Current/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs
+Counting viewfs:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs/myFile in /Users/bikash/.Trash/Current/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs
+counted 10 files myFile* in /Users/bikash/.Trash/Current/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data/Djr4KiICiY/test/mkdirs
+2015-10-27 07:25:52,481 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:initialize(92)) - Namenode trash configuration: Deletion interval = 10 minutes, Emptier interval = 0 minutes.
+2015-10-27 07:25:52,483 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:deleteCheckpoint(220)) - Deleted trash checkpoint: /Users/bikash/.Trash/1510270715
+2015-10-27 07:25:52,485 INFO  fs.TrashPolicyDefault (TrashPolicyDefault.java:createCheckpoint(189)) - Created trash checkpoint: /Users/bikash/.Trash/151027072552

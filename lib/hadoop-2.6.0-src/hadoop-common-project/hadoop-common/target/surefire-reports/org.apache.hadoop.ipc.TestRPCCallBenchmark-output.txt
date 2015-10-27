@@ -1,0 +1,57 @@
+2015-10-27 07:38:21,030 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:38:21,232 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56034
+2015-10-27 07:38:21,232 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #2 for port 56034
+2015-10-27 07:38:21,233 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #3 for port 56034
+2015-10-27 07:38:21,233 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #4 for port 56034
+2015-10-27 07:38:21,573 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:38:21,585 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:38:21,585 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56034: starting
+Calls per second: 1953.0
+Calls per second: 2986.0
+Calls per second: 3440.0
+Calls per second: 4134.0
+Calls per second: 4567.0
+====== Results ======
+Options:
+rpcEngine=class org.apache.hadoop.ipc.ProtobufRpcEngine
+serverThreads=30
+serverReaderThreads=4
+clientThreads=30
+host=0.0.0.0
+port=56034
+secondsToRun=5
+msgSize=1024
+Total calls per second: 3415.0
+CPU time per call on client: 174024 ns
+CPU time per call on server: 218955 ns
+2015-10-27 07:38:26,866 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56034
+2015-10-27 07:38:26,878 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56034
+2015-10-27 07:38:26,878 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder
+2015-10-27 07:38:26,966 INFO  ipc.CallQueueManager (CallQueueManager.java:<init>(53)) - Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-27 07:38:26,967 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #1 for port 56065
+2015-10-27 07:38:26,967 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #2 for port 56065
+2015-10-27 07:38:26,969 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #3 for port 56065
+2015-10-27 07:38:26,970 INFO  ipc.Server (Server.java:run(605)) - Starting Socket Reader #4 for port 56065
+2015-10-27 07:38:26,977 INFO  ipc.Server (Server.java:run(827)) - IPC Server Responder: starting
+2015-10-27 07:38:26,977 INFO  ipc.Server (Server.java:run(674)) - IPC Server listener on 56065: starting
+Calls per second: 936.0
+Calls per second: 1594.0
+Calls per second: 1665.0
+Calls per second: 1686.0
+Calls per second: 1640.0
+====== Results ======
+Options:
+rpcEngine=class org.apache.hadoop.ipc.WritableRpcEngine
+serverThreads=30
+serverReaderThreads=4
+clientThreads=30
+host=0.0.0.0
+port=56065
+secondsToRun=5
+msgSize=1024
+Total calls per second: 1504.0
+CPU time per call on client: 694800 ns
+CPU time per call on server: 600253 ns
+2015-10-27 07:38:32,078 INFO  ipc.Server (Server.java:stop(2437)) - Stopping server on 56065
+2015-10-27 07:38:32,095 INFO  ipc.Server (Server.java:run(706)) - Stopping IPC Server listener on 56065
+2015-10-27 07:38:32,096 INFO  ipc.Server (Server.java:run(832)) - Stopping IPC Server Responder

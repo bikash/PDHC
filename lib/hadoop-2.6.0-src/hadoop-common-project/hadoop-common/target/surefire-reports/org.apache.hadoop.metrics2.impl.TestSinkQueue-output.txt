@@ -1,0 +1,6 @@
+2015-10-27 07:39:32,599 INFO  impl.TestSinkQueue (TestSinkQueue.java:consume(258)) - sleeping
+2015-10-27 07:39:32,603 INFO  impl.TestSinkQueue (TestSinkQueue.java:shouldThrowCME(237)) - java.util.ConcurrentModificationException: The Sleeping consumer thread is consuming the queue.
+2015-10-27 07:39:32,605 INFO  impl.TestSinkQueue (TestSinkQueue.java:shouldThrowCME(237)) - java.util.ConcurrentModificationException: The Sleeping consumer thread is consuming the queue.
+2015-10-27 07:39:32,605 INFO  impl.TestSinkQueue (TestSinkQueue.java:shouldThrowCME(237)) - java.util.ConcurrentModificationException: The Sleeping consumer thread is consuming the queue.
+2015-10-27 07:39:32,606 INFO  impl.TestSinkQueue (TestSinkQueue.java:shouldThrowCME(237)) - java.util.ConcurrentModificationException: The Sleeping consumer thread is consuming the queue.
+2015-10-27 07:39:32,619 INFO  impl.TestSinkQueue (TestSinkQueue.java:consume(258)) - sleeping

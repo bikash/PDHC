@@ -1,0 +1,4 @@
+Testing for GenericWritable to find class names
+Testing Writable wrapped in GenericWritable
+Testing Writable, Configurable wrapped in GenericWritable
+Testing if Configuration is passed to wrapped classes

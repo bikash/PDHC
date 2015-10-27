@@ -1,0 +1,9 @@
+2015-10-27 07:34:44,992 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:34:45,960 INFO  compress.CodecPool (CodecPool.java:getCompressor(151)) - Got brand-new compressor [.deflate]
+2015-10-27 07:34:45,996 INFO  compress.CodecPool (CodecPool.java:getCompressor(151)) - Got brand-new compressor [.deflate]
+2015-10-27 07:34:46,024 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:34:46,039 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:34:46,039 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:34:46,039 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:34:46,040 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
+2015-10-27 07:34:46,806 INFO  compress.CodecPool (CodecPool.java:getCompressor(151)) - Got brand-new compressor [null]

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.io.file.tfile.TestTFileLzoCodecsByteArrays
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.837 sec - in org.apache.hadoop.io.file.tfile.TestTFileLzoCodecsByteArrays

@@ -1,0 +1,11 @@
+2015-10-27 07:20:57,372 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-27 07:20:57,432 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@146e2667
+2015-10-27 07:20:57,433 INFO  contract.ContractTestUtils (ContractTestUtils.java:skip(414)) - Skipping: Skipping as unsupported feature: supports-append
+2015-10-27 07:20:57,486 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@146e2667
+2015-10-27 07:20:57,486 INFO  contract.ContractTestUtils (ContractTestUtils.java:skip(414)) - Skipping: Skipping as unsupported feature: supports-append
+2015-10-27 07:20:57,550 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@146e2667
+2015-10-27 07:20:57,551 INFO  contract.ContractTestUtils (ContractTestUtils.java:skip(414)) - Skipping: Skipping as unsupported feature: supports-append
+2015-10-27 07:20:57,583 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@146e2667
+2015-10-27 07:20:57,584 INFO  contract.ContractTestUtils (ContractTestUtils.java:skip(414)) - Skipping: Skipping as unsupported feature: supports-append
+2015-10-27 07:20:57,612 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@146e2667
+2015-10-27 07:20:57,613 INFO  contract.ContractTestUtils (ContractTestUtils.java:skip(414)) - Skipping: Skipping as unsupported feature: supports-append

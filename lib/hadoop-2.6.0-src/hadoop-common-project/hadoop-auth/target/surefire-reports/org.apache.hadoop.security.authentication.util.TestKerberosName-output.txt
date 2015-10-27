@@ -1,0 +1,44 @@
+1 RULE:[1:$1@$0](.*@YAHOO\.COM)s/@.*//
+2 RULE:[2:$1](johndoe)s/^.*$/guest/
+3 RULE:[2:$1;$2](^.*;admin$)s/;admin$//
+4 RULE:[2:$2](root)
+5 DEFAULT
+1 RULE:[1:$1]/L
+2 RULE:[2:$1]/L
+3 RULE:[2:$1;$2](^.*;admin$)s/;admin$///L
+4 RULE:[2:$1;$2](^.*;guest$)s/;guest$//g/L
+5 DEFAULT
+Translate Joe@FOO.COM
+to joe
+Translate Joe/root@FOO.COM
+to joe
+Translate Joe/admin@FOO.COM
+to joe
+Translate Joe/guestguest@FOO.COM
+to joe
+1 RULE:[1:$1@$0](.*@YAHOO\.COM)s/@.*//
+2 RULE:[2:$1](johndoe)s/^.*$/guest/
+3 RULE:[2:$1;$2](^.*;admin$)s/;admin$//
+4 RULE:[2:$2](root)
+5 DEFAULT
+Translate omalley@EXAMPLE.COM
+to omalley
+Translate hdfs/10.0.0.1@EXAMPLE.COM
+to hdfs
+Translate oom@YAHOO.COM
+to oom
+Translate johndoe/zoo@FOO.COM
+to guest
+Translate joe/admin@FOO.COM
+to joe
+Translate joe/root@FOO.COM
+to root
+1 RULE:[1:$1@$0](.*@YAHOO\.COM)s/@.*//
+2 RULE:[2:$1](johndoe)s/^.*$/guest/
+3 RULE:[2:$1;$2](^.*;admin$)s/;admin$//
+4 RULE:[2:$2](root)
+5 DEFAULT
+Checking owen/owen/owen@FOO.COM to ensure it is bad.
+Checking owen@foo/bar.com to ensure it is bad.
+Checking bad translation for foo@ACME.COM
+Checking bad translation for root/joe@FOO.COM

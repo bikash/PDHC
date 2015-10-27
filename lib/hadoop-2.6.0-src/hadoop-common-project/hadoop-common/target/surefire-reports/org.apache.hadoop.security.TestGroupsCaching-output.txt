@@ -1,0 +1,19 @@
+2015-10-27 07:41:18,971 INFO  security.TestGroupsCaching (TestGroupsCaching.java:cacheGroupsAdd(88)) - Adding [grp1, grp2] to groups.
+2015-10-27 07:41:18,977 INFO  security.Groups (Groups.java:refresh(202)) - clearing userToGroupsMap cache
+2015-10-27 07:41:18,978 INFO  security.TestGroupsCaching (TestGroupsCaching.java:cacheGroupsRefresh(76)) - Cache is being refreshed.
+2015-10-27 07:41:18,978 INFO  security.TestGroupsCaching (TestGroupsCaching.java:clearBlackList(82)) - Clearing the blacklist
+2015-10-27 07:41:18,978 INFO  security.TestGroupsCaching (TestGroupsCaching.java:clearBlackList(82)) - Clearing the blacklist
+2015-10-27 07:41:18,979 INFO  security.TestGroupsCaching (TestGroupsCaching.java:addToBlackList(93)) - Adding user1 to the blacklist
+2015-10-27 07:41:18,979 INFO  security.TestGroupsCaching (TestGroupsCaching.java:getGroups(67)) - Getting groups for me
+2015-10-27 07:41:19,143 INFO  security.TestGroupsCaching (TestGroupsCaching.java:addToBlackList(93)) - Adding me to the blacklist
+2015-10-27 07:41:19,143 INFO  security.TestGroupsCaching (TestGroupsCaching.java:getGroups(67)) - Getting groups for user1
+2015-10-27 07:41:19,143 INFO  security.TestGroupsCaching (TestGroupsCaching.java:clearBlackList(82)) - Clearing the blacklist
+2015-10-27 07:41:19,144 INFO  security.TestGroupsCaching (TestGroupsCaching.java:getGroups(67)) - Getting groups for user1
+2015-10-27 07:41:19,229 INFO  security.TestGroupsCaching (TestGroupsCaching.java:cacheGroupsAdd(88)) - Adding [grp1, grp2] to groups.
+2015-10-27 07:41:19,229 INFO  security.Groups (Groups.java:refresh(202)) - clearing userToGroupsMap cache
+2015-10-27 07:41:19,230 INFO  security.TestGroupsCaching (TestGroupsCaching.java:cacheGroupsRefresh(76)) - Cache is being refreshed.
+2015-10-27 07:41:19,230 INFO  security.TestGroupsCaching (TestGroupsCaching.java:clearBlackList(82)) - Clearing the blacklist
+2015-10-27 07:41:19,230 INFO  security.TestGroupsCaching (TestGroupsCaching.java:addToBlackList(93)) - Adding negcache to the blacklist
+2015-10-27 07:41:19,233 INFO  security.TestGroupsCaching (TestGroupsCaching.java:getGroups(67)) - Getting groups for negcache
+2015-10-27 07:41:19,244 INFO  security.TestGroupsCaching (TestGroupsCaching.java:clearBlackList(82)) - Clearing the blacklist
+2015-10-27 07:41:19,245 INFO  security.TestGroupsCaching (TestGroupsCaching.java:getGroups(67)) - Getting groups for negcache

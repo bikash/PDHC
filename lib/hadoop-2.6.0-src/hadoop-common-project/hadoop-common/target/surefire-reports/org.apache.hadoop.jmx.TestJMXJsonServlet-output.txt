@@ -1,0 +1,1014 @@
+2015-10-27 07:39:09,176 INFO  mortbay.log (Slf4jLog.java:info(67)) - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-10-27 07:39:09,487 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(80)) - Http request log for http.requests.test is not defined
+2015-10-27 07:39:09,507 INFO  http.HttpServer2 (HttpServer2.java:addGlobalFilter(699)) - Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2015-10-27 07:39:09,546 INFO  http.HttpServer2 (HttpServer2.java:addFilter(677)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context test
+2015-10-27 07:39:09,547 INFO  http.HttpServer2 (HttpServer2.java:addFilter(684)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2015-10-27 07:39:09,547 INFO  http.HttpServer2 (HttpServer2.java:addFilter(684)) - Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2015-10-27 07:39:09,602 INFO  http.HttpServer2 (HttpServer2.java:openListeners(887)) - Jetty bound to port 56835
+2015-10-27 07:39:09,602 INFO  mortbay.log (Slf4jLog.java:info(67)) - jetty-6.1.26
+2015-10-27 07:39:10,080 INFO  mortbay.log (Slf4jLog.java:info(67)) - Started HttpServer2$SelectChannelConnectorWithSafeStartup@localhost:56835
+2015-10-27 07:39:10,786 INFO  jmx.TestJMXJsonServlet (TestJMXJsonServlet.java:testQury(56)) - /jmx?qry=java.lang:type=Runtime RESULT: {
+  "beans" : [ {
+    "name" : "java.lang:type=Runtime",
+    "modelerType" : "sun.management.RuntimeImpl",
+    "Name" : "18867@bikash.netgear.com",
+    "ClassPath" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-annotations/target/hadoop-annotations-2.6.0.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/../lib/tools.jar:/Users/bikash/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/Users/bikash/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar:/Users/bikash/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/Users/bikash/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/bikash/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/bikash/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/bikash/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/bikash/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/bikash/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar:/Users/bikash/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/bikash/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar:/Users/bikash/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/Users/bikash/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/bikash/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/Users/bikash/.m2/repository/asm/asm/3.2/asm-3.2.jar:/Users/bikash/.m2/repository/tomcat/jasper-compiler/5.5.23/jasper-compiler-5.5.23.jar:/Users/bikash/.m2/repository/tomcat/jasper-runtime/5.5.23/jasper-runtime-5.5.23.jar:/Users/bikash/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/bikash/.m2/repository/commons-el/commons-el/1.0/commons-el-1.0.jar:/Users/bikash/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/bikash/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/bikash/.m2/repository/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar:/Users/bikash/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar:/Users/bikash/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/bikash/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/bikash/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/bikash/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/Users/bikash/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar:/Users/bikash/.m2/repository/org/apache/avro/avro/1.7.4/avro-1.7.4.jar:/Users/bikash/.m2/repository/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar:/Users/bikash/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant-launcher/1.8.1/ant-launcher-1.8.1.jar:/Users/bikash/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/bikash/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0-tests.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-minikdc/target/hadoop-minikdc-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-api/2.0.0-M15/apacheds-core-api-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-constants/2.0.0-M15/apacheds-core-constants-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-i18n/1.0.0-M20/api-i18n-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-client-api/1.0.0-M20/api-ldap-client-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-codec-core/1.0.0-M20/api-ldap-codec-core-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-aci/1.0.0-M20/api-ldap-extras-aci-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-util/1.0.0-M20/api-ldap-extras-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-model/1.0.0-M20/api-ldap-model-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/mina/mina-core/2.0.0-M5/mina-core-2.0.0-M5.jar:/Users/bikash/.m2/repository/net/sf/ehcache/ehcache-core/2.4.4/ehcache-core-2.4.4.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0-M15/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core/2.0.0-M15/apacheds-core-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-admin/2.0.0-M15/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authn/2.0.0-M15/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authz/2.0.0-M15/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0-M15/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-collective/2.0.0-M15/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-event/2.0.0-M15/apacheds-interceptors-event-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-exception/2.0.0-M15/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-journal/2.0.0-M15/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0-M15/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-operational/2.0.0-M15/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-referral/2.0.0-M15/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-schema/2.0.0-M15/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0-M15/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0-M15/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-trigger/1.0.0-M20/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-shared/2.0.0-M15/apacheds-protocol-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0-M15/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-shared/2.0.0-M15/apacheds-core-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-ldif-partition/2.0.0-M15/apacheds-ldif-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-xdbm-partition/2.0.0-M15/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-mavibot-partition/2.0.0-M15/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/mavibot/mavibot/1.0.0-M1/mavibot-1.0.0-M1.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-avl/2.0.0-M15/apacheds-core-avl-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-all/1.0.0-M20/api-all-1.0.0-M20.jar:/Users/bikash/.m2/repository/commons-pool/commons-pool/1.6/commons-pool-1.6.jar:/Users/bikash/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-jdbm-partition/2.0.0-M15/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-ldap/2.0.0-M15/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-ber/1.0.0-M20/api-asn1-ber-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec-api/1.0.0-M20/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec/1.0.0-M20/api-ldap-extras-codec-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-sp/1.0.0-M20/api-ldap-extras-sp-1.0.0-M20.jar:/Users/bikash/.m2/repository/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar:/Users/bikash/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-test/2.6.0/curator-test-2.6.0.jar:/Users/bikash/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar:/Users/bikash/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/bikash/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/bikash/.m2/repository/io/netty/netty/3.6.2.Final/netty-3.6.2.Final.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6-tests.jar:/Users/bikash/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/Users/bikash/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar:",
+    "StartTime" : 1445945948070,
+    "BootClassPathSupported" : true,
+    "VmName" : "Java HotSpot(TM) 64-Bit Server VM",
+    "VmVendor" : "Oracle Corporation",
+    "VmVersion" : "24.75-b04",
+    "LibraryPath" : "/Users/bikash/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.",
+    "BootClassPath" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes",
+    "SpecName" : "Java Virtual Machine Specification",
+    "SpecVendor" : "Oracle Corporation",
+    "SpecVersion" : "1.7",
+    "ManagementSpecVersion" : "1.2",
+    "InputArguments" : [ "-Xmx1024m", "-XX:+HeapDumpOnOutOfMemoryError" ],
+    "Uptime" : 2678,
+    "SystemProperties" : [ {
+      "key" : "java.vm.version",
+      "value" : "24.75-b04"
+    }, {
+      "key" : "java.vendor.url",
+      "value" : "http://java.oracle.com/"
+    }, {
+      "key" : "sun.jnu.encoding",
+      "value" : "UTF-8"
+    }, {
+      "key" : "java.vm.info",
+      "value" : "mixed mode"
+    }, {
+      "key" : "user.dir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common"
+    }, {
+      "key" : "sun.cpu.isalist",
+      "value" : ""
+    }, {
+      "key" : "java.awt.graphicsenv",
+      "value" : "sun.awt.CGraphicsEnvironment"
+    }, {
+      "key" : "sun.os.patch.level",
+      "value" : "unknown"
+    }, {
+      "key" : "hadoop.log.dir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/log"
+    }, {
+      "key" : "java.io.tmpdir",
+      "value" : "/var/folders/j3/bdpymcq1045gxk1mdtp_myvw0000gn/T/"
+    }, {
+      "key" : "user.home",
+      "value" : "/Users/bikash"
+    }, {
+      "key" : "java.awt.printerjob",
+      "value" : "sun.lwawt.macosx.CPrinterJob"
+    }, {
+      "key" : "java.version",
+      "value" : "1.7.0_75"
+    }, {
+      "key" : "hadoop.tmp.dir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test"
+    }, {
+      "key" : "file.encoding.pkg",
+      "value" : "sun.io"
+    }, {
+      "key" : "java.vendor.url.bug",
+      "value" : "http://bugreport.sun.com/bugreport/"
+    }, {
+      "key" : "test.cache.data",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes"
+    }, {
+      "key" : "file.encoding",
+      "value" : "UTF-8"
+    }, {
+      "key" : "sun.java.command",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/surefire/surefirebooter769064194926581219.jar /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/surefire/surefire3508079645707925990tmp /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/surefire/surefire_237642900955549115784tmp"
+    }, {
+      "key" : "line.separator",
+      "value" : "\n"
+    }, {
+      "key" : "java.vm.specification.vendor",
+      "value" : "Oracle Corporation"
+    }, {
+      "key" : "java.security.egd",
+      "value" : "file:///dev/urandom"
+    }, {
+      "key" : "java.vm.vendor",
+      "value" : "Oracle Corporation"
+    }, {
+      "key" : "java.class.path",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-annotations/target/hadoop-annotations-2.6.0.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/../lib/tools.jar:/Users/bikash/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/Users/bikash/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar:/Users/bikash/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/Users/bikash/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/bikash/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/bikash/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/bikash/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/bikash/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/bikash/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar:/Users/bikash/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/bikash/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar:/Users/bikash/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/Users/bikash/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/bikash/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/Users/bikash/.m2/repository/asm/asm/3.2/asm-3.2.jar:/Users/bikash/.m2/repository/tomcat/jasper-compiler/5.5.23/jasper-compiler-5.5.23.jar:/Users/bikash/.m2/repository/tomcat/jasper-runtime/5.5.23/jasper-runtime-5.5.23.jar:/Users/bikash/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/bikash/.m2/repository/commons-el/commons-el/1.0/commons-el-1.0.jar:/Users/bikash/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/bikash/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/bikash/.m2/repository/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar:/Users/bikash/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar:/Users/bikash/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/bikash/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/bikash/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/bikash/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/Users/bikash/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar:/Users/bikash/.m2/repository/org/apache/avro/avro/1.7.4/avro-1.7.4.jar:/Users/bikash/.m2/repository/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar:/Users/bikash/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant-launcher/1.8.1/ant-launcher-1.8.1.jar:/Users/bikash/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/bikash/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0-tests.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-minikdc/target/hadoop-minikdc-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-api/2.0.0-M15/apacheds-core-api-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-constants/2.0.0-M15/apacheds-core-constants-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-i18n/1.0.0-M20/api-i18n-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-client-api/1.0.0-M20/api-ldap-client-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-codec-core/1.0.0-M20/api-ldap-codec-core-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-aci/1.0.0-M20/api-ldap-extras-aci-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-util/1.0.0-M20/api-ldap-extras-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-model/1.0.0-M20/api-ldap-model-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/mina/mina-core/2.0.0-M5/mina-core-2.0.0-M5.jar:/Users/bikash/.m2/repository/net/sf/ehcache/ehcache-core/2.4.4/ehcache-core-2.4.4.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0-M15/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core/2.0.0-M15/apacheds-core-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-admin/2.0.0-M15/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authn/2.0.0-M15/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authz/2.0.0-M15/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0-M15/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-collective/2.0.0-M15/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-event/2.0.0-M15/apacheds-interceptors-event-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-exception/2.0.0-M15/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-journal/2.0.0-M15/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0-M15/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-operational/2.0.0-M15/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-referral/2.0.0-M15/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-schema/2.0.0-M15/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0-M15/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0-M15/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-trigger/1.0.0-M20/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-shared/2.0.0-M15/apacheds-protocol-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0-M15/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-shared/2.0.0-M15/apacheds-core-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-ldif-partition/2.0.0-M15/apacheds-ldif-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-xdbm-partition/2.0.0-M15/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-mavibot-partition/2.0.0-M15/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/mavibot/mavibot/1.0.0-M1/mavibot-1.0.0-M1.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-avl/2.0.0-M15/apacheds-core-avl-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-all/1.0.0-M20/api-all-1.0.0-M20.jar:/Users/bikash/.m2/repository/commons-pool/commons-pool/1.6/commons-pool-1.6.jar:/Users/bikash/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-jdbm-partition/2.0.0-M15/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-ldap/2.0.0-M15/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-ber/1.0.0-M20/api-asn1-ber-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec-api/1.0.0-M20/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec/1.0.0-M20/api-ldap-extras-codec-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-sp/1.0.0-M20/api-ldap-extras-sp-1.0.0-M20.jar:/Users/bikash/.m2/repository/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar:/Users/bikash/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-test/2.6.0/curator-test-2.6.0.jar:/Users/bikash/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar:/Users/bikash/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/bikash/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/bikash/.m2/repository/io/netty/netty/3.6.2.Final/netty-3.6.2.Final.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6-tests.jar:/Users/bikash/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/Users/bikash/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar:"
+    }, {
+      "key" : "sun.io.unicode.encoding",
+      "value" : "UnicodeBig"
+    }, {
+      "key" : "user.language",
+      "value" : "en"
+    }, {
+      "key" : "os.arch",
+      "value" : "x86_64"
+    }, {
+      "key" : "user.name",
+      "value" : "bikash"
+    }, {
+      "key" : "java.runtime.version",
+      "value" : "1.7.0_75-b13"
+    }, {
+      "key" : "sun.boot.class.path",
+      "value" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes"
+    }, {
+      "key" : "gopherProxySet",
+      "value" : "false"
+    }, {
+      "key" : "sun.cpu.endian",
+      "value" : "little"
+    }, {
+      "key" : "ftp.nonProxyHosts",
+      "value" : "127.0.0.1"
+    }, {
+      "key" : "awt.toolkit",
+      "value" : "sun.lwawt.macosx.LWCToolkit"
+    }, {
+      "key" : "sun.boot.library.path",
+      "value" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib"
+    }, {
+      "key" : "java.home",
+      "value" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre"
+    }, {
+      "key" : "surefire.real.class.path",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/surefire/surefirebooter769064194926581219.jar"
+    }, {
+      "key" : "java.vm.name",
+      "value" : "Java HotSpot(TM) 64-Bit Server VM"
+    }, {
+      "key" : "java.endorsed.dirs",
+      "value" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed"
+    }, {
+      "key" : "basedir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common"
+    }, {
+      "key" : "java.net.preferIPv4Stack",
+      "value" : "true"
+    }, {
+      "key" : "test.build.dir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-dir"
+    }, {
+      "key" : "sun.management.compiler",
+      "value" : "HotSpot 64-Bit Tiered Compilers"
+    }, {
+      "key" : "java.runtime.name",
+      "value" : "Java(TM) SE Runtime Environment"
+    }, {
+      "key" : "user.country.format",
+      "value" : "NO"
+    }, {
+      "key" : "test.build.data",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data"
+    }, {
+      "key" : "java.library.path",
+      "value" : "/Users/bikash/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."
+    }, {
+      "key" : "file.separator",
+      "value" : "/"
+    }, {
+      "key" : "java.specification.vendor",
+      "value" : "Oracle Corporation"
+    }, {
+      "key" : "java.vm.specification.version",
+      "value" : "1.7"
+    }, {
+      "key" : "sun.java.launcher",
+      "value" : "SUN_STANDARD"
+    }, {
+      "key" : "user.timezone",
+      "value" : "America/New_York"
+    }, {
+      "key" : "http.nonProxyHosts",
+      "value" : "127.0.0.1"
+    }, {
+      "key" : "os.name",
+      "value" : "Mac OS X"
+    }, {
+      "key" : "path.separator",
+      "value" : ":"
+    }, {
+      "key" : "java.ext.dirs",
+      "value" : "/Users/bikash/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"
+    }, {
+      "key" : "sun.arch.data.model",
+      "value" : "64"
+    }, {
+      "key" : "java.specification.name",
+      "value" : "Java Platform API Specification"
+    }, {
+      "key" : "os.version",
+      "value" : "10.9.5"
+    }, {
+      "key" : "test.build.webapps",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes/webapps"
+    }, {
+      "key" : "user.country",
+      "value" : "US"
+    }, {
+      "key" : "java.class.version",
+      "value" : "51.0"
+    }, {
+      "key" : "socksNonProxyHosts",
+      "value" : "127.0.0.1"
+    }, {
+      "key" : "java.vendor",
+      "value" : "Oracle Corporation"
+    }, {
+      "key" : "java.vm.specification.name",
+      "value" : "Java Virtual Machine Specification"
+    }, {
+      "key" : "localRepository",
+      "value" : "/Users/bikash/.m2/repository"
+    }, {
+      "key" : "java.security.krb5.conf",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/src/test/resources/krb5.conf"
+    }, {
+      "key" : "surefire.test.class.path",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-annotations/target/hadoop-annotations-2.6.0.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/../lib/tools.jar:/Users/bikash/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/Users/bikash/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar:/Users/bikash/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/Users/bikash/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/bikash/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/bikash/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/bikash/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/bikash/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/bikash/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar:/Users/bikash/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/bikash/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar:/Users/bikash/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/Users/bikash/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/bikash/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/Users/bikash/.m2/repository/asm/asm/3.2/asm-3.2.jar:/Users/bikash/.m2/repository/tomcat/jasper-compiler/5.5.23/jasper-compiler-5.5.23.jar:/Users/bikash/.m2/repository/tomcat/jasper-runtime/5.5.23/jasper-runtime-5.5.23.jar:/Users/bikash/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/bikash/.m2/repository/commons-el/commons-el/1.0/commons-el-1.0.jar:/Users/bikash/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/bikash/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/bikash/.m2/repository/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar:/Users/bikash/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar:/Users/bikash/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/bikash/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/bikash/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/bikash/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/Users/bikash/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar:/Users/bikash/.m2/repository/org/apache/avro/avro/1.7.4/avro-1.7.4.jar:/Users/bikash/.m2/repository/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar:/Users/bikash/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant-launcher/1.8.1/ant-launcher-1.8.1.jar:/Users/bikash/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/bikash/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0-tests.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-minikdc/target/hadoop-minikdc-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-api/2.0.0-M15/apacheds-core-api-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-constants/2.0.0-M15/apacheds-core-constants-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-i18n/1.0.0-M20/api-i18n-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-client-api/1.0.0-M20/api-ldap-client-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-codec-core/1.0.0-M20/api-ldap-codec-core-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-aci/1.0.0-M20/api-ldap-extras-aci-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-util/1.0.0-M20/api-ldap-extras-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-model/1.0.0-M20/api-ldap-model-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/mina/mina-core/2.0.0-M5/mina-core-2.0.0-M5.jar:/Users/bikash/.m2/repository/net/sf/ehcache/ehcache-core/2.4.4/ehcache-core-2.4.4.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0-M15/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core/2.0.0-M15/apacheds-core-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-admin/2.0.0-M15/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authn/2.0.0-M15/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authz/2.0.0-M15/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0-M15/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-collective/2.0.0-M15/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-event/2.0.0-M15/apacheds-interceptors-event-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-exception/2.0.0-M15/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-journal/2.0.0-M15/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0-M15/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-operational/2.0.0-M15/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-referral/2.0.0-M15/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-schema/2.0.0-M15/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0-M15/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0-M15/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-trigger/1.0.0-M20/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-shared/2.0.0-M15/apacheds-protocol-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0-M15/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-shared/2.0.0-M15/apacheds-core-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-ldif-partition/2.0.0-M15/apacheds-ldif-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-xdbm-partition/2.0.0-M15/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-mavibot-partition/2.0.0-M15/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/mavibot/mavibot/1.0.0-M1/mavibot-1.0.0-M1.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-avl/2.0.0-M15/apacheds-core-avl-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-all/1.0.0-M20/api-all-1.0.0-M20.jar:/Users/bikash/.m2/repository/commons-pool/commons-pool/1.6/commons-pool-1.6.jar:/Users/bikash/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-jdbm-partition/2.0.0-M15/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-ldap/2.0.0-M15/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-ber/1.0.0-M20/api-asn1-ber-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec-api/1.0.0-M20/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec/1.0.0-M20/api-ldap-extras-codec-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-sp/1.0.0-M20/api-ldap-extras-sp-1.0.0-M20.jar:/Users/bikash/.m2/repository/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar:/Users/bikash/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-test/2.6.0/curator-test-2.6.0.jar:/Users/bikash/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar:/Users/bikash/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/bikash/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/bikash/.m2/repository/io/netty/netty/3.6.2.Final/netty-3.6.2.Final.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6-tests.jar:/Users/bikash/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/Users/bikash/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar:"
+    }, {
+      "key" : "java.specification.version",
+      "value" : "1.7"
+    }, {
+      "key" : "test.build.classes",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes"
+    } ],
+    "ObjectName" : "java.lang:type=Runtime"
+  } ]
+}
+2015-10-27 07:39:10,794 INFO  jmx.TestJMXJsonServlet (TestJMXJsonServlet.java:testQury(61)) - /jmx?qry=java.lang:type=Memory RESULT: {
+  "beans" : [ {
+    "name" : "java.lang:type=Memory",
+    "modelerType" : "sun.management.MemoryImpl",
+    "ObjectPendingFinalizationCount" : 0,
+    "HeapMemoryUsage" : {
+      "committed" : 128974848,
+      "init" : 134217728,
+      "max" : 954728448,
+      "used" : 16404560
+    },
+    "NonHeapMemoryUsage" : {
+      "committed" : 24576000,
+      "init" : 24576000,
+      "max" : 136314880,
+      "used" : 13888808
+    },
+    "Verbose" : false,
+    "ObjectName" : "java.lang:type=Memory"
+  } ]
+}
+2015-10-27 07:39:10,856 INFO  jmx.TestJMXJsonServlet (TestJMXJsonServlet.java:testQury(66)) - /jmx RESULT: {
+  "beans" : [ {
+    "name" : "java.lang:type=MemoryPool,name=PS Eden Space",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Name" : "PS Eden Space",
+    "Type" : "HEAP",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 34603008,
+      "init" : 34603008,
+      "max" : 347602944,
+      "used" : 11611256
+    },
+    "PeakUsage" : {
+      "committed" : 34603008,
+      "init" : 34603008,
+      "max" : 347602944,
+      "used" : 34603008
+    },
+    "MemoryManagerNames" : [ "PS MarkSweep", "PS Scavenge" ],
+    "UsageThresholdSupported" : false,
+    "CollectionUsageThreshold" : 0,
+    "CollectionUsageThresholdExceeded" : false,
+    "CollectionUsageThresholdCount" : 0,
+    "CollectionUsage" : {
+      "committed" : 34603008,
+      "init" : 34603008,
+      "max" : 347602944,
+      "used" : 0
+    },
+    "CollectionUsageThresholdSupported" : true,
+    "ObjectName" : "java.lang:type=MemoryPool,name=PS Eden Space"
+  }, {
+    "name" : "java.lang:type=Memory",
+    "modelerType" : "sun.management.MemoryImpl",
+    "ObjectPendingFinalizationCount" : 0,
+    "HeapMemoryUsage" : {
+      "committed" : 128974848,
+      "init" : 134217728,
+      "max" : 954728448,
+      "used" : 16404560
+    },
+    "NonHeapMemoryUsage" : {
+      "committed" : 24576000,
+      "init" : 24576000,
+      "max" : 136314880,
+      "used" : 13895544
+    },
+    "Verbose" : false,
+    "ObjectName" : "java.lang:type=Memory"
+  }, {
+    "name" : "java.lang:type=MemoryPool,name=PS Survivor Space",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Name" : "PS Survivor Space",
+    "Type" : "HEAP",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 5242880,
+      "init" : 5242880,
+      "max" : 5242880,
+      "used" : 4719560
+    },
+    "PeakUsage" : {
+      "committed" : 5242880,
+      "init" : 5242880,
+      "max" : 5242880,
+      "used" : 4719560
+    },
+    "MemoryManagerNames" : [ "PS MarkSweep", "PS Scavenge" ],
+    "UsageThresholdSupported" : false,
+    "CollectionUsageThreshold" : 0,
+    "CollectionUsageThresholdExceeded" : false,
+    "CollectionUsageThresholdCount" : 0,
+    "CollectionUsage" : {
+      "committed" : 5242880,
+      "init" : 5242880,
+      "max" : 5242880,
+      "used" : 4719560
+    },
+    "CollectionUsageThresholdSupported" : true,
+    "ObjectName" : "java.lang:type=MemoryPool,name=PS Survivor Space"
+  }, {
+    "name" : "java.lang:type=MemoryPool,name=Code Cache",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Name" : "Code Cache",
+    "Type" : "NON_HEAP",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 2555904,
+      "init" : 2555904,
+      "max" : 50331648,
+      "used" : 784768
+    },
+    "PeakUsage" : {
+      "committed" : 2555904,
+      "init" : 2555904,
+      "max" : 50331648,
+      "used" : 795072
+    },
+    "MemoryManagerNames" : [ "CodeCacheManager" ],
+    "UsageThreshold" : 0,
+    "UsageThresholdExceeded" : false,
+    "UsageThresholdCount" : 0,
+    "UsageThresholdSupported" : true,
+    "CollectionUsage" : null,
+    "CollectionUsageThresholdSupported" : false,
+    "ObjectName" : "java.lang:type=MemoryPool,name=Code Cache"
+  }, {
+    "name" : "java.lang:type=GarbageCollector,name=PS MarkSweep",
+    "modelerType" : "sun.management.GarbageCollectorImpl",
+    "LastGcInfo" : null,
+    "CollectionCount" : 0,
+    "CollectionTime" : 0,
+    "Name" : "PS MarkSweep",
+    "Valid" : true,
+    "MemoryPoolNames" : [ "PS Eden Space", "PS Survivor Space", "PS Old Gen", "PS Perm Gen" ],
+    "ObjectName" : "java.lang:type=GarbageCollector,name=PS MarkSweep"
+  }, {
+    "name" : "java.lang:type=Runtime",
+    "modelerType" : "sun.management.RuntimeImpl",
+    "Name" : "18867@bikash.netgear.com",
+    "ClassPath" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-annotations/target/hadoop-annotations-2.6.0.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/../lib/tools.jar:/Users/bikash/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/Users/bikash/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar:/Users/bikash/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/Users/bikash/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/bikash/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/bikash/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/bikash/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/bikash/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/bikash/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar:/Users/bikash/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/bikash/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar:/Users/bikash/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/Users/bikash/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/bikash/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/Users/bikash/.m2/repository/asm/asm/3.2/asm-3.2.jar:/Users/bikash/.m2/repository/tomcat/jasper-compiler/5.5.23/jasper-compiler-5.5.23.jar:/Users/bikash/.m2/repository/tomcat/jasper-runtime/5.5.23/jasper-runtime-5.5.23.jar:/Users/bikash/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/bikash/.m2/repository/commons-el/commons-el/1.0/commons-el-1.0.jar:/Users/bikash/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/bikash/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/bikash/.m2/repository/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar:/Users/bikash/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar:/Users/bikash/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/bikash/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/bikash/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/bikash/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/Users/bikash/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar:/Users/bikash/.m2/repository/org/apache/avro/avro/1.7.4/avro-1.7.4.jar:/Users/bikash/.m2/repository/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar:/Users/bikash/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant-launcher/1.8.1/ant-launcher-1.8.1.jar:/Users/bikash/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/bikash/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0-tests.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-minikdc/target/hadoop-minikdc-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-api/2.0.0-M15/apacheds-core-api-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-constants/2.0.0-M15/apacheds-core-constants-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-i18n/1.0.0-M20/api-i18n-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-client-api/1.0.0-M20/api-ldap-client-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-codec-core/1.0.0-M20/api-ldap-codec-core-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-aci/1.0.0-M20/api-ldap-extras-aci-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-util/1.0.0-M20/api-ldap-extras-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-model/1.0.0-M20/api-ldap-model-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/mina/mina-core/2.0.0-M5/mina-core-2.0.0-M5.jar:/Users/bikash/.m2/repository/net/sf/ehcache/ehcache-core/2.4.4/ehcache-core-2.4.4.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0-M15/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core/2.0.0-M15/apacheds-core-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-admin/2.0.0-M15/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authn/2.0.0-M15/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authz/2.0.0-M15/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0-M15/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-collective/2.0.0-M15/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-event/2.0.0-M15/apacheds-interceptors-event-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-exception/2.0.0-M15/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-journal/2.0.0-M15/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0-M15/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-operational/2.0.0-M15/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-referral/2.0.0-M15/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-schema/2.0.0-M15/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0-M15/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0-M15/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-trigger/1.0.0-M20/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-shared/2.0.0-M15/apacheds-protocol-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0-M15/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-shared/2.0.0-M15/apacheds-core-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-ldif-partition/2.0.0-M15/apacheds-ldif-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-xdbm-partition/2.0.0-M15/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-mavibot-partition/2.0.0-M15/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/mavibot/mavibot/1.0.0-M1/mavibot-1.0.0-M1.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-avl/2.0.0-M15/apacheds-core-avl-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-all/1.0.0-M20/api-all-1.0.0-M20.jar:/Users/bikash/.m2/repository/commons-pool/commons-pool/1.6/commons-pool-1.6.jar:/Users/bikash/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-jdbm-partition/2.0.0-M15/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-ldap/2.0.0-M15/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-ber/1.0.0-M20/api-asn1-ber-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec-api/1.0.0-M20/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec/1.0.0-M20/api-ldap-extras-codec-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-sp/1.0.0-M20/api-ldap-extras-sp-1.0.0-M20.jar:/Users/bikash/.m2/repository/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar:/Users/bikash/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-test/2.6.0/curator-test-2.6.0.jar:/Users/bikash/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar:/Users/bikash/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/bikash/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/bikash/.m2/repository/io/netty/netty/3.6.2.Final/netty-3.6.2.Final.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6-tests.jar:/Users/bikash/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/Users/bikash/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar:",
+    "StartTime" : 1445945948070,
+    "BootClassPathSupported" : true,
+    "VmName" : "Java HotSpot(TM) 64-Bit Server VM",
+    "VmVendor" : "Oracle Corporation",
+    "VmVersion" : "24.75-b04",
+    "LibraryPath" : "/Users/bikash/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.",
+    "BootClassPath" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes",
+    "SpecName" : "Java Virtual Machine Specification",
+    "SpecVendor" : "Oracle Corporation",
+    "SpecVersion" : "1.7",
+    "ManagementSpecVersion" : "1.2",
+    "InputArguments" : [ "-Xmx1024m", "-XX:+HeapDumpOnOutOfMemoryError" ],
+    "Uptime" : 2742,
+    "SystemProperties" : [ {
+      "key" : "java.vm.version",
+      "value" : "24.75-b04"
+    }, {
+      "key" : "java.vendor.url",
+      "value" : "http://java.oracle.com/"
+    }, {
+      "key" : "sun.jnu.encoding",
+      "value" : "UTF-8"
+    }, {
+      "key" : "java.vm.info",
+      "value" : "mixed mode"
+    }, {
+      "key" : "user.dir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common"
+    }, {
+      "key" : "sun.cpu.isalist",
+      "value" : ""
+    }, {
+      "key" : "java.awt.graphicsenv",
+      "value" : "sun.awt.CGraphicsEnvironment"
+    }, {
+      "key" : "sun.os.patch.level",
+      "value" : "unknown"
+    }, {
+      "key" : "hadoop.log.dir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/log"
+    }, {
+      "key" : "java.io.tmpdir",
+      "value" : "/var/folders/j3/bdpymcq1045gxk1mdtp_myvw0000gn/T/"
+    }, {
+      "key" : "user.home",
+      "value" : "/Users/bikash"
+    }, {
+      "key" : "java.awt.printerjob",
+      "value" : "sun.lwawt.macosx.CPrinterJob"
+    }, {
+      "key" : "java.version",
+      "value" : "1.7.0_75"
+    }, {
+      "key" : "hadoop.tmp.dir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test"
+    }, {
+      "key" : "file.encoding.pkg",
+      "value" : "sun.io"
+    }, {
+      "key" : "java.vendor.url.bug",
+      "value" : "http://bugreport.sun.com/bugreport/"
+    }, {
+      "key" : "test.cache.data",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes"
+    }, {
+      "key" : "file.encoding",
+      "value" : "UTF-8"
+    }, {
+      "key" : "sun.java.command",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/surefire/surefirebooter769064194926581219.jar /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/surefire/surefire3508079645707925990tmp /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/surefire/surefire_237642900955549115784tmp"
+    }, {
+      "key" : "line.separator",
+      "value" : "\n"
+    }, {
+      "key" : "java.vm.specification.vendor",
+      "value" : "Oracle Corporation"
+    }, {
+      "key" : "java.security.egd",
+      "value" : "file:///dev/urandom"
+    }, {
+      "key" : "java.vm.vendor",
+      "value" : "Oracle Corporation"
+    }, {
+      "key" : "java.class.path",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-annotations/target/hadoop-annotations-2.6.0.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/../lib/tools.jar:/Users/bikash/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/Users/bikash/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar:/Users/bikash/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/Users/bikash/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/bikash/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/bikash/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/bikash/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/bikash/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/bikash/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar:/Users/bikash/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/bikash/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar:/Users/bikash/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/Users/bikash/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/bikash/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/Users/bikash/.m2/repository/asm/asm/3.2/asm-3.2.jar:/Users/bikash/.m2/repository/tomcat/jasper-compiler/5.5.23/jasper-compiler-5.5.23.jar:/Users/bikash/.m2/repository/tomcat/jasper-runtime/5.5.23/jasper-runtime-5.5.23.jar:/Users/bikash/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/bikash/.m2/repository/commons-el/commons-el/1.0/commons-el-1.0.jar:/Users/bikash/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/bikash/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/bikash/.m2/repository/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar:/Users/bikash/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar:/Users/bikash/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/bikash/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/bikash/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/bikash/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/Users/bikash/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar:/Users/bikash/.m2/repository/org/apache/avro/avro/1.7.4/avro-1.7.4.jar:/Users/bikash/.m2/repository/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar:/Users/bikash/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant-launcher/1.8.1/ant-launcher-1.8.1.jar:/Users/bikash/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/bikash/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0-tests.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-minikdc/target/hadoop-minikdc-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-api/2.0.0-M15/apacheds-core-api-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-constants/2.0.0-M15/apacheds-core-constants-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-i18n/1.0.0-M20/api-i18n-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-client-api/1.0.0-M20/api-ldap-client-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-codec-core/1.0.0-M20/api-ldap-codec-core-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-aci/1.0.0-M20/api-ldap-extras-aci-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-util/1.0.0-M20/api-ldap-extras-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-model/1.0.0-M20/api-ldap-model-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/mina/mina-core/2.0.0-M5/mina-core-2.0.0-M5.jar:/Users/bikash/.m2/repository/net/sf/ehcache/ehcache-core/2.4.4/ehcache-core-2.4.4.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0-M15/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core/2.0.0-M15/apacheds-core-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-admin/2.0.0-M15/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authn/2.0.0-M15/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authz/2.0.0-M15/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0-M15/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-collective/2.0.0-M15/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-event/2.0.0-M15/apacheds-interceptors-event-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-exception/2.0.0-M15/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-journal/2.0.0-M15/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0-M15/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-operational/2.0.0-M15/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-referral/2.0.0-M15/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-schema/2.0.0-M15/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0-M15/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0-M15/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-trigger/1.0.0-M20/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-shared/2.0.0-M15/apacheds-protocol-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0-M15/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-shared/2.0.0-M15/apacheds-core-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-ldif-partition/2.0.0-M15/apacheds-ldif-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-xdbm-partition/2.0.0-M15/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-mavibot-partition/2.0.0-M15/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/mavibot/mavibot/1.0.0-M1/mavibot-1.0.0-M1.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-avl/2.0.0-M15/apacheds-core-avl-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-all/1.0.0-M20/api-all-1.0.0-M20.jar:/Users/bikash/.m2/repository/commons-pool/commons-pool/1.6/commons-pool-1.6.jar:/Users/bikash/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-jdbm-partition/2.0.0-M15/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-ldap/2.0.0-M15/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-ber/1.0.0-M20/api-asn1-ber-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec-api/1.0.0-M20/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec/1.0.0-M20/api-ldap-extras-codec-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-sp/1.0.0-M20/api-ldap-extras-sp-1.0.0-M20.jar:/Users/bikash/.m2/repository/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar:/Users/bikash/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-test/2.6.0/curator-test-2.6.0.jar:/Users/bikash/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar:/Users/bikash/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/bikash/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/bikash/.m2/repository/io/netty/netty/3.6.2.Final/netty-3.6.2.Final.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6-tests.jar:/Users/bikash/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/Users/bikash/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar:"
+    }, {
+      "key" : "sun.io.unicode.encoding",
+      "value" : "UnicodeBig"
+    }, {
+      "key" : "user.language",
+      "value" : "en"
+    }, {
+      "key" : "os.arch",
+      "value" : "x86_64"
+    }, {
+      "key" : "user.name",
+      "value" : "bikash"
+    }, {
+      "key" : "java.runtime.version",
+      "value" : "1.7.0_75-b13"
+    }, {
+      "key" : "sun.boot.class.path",
+      "value" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/classes"
+    }, {
+      "key" : "gopherProxySet",
+      "value" : "false"
+    }, {
+      "key" : "sun.cpu.endian",
+      "value" : "little"
+    }, {
+      "key" : "ftp.nonProxyHosts",
+      "value" : "127.0.0.1"
+    }, {
+      "key" : "awt.toolkit",
+      "value" : "sun.lwawt.macosx.LWCToolkit"
+    }, {
+      "key" : "sun.boot.library.path",
+      "value" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib"
+    }, {
+      "key" : "java.home",
+      "value" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre"
+    }, {
+      "key" : "surefire.real.class.path",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/surefire/surefirebooter769064194926581219.jar"
+    }, {
+      "key" : "java.vm.name",
+      "value" : "Java HotSpot(TM) 64-Bit Server VM"
+    }, {
+      "key" : "java.endorsed.dirs",
+      "value" : "/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/endorsed"
+    }, {
+      "key" : "basedir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common"
+    }, {
+      "key" : "java.net.preferIPv4Stack",
+      "value" : "true"
+    }, {
+      "key" : "test.build.dir",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-dir"
+    }, {
+      "key" : "sun.management.compiler",
+      "value" : "HotSpot 64-Bit Tiered Compilers"
+    }, {
+      "key" : "java.runtime.name",
+      "value" : "Java(TM) SE Runtime Environment"
+    }, {
+      "key" : "user.country.format",
+      "value" : "NO"
+    }, {
+      "key" : "test.build.data",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test/data"
+    }, {
+      "key" : "java.library.path",
+      "value" : "/Users/bikash/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."
+    }, {
+      "key" : "file.separator",
+      "value" : "/"
+    }, {
+      "key" : "java.specification.vendor",
+      "value" : "Oracle Corporation"
+    }, {
+      "key" : "java.vm.specification.version",
+      "value" : "1.7"
+    }, {
+      "key" : "sun.java.launcher",
+      "value" : "SUN_STANDARD"
+    }, {
+      "key" : "user.timezone",
+      "value" : "America/New_York"
+    }, {
+      "key" : "http.nonProxyHosts",
+      "value" : "127.0.0.1"
+    }, {
+      "key" : "os.name",
+      "value" : "Mac OS X"
+    }, {
+      "key" : "path.separator",
+      "value" : ":"
+    }, {
+      "key" : "java.ext.dirs",
+      "value" : "/Users/bikash/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"
+    }, {
+      "key" : "sun.arch.data.model",
+      "value" : "64"
+    }, {
+      "key" : "java.specification.name",
+      "value" : "Java Platform API Specification"
+    }, {
+      "key" : "os.version",
+      "value" : "10.9.5"
+    }, {
+      "key" : "test.build.webapps",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes/webapps"
+    }, {
+      "key" : "user.country",
+      "value" : "US"
+    }, {
+      "key" : "java.class.version",
+      "value" : "51.0"
+    }, {
+      "key" : "socksNonProxyHosts",
+      "value" : "127.0.0.1"
+    }, {
+      "key" : "java.vendor",
+      "value" : "Oracle Corporation"
+    }, {
+      "key" : "java.vm.specification.name",
+      "value" : "Java Virtual Machine Specification"
+    }, {
+      "key" : "localRepository",
+      "value" : "/Users/bikash/.m2/repository"
+    }, {
+      "key" : "java.security.krb5.conf",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/src/test/resources/krb5.conf"
+    }, {
+      "key" : "surefire.test.class.path",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/classes:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-annotations/target/hadoop-annotations-2.6.0.jar:/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/../lib/tools.jar:/Users/bikash/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/Users/bikash/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math3/3.1.1/commons-math3-3.1.1.jar:/Users/bikash/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/Users/bikash/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/bikash/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/Users/bikash/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/bikash/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/Users/bikash/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/Users/bikash/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty/6.1.26/jetty-6.1.26.jar:/Users/bikash/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-json/1.9/jersey-json-1.9.jar:/Users/bikash/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1.jar:/Users/bikash/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.3-1/jaxb-impl-2.2.3-1.jar:/Users/bikash/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/Users/bikash/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/bikash/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/Users/bikash/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/Users/bikash/.m2/repository/asm/asm/3.2/asm-3.2.jar:/Users/bikash/.m2/repository/tomcat/jasper-compiler/5.5.23/jasper-compiler-5.5.23.jar:/Users/bikash/.m2/repository/tomcat/jasper-runtime/5.5.23/jasper-runtime-5.5.23.jar:/Users/bikash/.m2/repository/javax/servlet/jsp/jsp-api/2.1/jsp-api-2.1.jar:/Users/bikash/.m2/repository/commons-el/commons-el/1.0/commons-el-1.0.jar:/Users/bikash/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/bikash/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/Users/bikash/.m2/repository/net/java/dev/jets3t/jets3t/0.9.0/jets3t-0.9.0.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpclient/4.2.5/httpclient-4.2.5.jar:/Users/bikash/.m2/repository/org/apache/httpcomponents/httpcore/4.2.5/httpcore-4.2.5.jar:/Users/bikash/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/0.4/java-xmlbuilder-0.4.jar:/Users/bikash/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/bikash/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/bikash/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/bikash/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/Users/bikash/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/Users/bikash/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/Users/bikash/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/Users/bikash/.m2/repository/org/mockito/mockito-all/1.8.5/mockito-all-1.8.5.jar:/Users/bikash/.m2/repository/org/apache/avro/avro/1.7.4/avro-1.7.4.jar:/Users/bikash/.m2/repository/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar:/Users/bikash/.m2/repository/org/xerial/snappy/snappy-java/1.0.4.1/snappy-java-1.0.4.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant/1.8.1/ant-1.8.1.jar:/Users/bikash/.m2/repository/org/apache/ant/ant-launcher/1.8.1/ant-launcher-1.8.1.jar:/Users/bikash/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/Users/bikash/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-auth/target/hadoop-auth-2.6.0-tests.jar:/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-minikdc/target/hadoop-minikdc-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-api/2.0.0-M15/apacheds-core-api-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-constants/2.0.0-M15/apacheds-core-constants-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-i18n/1.0.0-M20/api-i18n-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-client-api/1.0.0-M20/api-ldap-client-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-codec-core/1.0.0-M20/api-ldap-codec-core-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-aci/1.0.0-M20/api-ldap-extras-aci-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-util/1.0.0-M20/api-ldap-extras-util-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-model/1.0.0-M20/api-ldap-model-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/mina/mina-core/2.0.0-M5/mina-core-2.0.0-M5.jar:/Users/bikash/.m2/repository/net/sf/ehcache/ehcache-core/2.4.4/ehcache-core-2.4.4.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptor-kerberos/2.0.0-M15/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core/2.0.0-M15/apacheds-core-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-admin/2.0.0-M15/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authn/2.0.0-M15/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-authz/2.0.0-M15/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-changelog/2.0.0-M15/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-collective/2.0.0-M15/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-event/2.0.0-M15/apacheds-interceptors-event-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-exception/2.0.0-M15/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-journal/2.0.0-M15/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-normalization/2.0.0-M15/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-operational/2.0.0-M15/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-referral/2.0.0-M15/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-schema/2.0.0-M15/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-subtree/2.0.0-M15/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-interceptors-trigger/2.0.0-M15/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-trigger/1.0.0-M20/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-shared/2.0.0-M15/apacheds-protocol-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-kerberos/2.0.0-M15/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-shared/2.0.0-M15/apacheds-core-shared-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-ldif-partition/2.0.0-M15/apacheds-ldif-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-xdbm-partition/2.0.0-M15/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-mavibot-partition/2.0.0-M15/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/mavibot/mavibot/1.0.0-M1/mavibot-1.0.0-M1.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-core-avl/2.0.0-M15/apacheds-core-avl-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-all/1.0.0-M20/api-all-1.0.0-M20.jar:/Users/bikash/.m2/repository/commons-pool/commons-pool/1.6/commons-pool-1.6.jar:/Users/bikash/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-jdbm-partition/2.0.0-M15/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/jdbm/apacheds-jdbm1/2.0.0-M2/apacheds-jdbm1-2.0.0-M2.jar:/Users/bikash/.m2/repository/org/apache/directory/server/apacheds-protocol-ldap/2.0.0-M15/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-asn1-ber/1.0.0-M20/api-asn1-ber-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec-api/1.0.0-M20/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-codec/1.0.0-M20/api-ldap-extras-codec-1.0.0-M20.jar:/Users/bikash/.m2/repository/org/apache/directory/api/api-ldap-extras-sp/1.0.0-M20/api-ldap-extras-sp-1.0.0-M20.jar:/Users/bikash/.m2/repository/bouncycastle/bcprov-jdk15/140/bcprov-jdk15-140.jar:/Users/bikash/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-test/2.6.0/curator-test-2.6.0.jar:/Users/bikash/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-math/2.2/commons-math-2.2.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar:/Users/bikash/.m2/repository/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar:/Users/bikash/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/bikash/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/Users/bikash/.m2/repository/io/netty/netty/3.6.2.Final/netty-3.6.2.Final.jar:/Users/bikash/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6-tests.jar:/Users/bikash/.m2/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Users/bikash/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/Users/bikash/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar:"
+    }, {
+      "key" : "java.specification.version",
+      "value" : "1.7"
+    }, {
+      "key" : "test.build.classes",
+      "value" : "/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes"
+    } ],
+    "ObjectName" : "java.lang:type=Runtime"
+  }, {
+    "name" : "java.nio:type=BufferPool,name=direct",
+    "modelerType" : "sun.management.ManagementFactoryHelper$1",
+    "Name" : "direct",
+    "Count" : 2,
+    "TotalCapacity" : 90112,
+    "MemoryUsed" : 90112,
+    "ObjectName" : "java.nio:type=BufferPool,name=direct"
+  }, {
+    "name" : "java.lang:type=ClassLoading",
+    "modelerType" : "sun.management.ClassLoadingImpl",
+    "TotalLoadedClassCount" : 2140,
+    "Verbose" : false,
+    "LoadedClassCount" : 2140,
+    "UnloadedClassCount" : 0,
+    "ObjectName" : "java.lang:type=ClassLoading"
+  }, {
+    "name" : "java.lang:type=Threading",
+    "modelerType" : "sun.management.ThreadImpl",
+    "ThreadAllocatedMemorySupported" : true,
+    "ThreadAllocatedMemoryEnabled" : true,
+    "ThreadCount" : 8,
+    "ThreadContentionMonitoringEnabled" : false,
+    "AllThreadIds" : [ 13, 12, 11, 10, 4, 3, 2, 1 ],
+    "ThreadContentionMonitoringSupported" : true,
+    "CurrentThreadCpuTimeSupported" : true,
+    "ObjectMonitorUsageSupported" : true,
+    "SynchronizerUsageSupported" : true,
+    "ThreadCpuTimeEnabled" : true,
+    "PeakThreadCount" : 8,
+    "DaemonThreadCount" : 7,
+    "TotalStartedThreadCount" : 8,
+    "ThreadCpuTimeSupported" : true,
+    "CurrentThreadCpuTime" : 189492000,
+    "CurrentThreadUserTime" : 178938000,
+    "ObjectName" : "java.lang:type=Threading"
+  }, {
+    "name" : "java.nio:type=BufferPool,name=mapped",
+    "modelerType" : "sun.management.ManagementFactoryHelper$1",
+    "Name" : "mapped",
+    "Count" : 0,
+    "TotalCapacity" : 0,
+    "MemoryUsed" : 0,
+    "ObjectName" : "java.nio:type=BufferPool,name=mapped"
+  }, {
+    "name" : "java.util.logging:type=Logging",
+    "modelerType" : "sun.management.ManagementFactoryHelper$PlatformLoggingImpl",
+    "ObjectName" : "java.util.logging:type=Logging",
+    "LoggerNames" : [ "javax.management.snmp", "global", "sun.net.www.protocol.http.HttpURLConnection", "javax.management.notification", "javax.management.modelmbean", "javax.management.timer", "com.google.common.collect.MapMakerInternalMap", "javax.management", "javax.management.mlet", "javax.management.mbeanserver", "javax.management.snmp.daemon", "javax.management.relation", "javax.management.monitor", "javax.management.misc", "" ]
+  }, {
+    "name" : "java.lang:type=Compilation",
+    "modelerType" : "sun.management.CompilationImpl",
+    "Name" : "HotSpot 64-Bit Tiered Compilers",
+    "TotalCompilationTime" : 1563,
+    "CompilationTimeMonitoringSupported" : true,
+    "ObjectName" : "java.lang:type=Compilation"
+  }, {
+    "name" : "com.sun.management:type=HotSpotDiagnostic",
+    "modelerType" : "sun.management.HotSpotDiagnostic",
+    "DiagnosticOptions" : [ {
+      "name" : "HeapDumpBeforeFullGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "HeapDumpAfterFullGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "HeapDumpOnOutOfMemoryError",
+      "origin" : "VM_CREATION",
+      "value" : "true",
+      "writeable" : true
+    }, {
+      "name" : "HeapDumpPath",
+      "origin" : "DEFAULT",
+      "value" : "",
+      "writeable" : true
+    }, {
+      "name" : "CMSAbortablePrecleanWaitMillis",
+      "origin" : "DEFAULT",
+      "value" : "100",
+      "writeable" : true
+    }, {
+      "name" : "CMSWaitDuration",
+      "origin" : "DEFAULT",
+      "value" : "2000",
+      "writeable" : true
+    }, {
+      "name" : "PrintGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintGCDetails",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintGCDateStamps",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintGCTimeStamps",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintClassHistogramBeforeFullGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintClassHistogramAfterFullGC",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "PrintClassHistogram",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "MinHeapFreeRatio",
+      "origin" : "DEFAULT",
+      "value" : "0",
+      "writeable" : true
+    }, {
+      "name" : "MaxHeapFreeRatio",
+      "origin" : "DEFAULT",
+      "value" : "100",
+      "writeable" : true
+    }, {
+      "name" : "PrintConcurrentLocks",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    }, {
+      "name" : "UnlockCommercialFeatures",
+      "origin" : "DEFAULT",
+      "value" : "false",
+      "writeable" : true
+    } ],
+    "ObjectName" : "com.sun.management:type=HotSpotDiagnostic"
+  }, {
+    "name" : "java.lang:type=MemoryPool,name=PS Perm Gen",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Name" : "PS Perm Gen",
+    "Type" : "NON_HEAP",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 22020096,
+      "init" : 22020096,
+      "max" : 85983232,
+      "used" : 13148032
+    },
+    "PeakUsage" : {
+      "committed" : 22020096,
+      "init" : 22020096,
+      "max" : 85983232,
+      "used" : 13148032
+    },
+    "MemoryManagerNames" : [ "PS MarkSweep" ],
+    "UsageThreshold" : 0,
+    "UsageThresholdExceeded" : false,
+    "UsageThresholdCount" : 0,
+    "UsageThresholdSupported" : true,
+    "CollectionUsageThreshold" : 0,
+    "CollectionUsageThresholdExceeded" : false,
+    "CollectionUsageThresholdCount" : 0,
+    "CollectionUsage" : {
+      "committed" : 0,
+      "init" : 22020096,
+      "max" : 85983232,
+      "used" : 0
+    },
+    "CollectionUsageThresholdSupported" : true,
+    "ObjectName" : "java.lang:type=MemoryPool,name=PS Perm Gen"
+  }, {
+    "name" : "java.lang:type=OperatingSystem",
+    "modelerType" : "com.sun.management.UnixOperatingSystem",
+    "OpenFileDescriptorCount" : 157,
+    "MaxFileDescriptorCount" : 10240,
+    "CommittedVirtualMemorySize" : 3842719744,
+    "TotalSwapSpaceSize" : 5368709120,
+    "FreeSwapSpaceSize" : 689176576,
+    "ProcessCpuTime" : 2592395000,
+    "FreePhysicalMemorySize" : 304295936,
+    "TotalPhysicalMemorySize" : 8589934592,
+    "SystemCpuLoad" : 0.0,
+    "ProcessCpuLoad" : 0.0,
+    "Name" : "Mac OS X",
+    "Version" : "10.9.5",
+    "AvailableProcessors" : 4,
+    "Arch" : "x86_64",
+    "SystemLoadAverage" : 8.84765625,
+    "ObjectName" : "java.lang:type=OperatingSystem"
+  }, {
+    "name" : "java.lang:type=GarbageCollector,name=PS Scavenge",
+    "modelerType" : "sun.management.GarbageCollectorImpl",
+    "LastGcInfo" : {
+      "GcThreadCount" : 4,
+      "duration" : 18,
+      "endTime" : 1830,
+      "id" : 1,
+      "memoryUsageAfterGc" : [ {
+        "key" : "Code Cache",
+        "value" : {
+          "committed" : 2555904,
+          "init" : 2555904,
+          "max" : 50331648,
+          "used" : 714880
+        }
+      }, {
+        "key" : "PS Survivor Space",
+        "value" : {
+          "committed" : 5242880,
+          "init" : 5242880,
+          "max" : 5242880,
+          "used" : 4719560
+        }
+      }, {
+        "key" : "PS Perm Gen",
+        "value" : {
+          "committed" : 22020096,
+          "init" : 22020096,
+          "max" : 85983232,
+          "used" : 10062040
+        }
+      }, {
+        "key" : "PS Old Gen",
+        "value" : {
+          "committed" : 89128960,
+          "init" : 89128960,
+          "max" : 715653120,
+          "used" : 73744
+        }
+      }, {
+        "key" : "PS Eden Space",
+        "value" : {
+          "committed" : 34603008,
+          "init" : 34603008,
+          "max" : 347602944,
+          "used" : 0
+        }
+      } ],
+      "memoryUsageBeforeGc" : [ {
+        "key" : "Code Cache",
+        "value" : {
+          "committed" : 2555904,
+          "init" : 2555904,
+          "max" : 50331648,
+          "used" : 714880
+        }
+      }, {
+        "key" : "PS Survivor Space",
+        "value" : {
+          "committed" : 5242880,
+          "init" : 5242880,
+          "max" : 5242880,
+          "used" : 0
+        }
+      }, {
+        "key" : "PS Perm Gen",
+        "value" : {
+          "committed" : 22020096,
+          "init" : 22020096,
+          "max" : 85983232,
+          "used" : 10062040
+        }
+      }, {
+        "key" : "PS Old Gen",
+        "value" : {
+          "committed" : 89128960,
+          "init" : 89128960,
+          "max" : 715653120,
+          "used" : 0
+        }
+      }, {
+        "key" : "PS Eden Space",
+        "value" : {
+          "committed" : 34603008,
+          "init" : 34603008,
+          "max" : 347602944,
+          "used" : 34603008
+        }
+      } ],
+      "startTime" : 1812
+    },
+    "CollectionCount" : 1,
+    "CollectionTime" : 17,
+    "Name" : "PS Scavenge",
+    "Valid" : true,
+    "MemoryPoolNames" : [ "PS Eden Space", "PS Survivor Space" ],
+    "ObjectName" : "java.lang:type=GarbageCollector,name=PS Scavenge"
+  }, {
+    "name" : "java.lang:type=MemoryPool,name=PS Old Gen",
+    "modelerType" : "sun.management.MemoryPoolImpl",
+    "Name" : "PS Old Gen",
+    "Type" : "HEAP",
+    "Valid" : true,
+    "Usage" : {
+      "committed" : 89128960,
+      "init" : 89128960,
+      "max" : 715653120,
+      "used" : 73744
+    },
+    "PeakUsage" : {
+      "committed" : 89128960,
+      "init" : 89128960,
+      "max" : 715653120,
+      "used" : 73744
+    },
+    "MemoryManagerNames" : [ "PS MarkSweep" ],
+    "UsageThreshold" : 0,
+    "UsageThresholdExceeded" : false,
+    "UsageThresholdCount" : 0,
+    "UsageThresholdSupported" : true,
+    "CollectionUsageThreshold" : 0,
+    "CollectionUsageThresholdExceeded" : false,
+    "CollectionUsageThresholdCount" : 0,
+    "CollectionUsage" : {
+      "committed" : 0,
+      "init" : 89128960,
+      "max" : 715653120,
+      "used" : 0
+    },
+    "CollectionUsageThresholdSupported" : true,
+    "ObjectName" : "java.lang:type=MemoryPool,name=PS Old Gen"
+  }, {
+    "name" : "JMImplementation:type=MBeanServerDelegate",
+    "modelerType" : "javax.management.MBeanServerDelegate",
+    "MBeanServerId" : "bikash.netgear.com_1445945950211",
+    "SpecificationName" : "Java Management Extensions",
+    "SpecificationVersion" : "1.4",
+    "SpecificationVendor" : "Oracle Corporation",
+    "ImplementationName" : "JMX",
+    "ImplementationVersion" : "1.7.0_75-b13",
+    "ImplementationVendor" : "Oracle Corporation"
+  }, {
+    "name" : "java.lang:type=MemoryManager,name=CodeCacheManager",
+    "modelerType" : "sun.management.MemoryManagerImpl",
+    "Name" : "CodeCacheManager",
+    "Valid" : true,
+    "MemoryPoolNames" : [ "Code Cache" ],
+    "ObjectName" : "java.lang:type=MemoryManager,name=CodeCacheManager"
+  } ]
+}
+2015-10-27 07:39:10,861 INFO  jmx.TestJMXJsonServlet (TestJMXJsonServlet.java:testQury(72)) - /jmx RESULT: {
+  "beans" : [ {
+    "name" : "java.lang:type=Memory",
+    "modelerType" : "sun.management.MemoryImpl",
+    "HeapMemoryUsage" : {
+      "committed" : 128974848,
+      "init" : 134217728,
+      "max" : 954728448,
+      "used" : 18973200
+    }
+  } ]
+}
+2015-10-27 07:39:10,863 INFO  jmx.TestJMXJsonServlet (TestJMXJsonServlet.java:testQury(79)) - /jmx RESULT: {
+  "result" : "ERROR",
+  "message" : "query format is not as expected."
+}
+2015-10-27 07:39:10,866 INFO  jmx.TestJMXJsonServlet (TestJMXJsonServlet.java:testQury(84)) - /jmx?qry=java.lang:type=Memory&callback=mycallback RESULT: mycallback1({
+  "beans" : [ {
+    "name" : "java.lang:type=Memory",
+    "modelerType" : "sun.management.MemoryImpl",
+    "ObjectPendingFinalizationCount" : 0,
+    "HeapMemoryUsage" : {
+      "committed" : 128974848,
+      "init" : 134217728,
+      "max" : 954728448,
+      "used" : 18973200
+    },
+    "NonHeapMemoryUsage" : {
+      "committed" : 24576000,
+      "init" : 24576000,
+      "max" : 136314880,
+      "used" : 14024048
+    },
+    "Verbose" : false,
+    "ObjectName" : "java.lang:type=Memory"
+  } ]
+});
+2015-10-27 07:39:10,869 INFO  jmx.TestJMXJsonServlet (TestJMXJsonServlet.java:testQury(91)) - /jmx RESULT: mycallback2({
+  "result" : "ERROR",
+  "message" : "query format is not as expected."
+});
+2015-10-27 07:39:10,874 INFO  jmx.TestJMXJsonServlet (TestJMXJsonServlet.java:testQury(99)) - /jmx RESULT: mycallback3({
+  "beans" : [ {
+    "name" : "java.lang:type=Memory",
+    "modelerType" : "sun.management.MemoryImpl",
+    "HeapMemoryUsage" : {
+      "committed" : 128974848,
+      "init" : 134217728,
+      "max" : 954728448,
+      "used" : 19734640
+    }
+  } ]
+});
+2015-10-27 07:39:10,879 INFO  mortbay.log (Slf4jLog.java:info(67)) - Stopped HttpServer2$SelectChannelConnectorWithSafeStartup@localhost:0

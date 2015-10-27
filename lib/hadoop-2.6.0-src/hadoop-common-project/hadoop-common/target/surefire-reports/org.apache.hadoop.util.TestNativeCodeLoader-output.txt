@@ -1,0 +1,1 @@
+2015-10-27 07:44:11,467 INFO  util.TestNativeCodeLoader (TestNativeCodeLoader.java:testNativeCodeLoaded(44)) - TestNativeCodeLoader: libhadoop.so testing is not required.

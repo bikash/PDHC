@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy toDir="/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes">
+    <fileset dir="/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs">
+      <include name="test-untar.tar"/>
+      <include name="test-untar.tgz"/>
+    </fileset>
+  </copy>
+</target>
+</project>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.hadoop.fs.contract.ftp.TestFTPContractMkdir
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.482 sec - in org.apache.hadoop.fs.contract.ftp.TestFTPContractMkdir

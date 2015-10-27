@@ -1,0 +1,1 @@
+2015-10-27 07:40:14,734 WARN  util.MetricsCache (MetricsCache.java:removeEldestEntry(59)) - Metrics cache overflow at 1001 for [MetricsTag{info=MetricsInfoImpl{name=t0, description=}, value=0}]=Record{tags={}, metrics={m=Mock for AbstractMetric, hashCode: 1117961999}}
