@@ -1,3 +1,10 @@
+//---------------------------------------------------------------
+// Author: Bikash Agrawal
+// Date: 29th Oct 2015
+// Description: This file reads the metadata from the namenode.
+// Reference: 
+//---------------------------------------------------------------
+
 package org.apache.hadoop.fs;
 
 import java.io.BufferedReader;
@@ -21,11 +28,9 @@ import org.apache.hadoop.util.Progressable;
 public class FileAPIsystem extends FileSystem {
 	// ---------------------------------------------------------------
 	// File system interface for Hadoop which connects to
-	// a user implemented network API that follows the adamfs protocol.
+	// a user implemented network API that follows the fs protocol.
 	// Handles requests and responses between Hadoop and
-	// the other file system. Metadata is encapsulated in TCP packets
-	// specified by the adamfs protocol while read/write streams are 
-	// handled through socket streams.
+	// the other file system. 
 	// ---------------------------------------------------------------
 
 	private URI uri;
@@ -52,7 +57,7 @@ public class FileAPIsystem extends FileSystem {
 		LOG.info("<APIFS> fs.default.name: " + fs_default_name);
 		this.uri = URI.create(uri.getScheme() + "://" + uri.getAuthority());
 		LOG.info("<APIFS> uri at initialize: " + uri);
-		// conf.set("mapred.system.dir", "/home/adam/hadoop/AdamFS/temp");
+		// conf.set("mapred.system.dir", "/tmp");
 		this.workingDir = new Path("/user", System.getProperty("user.name"))
 				.makeQualified(this);
 		LOG.info("<APIFS> workingDir: " + this.workingDir);
@@ -456,4 +461,6 @@ public class FileAPIsystem extends FileSystem {
 		close_connection();
 		return response;
 	}
+	
+	
 } // end class
