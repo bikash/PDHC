@@ -11,15 +11,15 @@ public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		try{
+		//try{
             
-            Configuration conf = new Configuration();
-            conf.set("fs.defaultFS", "hdfs://localhost:9000/");
+            //Configuration conf = new Configuration();
+            //conf.set("fs.defaultFS", "hdfs://localhost:9000/");
             HDFSservice hdfsservice = new HDFSservice();
             
-            FileAPIsystem fsapi = new FileAPIsystem();
-            URI uri = fsapi.getUri();
-            fsapi.initialize(uri, conf);
+            //FileAPIsystem fsapi = new FileAPIsystem();
+            //URI uri = fsapi.getUri();
+            //fsapi.initialize(uri, conf);
             //conf.set("fs.defaultFS", "hdfs://128.210.139.187:9000/");
            
             //FileSystem fs = FileSystem.get(conf);
@@ -34,9 +34,9 @@ public class App {
                     line=br.readLine();
                 }
             }*/
-        }catch(Exception e){
-            System.out.println("File not found");
-        }
+        //}catch(Exception e){
+         //   System.out.println("File not found");
+       // }
 	}
 	
 
