@@ -48,7 +48,7 @@ public class FileOperation {
       dest = dest + filename;
     }
 
-    // System.out.println("Adding file to " + destination);
+    System.out.println("Adding file to " + dest);
 
     // Check if the file already exists
     Path path = new Path(dest);

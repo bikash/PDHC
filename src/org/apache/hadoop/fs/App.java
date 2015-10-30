@@ -16,7 +16,7 @@ public class App {
             
             //Configuration conf = new Configuration();
             //conf.set("fs.defaultFS", "hdfs://localhost:9000/");
-           // HDFSservice hdfsservice = new HDFSservice();
+            HDFSservice hdfsservice = new HDFSservice();
             
             //FileAPIsystem fsapi = new FileAPIsystem();
             //URI uri = fsapi.getUri();
