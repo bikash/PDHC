@@ -1,3 +1,10 @@
+//---------------------------------------------------------------
+// Author: Bikash Agrawal
+// Date: 29th Oct 2015
+// Description: This file is used to read, create, delete file in HDFS
+// Reference: 
+//---------------------------------------------------------------
+
 package org.apache.hadoop.fs;
 
 import java.io.BufferedReader;
@@ -35,16 +42,21 @@ public class HDFSservice {
 	private Config c;
 	private FileSystem fs;
 
-	public HDFSservice() {
-		this.c = ConfigProvider.getConfig();
-		String hadoopBase = this.c.getConfig("hdfs").getString("path");
+	public HDFSservice() throws IOException {
+		//this.c = ConfigProvider.getConfig();
+		//String hadoopBase = this.c.getConfig("hdfs").getString("path");
+		String hadoopBase = "";
 		Configuration conf = new Configuration();
 		conf.addResource(new Path(hadoopBase.concat(CORE_SITE)));
 		conf.addResource(new Path(hadoopBase.concat(HDFS_SITE)));
 		conf.addResource(new Path(hadoopBase.concat(YARN_SITE)));
 		conf.addResource(new Path(hadoopBase.concat(MAPRED_SITE)));
 		//conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
-		conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
+		//conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
+		FileSystem fileSystem = FileSystem.get(conf);
+		//Get the filename out of the file path
+		String source = "/P256MVM538.pdf";
+        String filename = source.substring(source.lastIndexOf('/') + 1, source.length());
 		try {
 			this.fs = FileSystem.get(conf);
 			LOGGER.info("Fs Created [{}]", fs.getUri());
@@ -66,7 +78,6 @@ public class HDFSservice {
 			LOGGER.error("Error trying to createFile", e);
 			return "";
 		}
-
 	}
 
 	public String getFile(String path) throws FileNotFoundException, IOException {

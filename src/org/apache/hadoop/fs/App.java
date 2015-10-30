@@ -3,19 +3,20 @@ package org.apache.hadoop.fs;
 import org.apache.hadoop.conf.Configuration;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URI;
 
 import org.apache.hadoop.fs.*;
 public class App {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		//try{
             
             //Configuration conf = new Configuration();
             //conf.set("fs.defaultFS", "hdfs://localhost:9000/");
-            HDFSservice hdfsservice = new HDFSservice();
+           // HDFSservice hdfsservice = new HDFSservice();
             
             //FileAPIsystem fsapi = new FileAPIsystem();
             //URI uri = fsapi.getUri();
