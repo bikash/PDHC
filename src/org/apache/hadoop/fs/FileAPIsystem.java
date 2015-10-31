@@ -42,7 +42,7 @@ public class FileAPIsystem extends FileSystem {
 	private BufferedReader in = null;
 
 	FileAPIsystem() throws UnknownHostException, IOException {
-		LOG.info("<APIFS> APIileSystem to Hadoop constructor called");
+		LOG.info("<APIFS> APIfileSystem to Hadoop constructor called");
 	}
 
 	@Override

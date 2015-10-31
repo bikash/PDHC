@@ -25,6 +25,8 @@ import org.slf4j.LoggerFactory;
 
 import com.typesafe.config.Config;
 
+import examples.FileOperation;
+
 
 /**
  * @author bikash
@@ -42,21 +44,23 @@ public class HDFSservice {
 	private Config c;
 	private FileSystem fs;
 
-	public HDFSservice() throws IOException {
+	public HDFSservice()  {
 		//this.c = ConfigProvider.getConfig();
 		//String hadoopBase = this.c.getConfig("hdfs").getString("path");
 		String hadoopBase = "";
+		String hdfsPath = "hdfs://localhost:9000"; 
 		Configuration conf = new Configuration();
 		conf.addResource(new Path(hadoopBase.concat(CORE_SITE)));
 		conf.addResource(new Path(hadoopBase.concat(HDFS_SITE)));
 		conf.addResource(new Path(hadoopBase.concat(YARN_SITE)));
 		conf.addResource(new Path(hadoopBase.concat(MAPRED_SITE)));
+		conf.set("fs.default.name", hdfsPath);
 		//conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
 		//conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
-		FileSystem fileSystem = FileSystem.get(conf);
+		//FileSystem fileSystem = FileSystem.get(conf);
 		//Get the filename out of the file path
-		String source = "/P256MVM538.pdf";
-        String filename = source.substring(source.lastIndexOf('/') + 1, source.length());
+		//String source = "/P256MVM538.pdf";
+        //String filename = source.substring(source.lastIndexOf('/') + 1, source.length());
 		try {
 			this.fs = FileSystem.get(conf);
 			LOGGER.info("Fs Created [{}]", fs.getUri());

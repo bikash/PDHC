@@ -10,14 +10,14 @@ import java.net.URI;
 import org.apache.hadoop.fs.*;
 public class App {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args)  {
 		// TODO Auto-generated method stub
 		//try{
             
             //Configuration conf = new Configuration();
             //conf.set("fs.defaultFS", "hdfs://localhost:9000/");
-            HDFSservice hdfsservice = new HDFSservice();
-            
+            //HDFSservice hdfsservice = new HDFSservice();
+            //hdfsservice.createFile("This is test", "/test");
             //FileAPIsystem fsapi = new FileAPIsystem();
             //URI uri = fsapi.getUri();
             //fsapi.initialize(uri, conf);
@@ -39,7 +39,4 @@ public class App {
          //   System.out.println("File not found");
        // }
 	}
-	
-
-
 }

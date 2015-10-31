@@ -80,7 +80,7 @@ public class FileOperation {
    * @param conf
    * @throws IOException
    */
-  public void readFile(String file, Configuration conf) throws IOException {
+  public static void readFile(String file, Configuration conf) throws IOException {
     FileSystem fileSystem = FileSystem.get(conf);
 
     Path path = new Path(file);
@@ -146,7 +146,7 @@ public class FileOperation {
     fileSystem.close();
   }
 
-  public static void main(String[] args) throws IOException {
+/*  public static void main(String[] args) throws IOException {
 	//args[0]="add";
 	//args[1]="/Users/bikash/Downloads/HDFS.ppt";
 	//args[2]="/"	;
@@ -213,5 +213,5 @@ public class FileOperation {
     }
 
     System.out.println("Done!");
-  }
+  }*/
 }
