@@ -1,1 +1,0 @@
-2015-10-27 07:29:10,601 INFO  http.HttpRequestLog (HttpRequestLog.java:getRequestLog(80)) - Http request log for http.requests.test is not defined

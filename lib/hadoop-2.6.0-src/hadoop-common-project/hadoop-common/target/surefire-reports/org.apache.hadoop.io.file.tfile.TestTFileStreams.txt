@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.io.file.tfile.TestTFileStreams
--------------------------------------------------------------------------------
-Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.665 sec - in org.apache.hadoop.io.file.tfile.TestTFileStreams

@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.io.serializer.TestWritableSerialization
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.114 sec - in org.apache.hadoop.io.serializer.TestWritableSerialization

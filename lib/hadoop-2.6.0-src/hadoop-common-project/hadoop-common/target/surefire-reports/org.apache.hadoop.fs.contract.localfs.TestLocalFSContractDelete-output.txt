@@ -1,7 +1,0 @@
-2015-10-27 07:20:59,522 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-10-27 07:20:59,561 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@763caf2d
-2015-10-27 07:20:59,638 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@763caf2d
-2015-10-27 07:20:59,691 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@763caf2d
-2015-10-27 07:20:59,722 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@763caf2d
-2015-10-27 07:20:59,752 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@763caf2d
-2015-10-27 07:20:59,776 INFO  contract.AbstractFSContractTestBase (AbstractFSContractTestBase.java:setup(172)) - Test filesystem = file:/// implemented by org.apache.hadoop.fs.LocalFileSystem@763caf2d

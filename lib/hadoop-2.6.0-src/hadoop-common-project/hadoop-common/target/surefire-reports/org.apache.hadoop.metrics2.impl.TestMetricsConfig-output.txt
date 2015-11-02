@@ -1,4 +1,0 @@
-2015-10-27 07:39:24,771 WARN  impl.MetricsConfig (MetricsConfig.java:loadFirst(124)) - Cannot locate configuration: tried non-existent.properties
-2015-10-27 07:39:24,879 INFO  impl.MetricsConfig (MetricsConfig.java:loadFirst(111)) - loaded properties from /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes/test-metrics2.properties
-2015-10-27 07:39:24,915 INFO  impl.MetricsConfig (MetricsConfig.java:loadFirst(111)) - loaded properties from hadoop-metrics2-p1.properties
-2015-10-27 07:39:24,920 INFO  impl.MetricsConfig (MetricsConfig.java:loadFirst(111)) - loaded properties from /Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-common/target/test-classes/hadoop-metrics2-p1.properties

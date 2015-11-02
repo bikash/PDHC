@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.util.TestNativeCrc32
--------------------------------------------------------------------------------
-Tests run: 20, Failures: 0, Errors: 0, Skipped: 20, Time elapsed: 0.557 sec - in org.apache.hadoop.util.TestNativeCrc32

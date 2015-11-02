@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.io.nativeio.TestSharedFileDescriptorFactory
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.512 sec - in org.apache.hadoop.io.nativeio.TestSharedFileDescriptorFactory

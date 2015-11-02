@@ -1,5 +1,0 @@
-Quantile 0.50 has value 529
-Quantile 0.75 has value 757
-Quantile 0.90 has value 900
-Quantile 0.95 has value 951
-Quantile 0.99 has value 990

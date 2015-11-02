@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.net.TestDNS
--------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.525 sec - in org.apache.hadoop.net.TestDNS

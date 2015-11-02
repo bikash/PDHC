@@ -1,7 +1,0 @@
-2015-10-27 07:40:08,494 INFO  impl.MetricsConfig (MetricsConfig.java:loadFirst(111)) - loaded properties from hadoop-metrics2-test.properties
-2015-10-27 07:40:08,550 INFO  impl.MetricsSinkAdapter (MetricsSinkAdapter.java:start(195)) - Sink mysink0 started
-2015-10-27 07:40:09,024 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:startTimer(376)) - Scheduled snapshot period at 10000 second(s).
-2015-10-27 07:40:09,025 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:start(191)) - test metrics system started
-2015-10-27 07:40:09,052 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(210)) - Stopping test metrics system...
-2015-10-27 07:40:09,053 INFO  impl.MetricsSinkAdapter (MetricsSinkAdapter.java:publishMetricsFromQueue(135)) - mysink0 thread interrupted.
-2015-10-27 07:40:09,055 INFO  impl.MetricsSystemImpl (MetricsSystemImpl.java:stop(216)) - test metrics system stopped.

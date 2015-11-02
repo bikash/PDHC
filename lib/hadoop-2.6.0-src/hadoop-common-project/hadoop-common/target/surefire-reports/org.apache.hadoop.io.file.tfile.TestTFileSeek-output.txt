@@ -1,7 +1,0 @@
-2015-10-27 07:33:22,627 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-10-27 07:33:22,841 INFO  tfile.Compression (Compression.java:isSupported(90)) - Trying to load Lzo codec class: org.apache.hadoop.io.compress.LzoCodec
-2015-10-27 07:33:23,075 INFO  compress.CodecPool (CodecPool.java:getCompressor(151)) - Got brand-new compressor [.deflate]
-time: 1.13s...uncompressed: 8.71MB...raw thrpt: 8.06MB/s
-time: 1.13s...file size: 3.04MB...disk thrpt: 2.81MB/s
-2015-10-27 07:33:24,152 INFO  compress.CodecPool (CodecPool.java:getDecompressor(179)) - Got brand-new decompressor [.deflate]
-time: 2.16s...avg seek: 2.16ms...1000 hit...0 miss...avg I/O size: 0.16KB

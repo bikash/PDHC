@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.ipc.TestRPC
--------------------------------------------------------------------------------
-Tests run: 18, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 26.962 sec <<< FAILURE! - in org.apache.hadoop.ipc.TestRPC
-testRPCInterruptedSimple(org.apache.hadoop.ipc.TestRPC)  Time elapsed: 0.093 sec  <<< FAILURE!
-java.lang.AssertionError: Interruption did not cause IPC to fail
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.apache.hadoop.ipc.TestRPC.testRPCInterruptedSimple(TestRPC.java:874)
-

@@ -1,3 +1,0 @@
-2015-10-27 07:24:33,474 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-MARKED
-Read 2048 bytes. file size=2048

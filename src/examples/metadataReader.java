@@ -59,8 +59,8 @@ public class metadataReader {
 
     public static void main(String[] args) throws Exception {
 
-        InetSocketAddress namenodeAddr = new InetSocketAddress("myhost",8020);
-        InetSocketAddress jobtrackerAddr = new InetSocketAddress("myhost",8021);
+        InetSocketAddress namenodeAddr = new InetSocketAddress("localhost",9000);
+        InetSocketAddress jobtrackerAddr = new InetSocketAddress("localhost",9001);
 
         Configuration conf = new Configuration();
 

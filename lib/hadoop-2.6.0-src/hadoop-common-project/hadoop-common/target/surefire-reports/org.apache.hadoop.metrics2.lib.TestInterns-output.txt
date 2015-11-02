@@ -1,4 +1,0 @@
-2015-10-27 07:39:33,604 WARN  lib.Interns (Interns.java:removeEldestEntry(50)) - Metrics intern cache overflow at 101 for MetricsInfoImpl{name=t0, description=t desc}={t value=MetricsTag{info=MetricsInfoImpl{name=t0, description=t desc}, value=t value}}
-2015-10-27 07:39:33,636 WARN  lib.Interns (Interns.java:removeEldestEntry(70)) - Metrics intern cache overflow at 1001 for t value=MetricsTag{info=MetricsInfoImpl{name=t1, description=t desc}, value=t value}
-2015-10-27 07:39:33,676 WARN  lib.Interns (Interns.java:removeEldestEntry(50)) - Metrics intern cache overflow at 2011 for t0={t desc=MetricsInfoImpl{name=t0, description=t desc}}
-2015-10-27 07:39:33,678 WARN  lib.Interns (Interns.java:removeEldestEntry(70)) - Metrics intern cache overflow at 101 for m desc=MetricsInfoImpl{name=m1, description=m desc}

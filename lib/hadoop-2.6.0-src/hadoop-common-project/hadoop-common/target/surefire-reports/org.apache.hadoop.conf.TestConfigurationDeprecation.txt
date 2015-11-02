@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.conf.TestConfigurationDeprecation
--------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.86 sec - in org.apache.hadoop.conf.TestConfigurationDeprecation

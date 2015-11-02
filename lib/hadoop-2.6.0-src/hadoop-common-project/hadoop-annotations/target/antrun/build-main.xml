@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="maven-antrun-" default="main"  >
-<target name="main">
-  <mkdir dir="/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-annotations/target/test-dir"/>
-  <mkdir dir="/Users/bikash/repos/bigdata/PDHC/lib/hadoop-2.6.0-src/hadoop-common-project/hadoop-annotations/target/test-dir"/>
-</target>
-</project>

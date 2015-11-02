@@ -1,6 +1,0 @@
-2015-10-27 07:41:21,889 WARN  security.LdapGroupsMapping (LdapGroupsMapping.java:getGroups(202)) - Connection is closed, will try to reconnect
-2015-10-27 07:41:21,896 WARN  security.LdapGroupsMapping (LdapGroupsMapping.java:getGroups(217)) - Connection being closed, reconnecting failed, retryCount = 1
-2015-10-27 07:41:21,897 WARN  security.LdapGroupsMapping (LdapGroupsMapping.java:getGroups(217)) - Connection being closed, reconnecting failed, retryCount = 2
-2015-10-27 07:41:21,900 WARN  security.LdapGroupsMapping (LdapGroupsMapping.java:getGroups(217)) - Connection being closed, reconnecting failed, retryCount = 3
-2015-10-27 07:41:22,022 WARN  security.LdapGroupsMapping (LdapGroupsMapping.java:getGroups(202)) - Connection is closed, will try to reconnect
-2015-10-27 07:41:22,542 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable

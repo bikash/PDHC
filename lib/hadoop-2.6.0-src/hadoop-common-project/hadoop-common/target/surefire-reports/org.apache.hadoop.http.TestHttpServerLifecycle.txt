@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.http.TestHttpServerLifecycle
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.431 sec - in org.apache.hadoop.http.TestHttpServerLifecycle

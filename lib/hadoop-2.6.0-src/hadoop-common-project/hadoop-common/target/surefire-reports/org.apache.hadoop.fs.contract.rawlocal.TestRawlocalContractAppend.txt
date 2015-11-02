@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.fs.contract.rawlocal.TestRawlocalContractAppend
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 0.838 sec - in org.apache.hadoop.fs.contract.rawlocal.TestRawlocalContractAppend

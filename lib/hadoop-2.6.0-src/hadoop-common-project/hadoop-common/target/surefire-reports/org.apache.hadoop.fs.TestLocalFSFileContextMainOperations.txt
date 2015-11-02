@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.hadoop.fs.TestLocalFSFileContextMainOperations
--------------------------------------------------------------------------------
-Tests run: 62, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.96 sec - in org.apache.hadoop.fs.TestLocalFSFileContextMainOperations

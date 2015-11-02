@@ -1,1 +1,0 @@
-2015-10-27 07:44:28,785 INFO  util.TestSignalLogger (SignalLogger.java:register(91)) - registered UNIX signal handlers for [TERM, HUP, INT]

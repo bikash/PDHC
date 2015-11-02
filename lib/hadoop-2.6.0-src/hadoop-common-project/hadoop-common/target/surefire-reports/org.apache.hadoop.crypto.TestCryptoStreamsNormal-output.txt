@@ -1,7 +1,0 @@
-2015-10-27 07:20:22,396 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-10-27 07:20:22,472 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
-2015-10-27 07:20:23,228 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
-2015-10-27 07:20:27,488 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
-2015-10-27 07:20:29,289 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
-2015-10-27 07:20:29,626 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records
-2015-10-27 07:20:29,747 INFO  crypto.CryptoStreamsTestBase (CryptoStreamsTestBase.java:setUp(75)) - Generated 10000 records

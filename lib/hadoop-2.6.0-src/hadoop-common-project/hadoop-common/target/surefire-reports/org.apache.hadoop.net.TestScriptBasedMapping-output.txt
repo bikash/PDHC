@@ -1,1 +1,0 @@
-2015-10-27 07:40:27,134 WARN  net.ScriptBasedMapping (ScriptBasedMapping.java:runResolveCommand(229)) - Invalid value 0 for net.topology.script.number.args; must be >= 1

@@ -1,2 +1,0 @@
-2015-10-27 07:40:50,016 WARN  util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-2015-10-27 07:40:50,648 INFO  authorize.TestAccessControlList (TestAccessControlList.java:testNetgroups(84)) - Not testing netgroups, this test only runs when native code is compiled
