@@ -3,16 +3,16 @@ package examples;
 import com.typesafe.config.Config;
 import com.typesafe.config.ConfigFactory;
 
-/**
- * @author bikash agrawal
- *
- */
-public class ConfigProvider {
+	/**
+	 * @author bikash
+	 *
+	 */
+	public class ConfigProvider {
 
-	private static Config c = ConfigFactory.load("conf/application.conf");
+		private static Config c = ConfigFactory.load("conf/application.conf");
 
-	public static Config getConfig() {
-		return c;
+		public static Config getConfig() {
+			return c;
+		}
+
 	}
-
-}

@@ -1,11 +1,9 @@
-//---------------------------------------------------------------
-// Author: Bikash Agrawal
-// Date: 29th Oct 2015
-// Description: This file is used to read, create, delete file in HDFS
-// Reference: 
-//---------------------------------------------------------------
-
 package examples;
+
+
+/**
+ * 
+ */
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -23,42 +21,37 @@ import org.apache.hadoop.fs.Path;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.typesafe.config.Config;
-
+//import com.typesafe.config.Config;
+//import ConfigProvider;
 
 /**
  * @author bikash
  *
  */
-public class HDFSservice {
+public class HdfsService {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(HDFSservice.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(HdfsService.class);
 
 	private static final String CORE_SITE = "/Users/bikash/BigData/hadoop/etc/hadoop/core-site.xml";
 	private static final String HDFS_SITE = "/Users/bikash/BigData/hadoop/etc/hadoop/hdfs-site.xml";
 	private static final String YARN_SITE = "/Users/bikash/BigData/hadoop/etc/hadoop/yarn-site.xml";
 	private static final String MAPRED_SITE = "/Users/bikash/BigData/hadoop/etc/hadoop/mapred-site.xml";
 
-	private Config c;
+	//private Config c;
 	private FileSystem fs;
 
-	public HDFSservice()  {
+	public HdfsService() {
 		//this.c = ConfigProvider.getConfig();
-		//String hadoopBase = this.c.getConfig("hdfs").getString("path");
-		String hadoopBase = "";
-		String hdfsPath = "hdfs://localhost:9000"; 
+		String hadoopBase = "/Users/bikash/BigData/hadoop";
 		Configuration conf = new Configuration();
 		conf.addResource(new Path(hadoopBase.concat(CORE_SITE)));
 		conf.addResource(new Path(hadoopBase.concat(HDFS_SITE)));
 		conf.addResource(new Path(hadoopBase.concat(YARN_SITE)));
 		conf.addResource(new Path(hadoopBase.concat(MAPRED_SITE)));
+		conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
+		conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
+		String hdfsPath = "hdfs://localhost:9000"; 
 		conf.set("fs.default.name", hdfsPath);
-		//conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
-		//conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
-		//FileSystem fileSystem = FileSystem.get(conf);
-		//Get the filename out of the file path
-		//String source = "/P256MVM538.pdf";
-        //String filename = source.substring(source.lastIndexOf('/') + 1, source.length());
 		try {
 			this.fs = FileSystem.get(conf);
 			LOGGER.info("Fs Created [{}]", fs.getUri());
@@ -80,6 +73,7 @@ public class HDFSservice {
 			LOGGER.error("Error trying to createFile", e);
 			return "";
 		}
+
 	}
 
 	public String getFile(String path) throws FileNotFoundException, IOException {
