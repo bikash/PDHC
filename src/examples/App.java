@@ -14,8 +14,8 @@ public class App {
 		//Config c = ConfigProvider.getConfig();
 		//port("9000");
 		//String base = "/Users/bikash/repos/bigdata/hadoop-common/hadoop-hdfs-project";
-		HdfsService hdfsService = new HdfsService();
-		LOGGER.info("Application Started!");
+		//HdfsService hdfsService = new HdfsService();
+		//LOGGER.info("Application Started!");
 		
 	}
 

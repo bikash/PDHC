@@ -156,8 +156,7 @@ public class VolumeBalancer {
 
         // Hadoop *always* need a configuration :)
         final HdfsConfiguration conf = new HdfsConfiguration();
-        String hdfsPath = "hdfs://localhost:9000"; 
-		conf.set("fs.default.name", hdfsPath);
+
         final String blockpoolID = getBlockPoolID(conf);
 
         LOG.info("BlockPoolId is " + blockpoolID);
@@ -346,7 +345,7 @@ public class VolumeBalancer {
         // TODO: print some reports for your manager
 
         // Let the shutdown thread finishing
-        shutdownLatch.countDown();
+        shutdownLatch.countDown();     
 
     }
 
