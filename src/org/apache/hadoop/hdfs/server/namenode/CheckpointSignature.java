@@ -35,7 +35,7 @@ public class CheckpointSignature extends StorageInfo
   private static final String FIELD_SEPARATOR = ":";
   private static final int NUM_FIELDS = 7;
   String blockpoolID = "";
-  long mostRecentCheckpointTxId;
+  public long mostRecentCheckpointTxId;
   long curSegmentTxId;
 
   CheckpointSignature(FSImage fsImage) {
@@ -128,7 +128,7 @@ public class CheckpointSignature extends StorageInfo
     return namespaceID == si.getStorage().namespaceID;
   }
 
-  void validateStorageInfo(FSImage si) throws IOException {
+  public void validateStorageInfo(FSImage si) throws IOException {
     if (!isSameCluster(si)
         || !storageVersionMatches(si.getStorage())) {
       throw new IOException("Inconsistent checkpoint fields.\n"

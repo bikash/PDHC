@@ -72,6 +72,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.net.InetSocketAddress;
 import java.net.URI;
+import java.net.URL;
 import java.security.PrivilegedExceptionAction;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -255,7 +256,7 @@ public class NameNode implements NameNodeStatusMXBean {
   public static final HAState ACTIVE_STATE = new ActiveState();
   public static final HAState STANDBY_STATE = new StandbyState();
   
-  protected FSNamesystem namesystem; 
+  public FSNamesystem namesystem; 
   protected final Configuration conf;
   protected final NamenodeRole role;
   private volatile HAState state;
@@ -284,6 +285,10 @@ public class NameNode implements NameNodeStatusMXBean {
    * will be the logical address.
    */
   private String clientNamenodeAddress;
+
+public URL nnHttpAddress;
+
+public NamenodeProtocol namenode;
   
   /** Format a new filesystem.  Destroys any filesystem that may already
    * exist at this location.  **/
@@ -445,7 +450,7 @@ public class NameNode implements NameNodeStatusMXBean {
     return role;
   }
 
-  boolean isRole(NamenodeRole that) {
+  public boolean isRole(NamenodeRole that) {
     return role.equals(that);
   }
 
@@ -533,11 +538,11 @@ public class NameNode implements NameNodeStatusMXBean {
     this.namesystem = FSNamesystem.loadFromDisk(conf);
   }
 
-  NamenodeRegistration getRegistration() {
+  public NamenodeRegistration getRegistration() {
     return nodeRegistration;
   }
 
-  NamenodeRegistration setRegistration() {
+  public NamenodeRegistration setRegistration() {
     nodeRegistration = new NamenodeRegistration(
         NetUtils.getHostPortString(rpcServer.getRpcAddress()),
         NetUtils.getHostPortString(getHttpAddress()),

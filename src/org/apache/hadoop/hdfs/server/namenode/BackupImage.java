@@ -87,7 +87,7 @@ public class BackupImage extends FSImage {
    * @param conf Configuration
    * @throws IOException if storage cannot be initialised.
    */
-  BackupImage(Configuration conf) throws IOException {
+  public BackupImage(Configuration conf) throws IOException {
     super(conf);
     storage.setDisablePreUpgradableLayoutCheck(true);
     bnState = BNState.DROP_UNTIL_NEXT_ROLL;
@@ -228,7 +228,7 @@ public class BackupImage extends FSImage {
    * This is done by repeated invocations of tryConvergeJournalSpool until
    * we are caught up to the latest in-progress edits file.
    */
-  void convergeJournalSpool() throws IOException {
+  public void convergeJournalSpool() throws IOException {
     Preconditions.checkState(bnState == BNState.JOURNAL_ONLY,
         "bad state: %s", bnState);
 
@@ -353,7 +353,7 @@ public class BackupImage extends FSImage {
    * stop applying the edits log to the local namespace. This is
    * typically followed on by a call to {@link #waitUntilNamespaceFrozen()}
    */
-  synchronized void freezeNamespaceAtNextRoll() {
+  public synchronized void freezeNamespaceAtNextRoll() {
     stopApplyingEditsOnNextRoll = true;
   }
 

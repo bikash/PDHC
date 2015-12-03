@@ -55,7 +55,7 @@ import com.google.common.collect.Lists;
  * The start of a checkpoint is triggered by one of the two factors:
  * (1) time or (2) the size of the edits file.
  */
-class Checkpointer extends Daemon {
+public class Checkpointer extends Daemon {
   public static final Log LOG = 
     LogFactory.getLog(Checkpointer.class.getName());
 
@@ -178,7 +178,7 @@ class Checkpointer extends Daemon {
   /**
    * Create a new checkpoint
    */
-  void doCheckpoint() throws IOException {
+  public void doCheckpoint() throws IOException {
     BackupImage bnImage = getFSImage();
     NNStorage bnStorage = bnImage.getStorage();
 

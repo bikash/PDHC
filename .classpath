@@ -89,5 +89,7 @@
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar"/>
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar"/>
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar"/>
+	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar"/>
+	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/common/hadoop-common-2.6.0-tests.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

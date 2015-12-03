@@ -29,6 +29,9 @@ import org.apache.hadoop.hdfs.server.datanode.DataNode;
 import org.apache.hadoop.hdfs.server.namenode.BackupImage;
 import org.apache.hadoop.hdfs.server.namenode.BackupNode;
 import org.apache.hadoop.hdfs.server.namenode.CheckpointConf;
+import org.apache.hadoop.hdfs.server.namenode.CheckpointSignature;
+import org.apache.hadoop.hdfs.server.namenode.NNStorage;
+import org.apache.hadoop.hdfs.server.namenode.TransferFsImage;
 import org.apache.hadoop.hdfs.server.namenode.NNStorage.NameNodeFile;
 import org.apache.hadoop.hdfs.server.namenode.NameNode;
 import org.apache.hadoop.hdfs.server.protocol.CheckpointCommand;
@@ -70,6 +73,8 @@ public class CheckerNode {
 
 	  DFSClient dfs;
 
+	private static NameNode checkerNode;
+
 	private static DFSClient dfsClient;
 	  
 	  /*private BackupImage getFSImage() {
@@ -86,7 +91,9 @@ public class CheckerNode {
 	    return makeQualified(new Path("/user/" + dfs.ugi.getShortUserName()));
 	  }*/
 
-		
+	  private static NamenodeProtocol getRemoteNamenodeProxy(){
+		    return checkerNode.namenode;
+		  }	
 	  
 	  /**
 	   * Return datanode information.
@@ -103,18 +110,112 @@ public class CheckerNode {
 	   * Return datanode information.
 	   * @return DatanodeInfo
 	   */
-	  private static void getDataNodeBlockSummary()  throws IOException {
-		  
+	  private void getMetadataNamenode(){
 		  
 	  }
+	  /**
+	   * Return datanode information.
+	   * @return DatanodeInfo
+	   */
+	  private static void getDataNodeBlockSummary()  throws IOException {
+		  // Make sure we're talking to the same NN!
+		    //sig.validateStorageInfo(bnImage);
+
+		    //long lastApplied = bnImage.getLastAppliedTxId();
+		   // LOG.debug("Doing checkpoint. Last applied: " + lastApplied);
+		  
+	  }
+	  private static BackupImage getFSImage() {
+		    return (BackupImage)checkerNode.getFSImage();
+		  }
 	  public static void main(String[] args) throws Exception {
 		  Configuration conf = new HdfsConfiguration();
-		  MiniDFSCluster cluster = new MiniDFSCluster.Builder(conf).build();
+		  //MiniDFSCluster cluster = new MiniDFSCluster.Builder(conf).build();
 		  //getDataNodeSummaryReport(conf,cluster);
 		  
-		  DataNode dataNode = cluster.getDataNodes().get(0);
-		  int infoPort = dataNode.getInfoPort();
-		  System.out.println("Infoport "+infoPort);
+		  //DataNode dataNode = cluster.getDataNodes().get(0);
+		  //int infoPort = dataNode.getInfoPort();
+		  //System.out.println("Infoport "+infoPort);
+		  
+		  BackupImage bnImage = getFSImage();
+		  NNStorage bnStorage = bnImage.getStorage();
+		  long startTime = now();
+		  //bnImage.freezeNamespaceAtNextRoll();
+		  CheckpointCommand cpCmd = null;
+		  //bnImage.waitUntilNamespaceFrozen();
+		  CheckpointSignature sig = cpCmd.getSignature();
+		  // Make sure we're talking to the same NN!
+		  //sig.validateStorageInfo(bnImage);
+		  
+		  long lastApplied = bnImage.getLastAppliedTxId();
+		  LOG.debug("Doing checkpoint. Last applied: " + lastApplied);
+		  RemoteEditLogManifest manifest = getRemoteNamenodeProxy().getEditLogManifest(bnImage.getLastAppliedTxId() + 1);
+		  boolean needReloadImage = false;
+		  if (!manifest.getLogs().isEmpty()) {
+		      RemoteEditLog firstRemoteLog = manifest.getLogs().get(0);
+		      // we don't have enough logs to roll forward using only logs. Need
+		      // to download and load the image.
+		      if (firstRemoteLog.getStartTxId() > lastApplied + 1) {
+		        LOG.info("Unable to roll forward using only logs. Downloading " +"image with txid " );
+		        MD5Hash downloadedHash = TransferFsImage.downloadImageToStorage(
+		        		checkerNode.nnHttpAddress, sig.mostRecentCheckpointTxId, bnStorage,
+		            true);
+		        bnImage.saveDigestAndRenameCheckpointImage(NameNodeFile.IMAGE,
+		            sig.mostRecentCheckpointTxId, downloadedHash);
+		        lastApplied = sig.mostRecentCheckpointTxId;
+		        needReloadImage = true;
+		      }
+
+		      if (firstRemoteLog.getStartTxId() > lastApplied + 1) {
+		        throw new IOException("No logs to roll forward from " + lastApplied);
+		      }
+		  
+		      // get edits files
+		      for (RemoteEditLog log : manifest.getLogs()) {
+		        TransferFsImage.downloadEditsToStorage(
+		        		checkerNode.nnHttpAddress, log, bnStorage);
+		      }
+
+		      if(needReloadImage) {
+		        LOG.info("Loading image with txid " + sig.mostRecentCheckpointTxId);
+		        File file = bnStorage.findImageFile(NameNodeFile.IMAGE,
+		            sig.mostRecentCheckpointTxId);
+		        bnImage.reloadFromImageFile(file, checkerNode.getNamesystem());
+		      }
+		      //rollForwardByApplyingLogs(manifest, bnImage, checkerNode.getNamesystem());
+		    }
+		    
+		    long txid = bnImage.getLastAppliedTxId();
+		    
+		    checkerNode.namesystem.writeLock();
+		    try {
+		    	checkerNode.namesystem.setImageLoaded();
+		      if(checkerNode.namesystem.getBlocksTotal() > 0) {
+		    	  checkerNode.namesystem.setBlockTotal();
+		      }
+		      bnImage.saveFSImageInAllDirs(checkerNode.getNamesystem(), txid);
+		      bnStorage.writeAll();
+		    } finally {
+		    	checkerNode.namesystem.writeUnlock();
+		    }
+
+		    if(cpCmd.needToReturnImage()) {
+		      TransferFsImage.uploadImageFromStorage(checkerNode.nnHttpAddress, conf,
+		          bnStorage, NameNodeFile.IMAGE, txid);
+		    }
+
+		    getRemoteNamenodeProxy().endCheckpoint(checkerNode.getRegistration(), sig);
+
+		    if (checkerNode.getRole() == NamenodeRole.BACKUP) {
+		      bnImage.convergeJournalSpool();
+		    }
+		    checkerNode.setRegistration(); // keep registration up to date
+		    
+		    long imageSize = bnImage.getStorage().getFsImageName(txid).length();
+		    LOG.info("Checkpoint completed in "
+		        + (now() - startTime)/1000 + " seconds."
+		        + " New Image Size: " + imageSize);
+		  
 	  }
 
 	  

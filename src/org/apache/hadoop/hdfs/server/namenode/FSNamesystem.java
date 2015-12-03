@@ -419,7 +419,7 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
   private final List<AuditLogger> auditLoggers;
 
   /** The namespace tree. */
-  FSDirectory dir;
+  public FSDirectory dir;
   private final BlockManager blockManager;
   private final SnapshotManager snapshotManager;
   private final CacheManager cacheManager;
@@ -563,7 +563,7 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
     setImageLoaded();
   }
 
-  void setImageLoaded() {
+  public void setImageLoaded() {
     if(imageLoaded) return;
     writeLock();
     try {
@@ -748,7 +748,7 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
     return namesystem;
   }
   
-  FSNamesystem(Configuration conf, FSImage fsImage) throws IOException {
+  public FSNamesystem(Configuration conf, FSImage fsImage) throws IOException {
     this(conf, fsImage, false);
   }
   
@@ -1106,7 +1106,7 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
    * Start services required in active state
    * @throws IOException
    */
-  void startActiveServices() throws IOException {
+  public void startActiveServices() throws IOException {
     startingActiveService = true;
     LOG.info("Starting services required for active state");
     writeLock();
@@ -1206,7 +1206,7 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
   /** 
    * Stop services required in active state
    */
-  void stopActiveServices() {
+  public void stopActiveServices() {
     LOG.info("Stopping services started for active state");
     writeLock();
     try {
@@ -2574,7 +2574,7 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
       if (!ezKeyName.equals(edek.getEncryptionKeyName())) {
         throw new RetryStartFileException();
       }
-      /*feInfo = new FileEncryptionInfo(suite,
+     /* feInfo = new FileEncryptionInfo(suite,
           edek.getEncryptedKeyVersion().getMaterial(),
           edek.getEncryptedKeyIv(),
           edek.getEncryptionKeyVersionName());*/

@@ -757,7 +757,7 @@ public class NNStorage extends Storage implements Closeable,
    * Return the first readable image file for the given txid and image type, or
    * null if no such image can be found
    */
-  File findImageFile(NameNodeFile nnf, long txid) {
+  public File findImageFile(NameNodeFile nnf, long txid) {
     return findFile(NameNodeDirType.IMAGE,
         getNameNodeFileName(nnf, txid));
   }
@@ -905,7 +905,7 @@ public class NNStorage extends Storage implements Closeable,
     return "CID-" + UUID.randomUUID().toString();
   }
 
-  void setClusterID(String cid) {
+  public void setClusterID(String cid) {
     clusterID = cid;
   }
 
@@ -956,7 +956,7 @@ public class NNStorage extends Storage implements Closeable,
   }
 
   /** Validate and set block pool ID */
-  void setBlockPoolID(String bpid) {
+  public void setBlockPoolID(String bpid) {
     blockpoolID = bpid;
   }
 

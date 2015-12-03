@@ -569,7 +569,7 @@ public class FSImage implements Closeable {
    * Toss the current image and namesystem, reloading from the specified
    * file.
    */
-  void reloadFromImageFile(File file, FSNamesystem target) throws IOException {
+  public void reloadFromImageFile(File file, FSNamesystem target) throws IOException {
     target.clear();
     LOG.debug("Reloading namespace from " + file);
     loadFSImage(file, target, null);
@@ -1074,7 +1074,7 @@ public class FSImage implements Closeable {
   /**
    * @see #saveFSImageInAllDirs(FSNamesystem, long, Canceler)
    */
-  protected synchronized void saveFSImageInAllDirs(FSNamesystem source, long txid)
+  public synchronized void saveFSImageInAllDirs(FSNamesystem source, long txid)
       throws IOException {
     saveFSImageInAllDirs(source, NameNodeFile.IMAGE, txid, null);
   }

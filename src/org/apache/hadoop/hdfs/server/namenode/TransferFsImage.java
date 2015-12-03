@@ -136,7 +136,7 @@ public class TransferFsImage {
     return hash;
   }
 
-  static void downloadEditsToStorage(URL fsName, RemoteEditLog log,
+  public static void downloadEditsToStorage(URL fsName, RemoteEditLog log,
       NNStorage dstStorage) throws IOException {
     assert log.getStartTxId() > 0 && log.getEndTxId() > 0 :
       "bad log: " + log;
