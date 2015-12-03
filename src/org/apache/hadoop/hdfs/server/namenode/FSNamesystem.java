@@ -2574,10 +2574,10 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
       if (!ezKeyName.equals(edek.getEncryptionKeyName())) {
         throw new RetryStartFileException();
       }
-      feInfo = new FileEncryptionInfo(suite,
+      /*feInfo = new FileEncryptionInfo(suite,
           edek.getEncryptedKeyVersion().getMaterial(),
           edek.getEncryptedKeyIv(),
-          edek.getEncryptionKeyVersionName());
+          edek.getEncryptionKeyVersionName());*/
       Preconditions.checkNotNull(feInfo);
     }
 

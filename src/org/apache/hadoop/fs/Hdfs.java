@@ -91,6 +91,7 @@ public class Hdfs extends AbstractFileSystem {
     this.factory = CryptoCodec.getInstance(conf);
   }
 
+  @Override
   public int getUriDefaultPort() {
     return NameNode.DEFAULT_PORT;
   }

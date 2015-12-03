@@ -77,7 +77,7 @@ public class BackupNode extends NameNode {
   private static final int    BN_SAFEMODE_EXTENSION_DEFAULT = Integer.MAX_VALUE;
 
   /** Name-node proxy */
-  NamenodeProtocol namenode;
+  public NamenodeProtocol namenode;
   /** Name-node RPC address */
   String nnRpcAddress;
   /** Name-node HTTP address */

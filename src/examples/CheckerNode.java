@@ -20,11 +20,17 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hdfs.DFSClient;
 import org.apache.hadoop.hdfs.DFSUtil;
+import org.apache.hadoop.hdfs.HdfsConfiguration;
+import org.apache.hadoop.hdfs.MiniDFSCluster;
+import org.apache.hadoop.hdfs.protocol.DatanodeInfo;
+import org.apache.hadoop.hdfs.protocol.HdfsConstants.DatanodeReportType;
 import org.apache.hadoop.hdfs.server.common.HdfsServerConstants.NamenodeRole;
+import org.apache.hadoop.hdfs.server.datanode.DataNode;
 import org.apache.hadoop.hdfs.server.namenode.BackupImage;
 import org.apache.hadoop.hdfs.server.namenode.BackupNode;
 import org.apache.hadoop.hdfs.server.namenode.CheckpointConf;
 import org.apache.hadoop.hdfs.server.namenode.NNStorage.NameNodeFile;
+import org.apache.hadoop.hdfs.server.namenode.NameNode;
 import org.apache.hadoop.hdfs.server.protocol.CheckpointCommand;
 import org.apache.hadoop.hdfs.server.protocol.NamenodeCommand;
 import org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol;
@@ -46,53 +52,74 @@ import com.google.common.collect.Lists;
  * The start of a checkpoint is triggered by one of the two factors:
  * (1) time or (2) the size of the edits file.
  */
+@SuppressWarnings("unused")
 public class CheckerNode {
 
 	 public static final Log LOG = LogFactory.getLog(CheckerNode.class.getName());
 	 
-	 private final BackupNode backupNode;
-	  volatile boolean shouldRun;
+	 //private final BackupNode backupNode;
+
 
 	  private String infoBindAddress;
 
 	  private CheckpointConf checkpointConf;
-	  private final Configuration conf;
+	  //private final static Configuration conf;
 
 	  private Path workingDir;
 	  private URI uri;
 
 	  DFSClient dfs;
-	  
-	  private BackupImage getFSImage() {
-	    return (BackupImage)backupNode.getFSImage();
-	  }
 
-	  private NamenodeProtocol getRemoteNamenodeProxy(){
+	private static DFSClient dfsClient;
+	  
+	  /*private BackupImage getFSImage() {
+	    NameNode backupNode = null;
+		return (BackupImage)backupNode.getFSImage();
+	  }*/
+
+	 /* private NamenodeProtocol getRemoteNamenodeProxy(){
 	    return backupNode.namenode;
-	  }
+	  }*/
 	  
 
 	  /*public Path getHomeDirectory() {
 	    return makeQualified(new Path("/user/" + dfs.ugi.getShortUserName()));
 	  }*/
 
+		
+	  
 	  /**
-	   * Create a connection to the primary namenode.
+	   * Return datanode information.
+	   * @return DatanodeInfo
 	   */
-	  CheckerNode(Configuration conf, BackupNode bnNode)  throws IOException {
-	    this.conf = conf;
-	    this.backupNode = bnNode;
-	    
-	    Statistics statistics = null;
-		this.dfs = new DFSClient(uri, conf, statistics);
-	    this.uri = URI.create(uri.getScheme()+"://"+uri.getAuthority());
-	    //this.workingDir = getHomeDirectory();
-	    try {
-	      //initialize(conf);
-	    } catch(IOException e) {
-	      LOG.warn("Checkpointer got exception", e);
-	      //shutdown();
-	      throw e;
-	    }
+	  private static DatanodeInfo getDataNodeSummaryReport(Configuration conf, MiniDFSCluster cluster)  throws IOException {
+	    dfsClient = new DFSClient(new InetSocketAddress("localhost", 
+                cluster.getNameNodePort()), conf);
+		DatanodeInfo dn = dfsClient.datanodeReport(DatanodeReportType.LIVE)[0];
+		return dn;
 	  }
+	  
+	  /**
+	   * Return datanode information.
+	   * @return DatanodeInfo
+	   */
+	  private static void getDataNodeBlockSummary()  throws IOException {
+		  
+		  
+	  }
+	  public static void main(String[] args) throws Exception {
+		  Configuration conf = new HdfsConfiguration();
+		  MiniDFSCluster cluster = new MiniDFSCluster.Builder(conf).build();
+		  //getDataNodeSummaryReport(conf,cluster);
+		  
+		  DataNode dataNode = cluster.getDataNodes().get(0);
+		  int infoPort = dataNode.getInfoPort();
+		  System.out.println("Infoport "+infoPort);
+	  }
+
+	  
+	  
+
+	  
+	  
 }

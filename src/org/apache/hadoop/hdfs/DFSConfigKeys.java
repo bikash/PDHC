@@ -673,4 +673,7 @@ public class DFSConfigKeys extends CommonConfigurationKeys {
    public static final String DFS_DATANODE_BLOCK_ID_LAYOUT_UPGRADE_THREADS_KEY =
        "dfs.datanode.block.id.layout.upgrade.threads";
    public static final int DFS_DATANODE_BLOCK_ID_LAYOUT_UPGRADE_THREADS = 12;
+   
+   public static final String  DFS_DATANODE_NUMBLOCKS_KEY = "dfs.datanode.numblocks";
+   public static final int     DFS_DATANODE_NUMBLOCKS_DEFAULT = 64;
 }

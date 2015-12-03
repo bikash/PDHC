@@ -1319,14 +1319,15 @@ public class DFSClient implements java.io.Closeable, RemotePeerFactory,
       throw new IOException("No KeyProvider is configured, cannot access" +
           " an encrypted file");
     }
-    EncryptedKeyVersion ekv = EncryptedKeyVersion.createForDecryption(
+    /*EncryptedKeyVersion ekv = EncryptedKeyVersion.createForDecryption(
         feInfo.getEzKeyVersionName(), feInfo.getIV(),
         feInfo.getEncryptedDataEncryptionKey());
     try {
       return provider.decryptEncryptedKey(ekv);
     } catch (GeneralSecurityException e) {
       throw new IOException(e);
-    }
+    }*/
+	return null;
   }
 
   /**
