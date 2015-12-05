@@ -12,6 +12,8 @@ import java.net.URI;
 import java.net.URL;
 import java.util.List;
 
+import org.apache.hadoop.fs.BlockLocation;
+import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.FileSystem.Statistics;
 import org.apache.commons.logging.Log;
@@ -24,6 +26,7 @@ import org.apache.hadoop.hdfs.HdfsConfiguration;
 import org.apache.hadoop.hdfs.MiniDFSCluster;
 import org.apache.hadoop.hdfs.protocol.DatanodeInfo;
 import org.apache.hadoop.hdfs.protocol.HdfsConstants.DatanodeReportType;
+import org.apache.hadoop.hdfs.security.token.block.ExportedBlockKeys;
 import org.apache.hadoop.hdfs.server.common.HdfsServerConstants.NamenodeRole;
 import org.apache.hadoop.hdfs.server.datanode.DataNode;
 import org.apache.hadoop.hdfs.server.namenode.BackupImage;
@@ -34,6 +37,7 @@ import org.apache.hadoop.hdfs.server.namenode.NNStorage;
 import org.apache.hadoop.hdfs.server.namenode.TransferFsImage;
 import org.apache.hadoop.hdfs.server.namenode.NNStorage.NameNodeFile;
 import org.apache.hadoop.hdfs.server.namenode.NameNode;
+import org.apache.hadoop.hdfs.server.protocol.BlocksWithLocations;
 import org.apache.hadoop.hdfs.server.protocol.CheckpointCommand;
 import org.apache.hadoop.hdfs.server.protocol.NamenodeCommand;
 import org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol;
@@ -76,6 +80,14 @@ public class CheckerNode {
 	private static NameNode checkerNode;
 
 	private static DFSClient dfsClient;
+	
+	private NameNode namenode;
+
+    public CheckerNode(NameNode nn){
+   	   this.namenode=nn;
+      }
+      
+      
 	  
 	  /*private BackupImage getFSImage() {
 	    NameNode backupNode = null;
@@ -128,8 +140,63 @@ public class CheckerNode {
 	  private static BackupImage getFSImage() {
 		    return (BackupImage)checkerNode.getFSImage();
 		  }
-	  public static void main(String[] args) throws Exception {
-		  Configuration conf = new HdfsConfiguration();
+	  
+	  
+	  // get the bloack location for particlar file in hdfs
+	  public void getBlockLocations(String source, Configuration conf) throws IOException{
+
+		  FileSystem fileSystem = FileSystem.get(conf);
+		  Path srcPath = new Path(source);
+		   
+		  // Check if the file already exists
+		  if (!(ifExists(srcPath))) {
+			  System.out.println("No such destination " + srcPath);
+			  return;
+		  }
+		  // Get the filename out of the file path
+		  String filename = source.substring(source.lastIndexOf('/') + 1, source.length());
+		   
+		  FileStatus fileStatus = fileSystem.getFileStatus(srcPath);   
+		  BlockLocation[] blkLocations = fileSystem.getFileBlockLocations(fileStatus, 0, fileStatus.getLen());
+		  int blkCount = blkLocations.length;
+		   
+		  System.out.println("File :" + filename + "stored at:");
+		  for (int i=0; i < blkCount; i++) {
+		  String[] hosts = blkLocations[i].getHosts();
+		  System.out.format("Host %d: %s %n", i, hosts);
+		  }
+		   
+		  }
+
+
+      // NamenodeProtocol interface
+      public BlocksWithLocations getBlocks(DatanodeInfo datanode, long size)
+   		   throws IOException{
+   	   return namenode.getBlocks(datanode, size);
+      }
+      
+      public ExportedBlockKeys getBlockKeys() throws IOException{
+   	   return namenode.getBlockKeys();
+      }
+      
+      public long getEditLogSize() throws IOException{
+   	   return namenode.getEditLogSize();
+      }
+      
+      public CheckpointSignature rollEditLog() throws IOException{
+   	   return namenode.rollEditLog();
+      }
+      
+      public void rollFsImage() throws IOException{
+   	   namenode.rollFsImage();
+      }
+	public static void main(String[] args) throws Exception {
+		  //Configuration conf = new HdfsConfiguration();
+		  Configuration conf = new Configuration();
+		  //conf.addResource(new Path("/home/hadoop/hadoop/conf/core-site.xml"));
+		  //conf.addResource(new Path("/home/hadoop/hadoop/conf/hdfs-site.xml"));
+		  //conf.addResource(new Path("/home/hadoop/hadoop/conf/mapred-site.xml"));
+		  
 		  //MiniDFSCluster cluster = new MiniDFSCluster.Builder(conf).build();
 		  //getDataNodeSummaryReport(conf,cluster);
 		  
@@ -137,17 +204,17 @@ public class CheckerNode {
 		  //int infoPort = dataNode.getInfoPort();
 		  //System.out.println("Infoport "+infoPort);
 		  
-		  BackupImage bnImage = getFSImage();
-		  NNStorage bnStorage = bnImage.getStorage();
-		  long startTime = now();
+		  //BackupImage bnImage = getFSImage();
+		 // NNStorage bnStorage = bnImage.getStorage();
+		  //long startTime = now();
 		  //bnImage.freezeNamespaceAtNextRoll();
-		  CheckpointCommand cpCmd = null;
+		  //CheckpointCommand cpCmd = null;
 		  //bnImage.waitUntilNamespaceFrozen();
-		  CheckpointSignature sig = cpCmd.getSignature();
+		  //CheckpointSignature sig = cpCmd.getSignature();
 		  // Make sure we're talking to the same NN!
 		  //sig.validateStorageInfo(bnImage);
 		  
-		  long lastApplied = bnImage.getLastAppliedTxId();
+		/*  long lastApplied = bnImage.getLastAppliedTxId();
 		  LOG.debug("Doing checkpoint. Last applied: " + lastApplied);
 		  RemoteEditLogManifest manifest = getRemoteNamenodeProxy().getEditLogManifest(bnImage.getLastAppliedTxId() + 1);
 		  boolean needReloadImage = false;
@@ -214,7 +281,7 @@ public class CheckerNode {
 		    long imageSize = bnImage.getStorage().getFsImageName(txid).length();
 		    LOG.info("Checkpoint completed in "
 		        + (now() - startTime)/1000 + " seconds."
-		        + " New Image Size: " + imageSize);
+		        + " New Image Size: " + imageSize);*/
 		  
 	  }
 
