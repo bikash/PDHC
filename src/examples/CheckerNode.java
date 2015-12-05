@@ -149,10 +149,10 @@ public class CheckerNode {
 		  Path srcPath = new Path(source);
 		   
 		  // Check if the file already exists
-		  if (!(ifExists(srcPath))) {
+		  /*if (!(ifExists(srcPath))) {
 			  System.out.println("No such destination " + srcPath);
 			  return;
-		  }
+		  }*/
 		  // Get the filename out of the file path
 		  String filename = source.substring(source.lastIndexOf('/') + 1, source.length());
 		   
@@ -170,7 +170,7 @@ public class CheckerNode {
 
 
       // NamenodeProtocol interface
-      public BlocksWithLocations getBlocks(DatanodeInfo datanode, long size)
+      /*public BlocksWithLocations getBlocks(DatanodeInfo datanode, long size)
    		   throws IOException{
    	   return namenode.getBlocks(datanode, size);
       }
@@ -189,7 +189,9 @@ public class CheckerNode {
       
       public void rollFsImage() throws IOException{
    	   namenode.rollFsImage();
-      }
+      }*/
+      
+      
 	public static void main(String[] args) throws Exception {
 		  //Configuration conf = new HdfsConfiguration();
 		  Configuration conf = new Configuration();

@@ -114,43 +114,7 @@ public class CheckerN extends NameNode {
     String addr = conf.get(BN_HTTP_ADDRESS_NAME_KEY, BN_HTTP_ADDRESS_DEFAULT);
     return NetUtils.createSocketAddr(addr);
   }
-
-  @Override // NameNode
-  protected void initialize(Configuration conf) throws IOException {
-    // Trash is disabled in BackupNameNode,
-    // but should be turned back on if it ever becomes active.
-    conf.setLong(CommonConfigurationKeys.FS_TRASH_INTERVAL_KEY, 
-                 CommonConfigurationKeys.FS_TRASH_INTERVAL_DEFAULT);
-    NamespaceInfo nsInfo = handshake(conf);
-    super.initialize(conf);
-    namesystem.setBlockPoolId(nsInfo.getBlockPoolID());
-
-    if (false == namesystem.isInSafeMode()) {
-      namesystem.setSafeMode(SafeModeAction.SAFEMODE_ENTER);
-    }
-
-    // Backup node should never do lease recovery,
-    // therefore lease hard limit should never expire.
-    namesystem.leaseManager.setLeasePeriod(
-        HdfsConstants.LEASE_SOFTLIMIT_PERIOD, Long.MAX_VALUE);
-
-    // register with the active name-node 
-    registerWith(nsInfo);
-    // Checkpoint daemon should start after the rpc server started
-    runCheckpointDaemon(conf);
-    InetSocketAddress addr = getHttpAddress();
-    if (addr != null) {
-      conf.set(BN_HTTP_ADDRESS_NAME_KEY, NetUtils.getHostPortString(getHttpAddress()));
-    }
-  }
-
-  @Override
-  protected NameNodeRpcServer createRpcServer(Configuration conf)
-      throws IOException {
-    return new BackupNodeRpcServer(conf, this);
-  }
-
-  @Override // NameNode
+  
   public void stop() {
     stop(true);
   }
