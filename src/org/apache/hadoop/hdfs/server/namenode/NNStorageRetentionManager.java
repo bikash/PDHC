@@ -208,7 +208,7 @@ public class NNStorageRetentionManager {
   /**
    * Interface responsible for disposing of old checkpoints and edit logs.
    */
-  static interface StoragePurger {
+  public static interface StoragePurger {
     void purgeLog(EditLogFile log);
     void purgeImage(FSImageFile image);
   }
