@@ -316,7 +316,7 @@ public class FileJournalManager implements JournalManager {
     addStreamsToCollectionFromFiles(elfs, streams, fromTxId, inProgressOk);
   }
   
-  static void addStreamsToCollectionFromFiles(Collection<EditLogFile> elfs,
+  public static void addStreamsToCollectionFromFiles(Collection<EditLogFile> elfs,
       Collection<EditLogInputStream> streams, long fromTxId, boolean inProgressOk) {
     for (EditLogFile elf : elfs) {
       if (elf.isInProgress()) {

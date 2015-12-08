@@ -10,6 +10,7 @@ import java.net.InetSocketAddress;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
+import java.util.Collection;
 import java.util.List;
 
 import org.apache.hadoop.fs.BlockLocation;
@@ -21,9 +22,11 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hdfs.DFSClient;
+import org.apache.hadoop.hdfs.DFSConfigKeys;
 import org.apache.hadoop.hdfs.DFSUtil;
 import org.apache.hadoop.hdfs.HdfsConfiguration;
 import org.apache.hadoop.hdfs.MiniDFSCluster;
+import org.apache.hadoop.hdfs.NameNodeProxies;
 import org.apache.hadoop.hdfs.protocol.DatanodeInfo;
 import org.apache.hadoop.hdfs.protocol.HdfsConstants.DatanodeReportType;
 import org.apache.hadoop.hdfs.security.token.block.ExportedBlockKeys;
@@ -41,6 +44,7 @@ import org.apache.hadoop.hdfs.server.protocol.BlocksWithLocations;
 import org.apache.hadoop.hdfs.server.protocol.CheckpointCommand;
 import org.apache.hadoop.hdfs.server.protocol.NamenodeCommand;
 import org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol;
+import org.apache.hadoop.hdfs.server.protocol.NamespaceInfo;
 import org.apache.hadoop.hdfs.server.protocol.RemoteEditLog;
 import org.apache.hadoop.hdfs.server.protocol.RemoteEditLogManifest;
 import org.apache.hadoop.io.MD5Hash;
@@ -142,7 +146,7 @@ public class CheckerNode {
 		  }
 	  
 	  
-	  // get the bloack location for particlar file in hdfs
+	  // get the block location for particular file in hdfs
 	  public void getBlockLocations(String source, Configuration conf) throws IOException{
 
 		  FileSystem fileSystem = FileSystem.get(conf);
@@ -195,10 +199,10 @@ public class CheckerNode {
 	public static void main(String[] args) throws Exception {
 		  //Configuration conf = new HdfsConfiguration();
 		  Configuration conf = new Configuration();
-		  //conf.addResource(new Path("/home/hadoop/hadoop/conf/core-site.xml"));
-		  //conf.addResource(new Path("/home/hadoop/hadoop/conf/hdfs-site.xml"));
-		  //conf.addResource(new Path("/home/hadoop/hadoop/conf/mapred-site.xml"));
-		  
+		  conf.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/core-site.xml"));
+		  conf.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/hdfs-site.xml"));
+		  conf.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/mapred-site.xml"));
+		  //getDatanodeReport(conf);
 		  //MiniDFSCluster cluster = new MiniDFSCluster.Builder(conf).build();
 		  //getDataNodeSummaryReport(conf,cluster);
 		  
@@ -206,88 +210,32 @@ public class CheckerNode {
 		  //int infoPort = dataNode.getInfoPort();
 		  //System.out.println("Infoport "+infoPort);
 		  
-		  //BackupImage bnImage = getFSImage();
-		 // NNStorage bnStorage = bnImage.getStorage();
-		  //long startTime = now();
-		  //bnImage.freezeNamespaceAtNextRoll();
-		  //CheckpointCommand cpCmd = null;
-		  //bnImage.waitUntilNamespaceFrozen();
-		  //CheckpointSignature sig = cpCmd.getSignature();
-		  // Make sure we're talking to the same NN!
-		  //sig.validateStorageInfo(bnImage);
-		  
-		/*  long lastApplied = bnImage.getLastAppliedTxId();
-		  LOG.debug("Doing checkpoint. Last applied: " + lastApplied);
-		  RemoteEditLogManifest manifest = getRemoteNamenodeProxy().getEditLogManifest(bnImage.getLastAppliedTxId() + 1);
-		  boolean needReloadImage = false;
-		  if (!manifest.getLogs().isEmpty()) {
-		      RemoteEditLog firstRemoteLog = manifest.getLogs().get(0);
-		      // we don't have enough logs to roll forward using only logs. Need
-		      // to download and load the image.
-		      if (firstRemoteLog.getStartTxId() > lastApplied + 1) {
-		        LOG.info("Unable to roll forward using only logs. Downloading " +"image with txid " );
-		        MD5Hash downloadedHash = TransferFsImage.downloadImageToStorage(
-		        		checkerNode.nnHttpAddress, sig.mostRecentCheckpointTxId, bnStorage,
-		            true);
-		        bnImage.saveDigestAndRenameCheckpointImage(NameNodeFile.IMAGE,
-		            sig.mostRecentCheckpointTxId, downloadedHash);
-		        lastApplied = sig.mostRecentCheckpointTxId;
-		        needReloadImage = true;
-		      }
-
-		      if (firstRemoteLog.getStartTxId() > lastApplied + 1) {
-		        throw new IOException("No logs to roll forward from " + lastApplied);
-		      }
-		  
-		      // get edits files
-		      for (RemoteEditLog log : manifest.getLogs()) {
-		        TransferFsImage.downloadEditsToStorage(
-		        		checkerNode.nnHttpAddress, log, bnStorage);
-		      }
-
-		      if(needReloadImage) {
-		        LOG.info("Loading image with txid " + sig.mostRecentCheckpointTxId);
-		        File file = bnStorage.findImageFile(NameNodeFile.IMAGE,
-		            sig.mostRecentCheckpointTxId);
-		        bnImage.reloadFromImageFile(file, checkerNode.getNamesystem());
-		      }
-		      //rollForwardByApplyingLogs(manifest, bnImage, checkerNode.getNamesystem());
-		    }
-		    
-		    long txid = bnImage.getLastAppliedTxId();
-		    
-		    checkerNode.namesystem.writeLock();
-		    try {
-		    	checkerNode.namesystem.setImageLoaded();
-		      if(checkerNode.namesystem.getBlocksTotal() > 0) {
-		    	  checkerNode.namesystem.setBlockTotal();
-		      }
-		      bnImage.saveFSImageInAllDirs(checkerNode.getNamesystem(), txid);
-		      bnStorage.writeAll();
-		    } finally {
-		    	checkerNode.namesystem.writeUnlock();
-		    }
-
-		    if(cpCmd.needToReturnImage()) {
-		      TransferFsImage.uploadImageFromStorage(checkerNode.nnHttpAddress, conf,
-		          bnStorage, NameNodeFile.IMAGE, txid);
-		    }
-
-		    getRemoteNamenodeProxy().endCheckpoint(checkerNode.getRegistration(), sig);
-
-		    if (checkerNode.getRole() == NamenodeRole.BACKUP) {
-		      bnImage.convergeJournalSpool();
-		    }
-		    checkerNode.setRegistration(); // keep registration up to date
-		    
-		    long imageSize = bnImage.getStorage().getFsImageName(txid).length();
-		    LOG.info("Checkpoint completed in "
-		        + (now() - startTime)/1000 + " seconds."
-		        + " New Image Size: " + imageSize);*/
+		 // final String blockpoolID = getBlockPoolID(conf);
+		 // LOG.info("BlockPoolId is " + blockpoolID);
 		  
 	  }
 
-	  
+	// get the datanode summary report
+	public static void getDatanodeReport( Configuration conf ) throws IOException{
+		conf.setInt( DFSConfigKeys.DFS_NAMENODE_HEARTBEAT_RECHECK_INTERVAL_KEY, 500); // 0.5s
+		conf.setLong(DFSConfigKeys.DFS_HEARTBEAT_INTERVAL_KEY, 1L);
+		MiniDFSCluster cluster = 
+			      new MiniDFSCluster.Builder(conf).numDataNodes(4).build();
+		 final String bpid = cluster.getNamesystem().getBlockPoolId();
+		 final List<DataNode> datanodes = cluster.getDataNodes();
+	     final DFSClient client = cluster.getFileSystem().dfs;
+	}
+	
+    private static String getBlockPoolID(Configuration conf) throws IOException {
+
+        final Collection<URI> namenodeURIs = DFSUtil.getNsServiceRpcUris(conf);
+        URI nameNodeUri = namenodeURIs.iterator().next();
+
+        final NamenodeProtocol namenode = NameNodeProxies.createProxy(conf, nameNodeUri, NamenodeProtocol.class)
+            .getProxy();
+        final NamespaceInfo namespaceinfo = namenode.versionRequest();
+        return namespaceinfo.getBlockPoolID();
+    }  
 	  
 
 	  

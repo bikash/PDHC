@@ -558,7 +558,7 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
    * Notify that loading of this FSDirectory is complete, and
    * it is imageLoaded for use
    */
-  void imageLoadComplete() {
+  public void imageLoadComplete() {
     Preconditions.checkState(!imageLoaded, "FSDirectory already loaded");
     setImageLoaded();
   }
@@ -764,7 +764,7 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
    *                         step. For Secondary NN this should be set to true.
    * @throws IOException on bad configuration
    */
-  FSNamesystem(Configuration conf, FSImage fsImage, boolean ignoreRetryCache)
+  public FSNamesystem(Configuration conf, FSImage fsImage, boolean ignoreRetryCache)
       throws IOException {
     provider = DFSUtil.createKeyProviderCryptoExtension(conf);
     if (provider == null) {
@@ -6345,7 +6345,7 @@ public class FSNamesystem implements Namesystem, FSClusterStats,
   /**
    * shutdown FSNamesystem
    */
-  void shutdown() {
+  public void shutdown() {
     if (snapshotManager != null) {
       snapshotManager.shutdown();
     }

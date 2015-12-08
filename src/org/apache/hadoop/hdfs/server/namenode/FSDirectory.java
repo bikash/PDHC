@@ -265,7 +265,7 @@ public class FSDirectory implements Closeable {
   }
 
   /** Disable quota verification */
-  void disableQuotaChecks() {
+  public void disableQuotaChecks() {
     skipQuotaCheck = true;
   }
 

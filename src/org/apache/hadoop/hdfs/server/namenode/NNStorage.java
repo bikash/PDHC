@@ -220,7 +220,7 @@ public class NNStorage extends Storage implements Closeable,
    * See if any of removed storages is "writable" again, and can be returned
    * into service.
    */
-  void attemptRestoreRemovedStorage() {
+  public void attemptRestoreRemovedStorage() {
     // if directory is "alive" - copy the images there...
     if(!restoreFailedStorage || removedStorageDirs.size() == 0)
       return; //nothing to restore

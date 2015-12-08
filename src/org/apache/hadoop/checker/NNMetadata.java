@@ -1,5 +1,4 @@
-package examples;
-
+package org.apache.hadoop.checker;
 
 import java.io.IOException;
 import java.util.Date;
@@ -16,13 +15,13 @@ import java.util.Iterator;
 
 import org.apache.commons.logging.LogFactory;
 import org.apache.commons.logging.Log;
+import org.apache.hadoop.checker.MyFile.EventType;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.fs.FSDataOutputStream;
 import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.TestFileUtil.MyFile;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
@@ -37,6 +36,9 @@ import org.apache.hadoop.mapreduce.Cluster;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
+
+import examples.CreatePreExistingNamespaceMapper;
+import examples.NNMetadataReducer;
 
 /**
  * This program executes a specified operation that applies realistic namespace
@@ -116,8 +118,7 @@ public class NNMetadata {
    * 
    * @throws IOException on error
    */
-  @SuppressWarnings("deprecation")
-private static void createControlFiles() throws IOException {
+  private static void createControlFiles() throws IOException {
     FileSystem tempFS = FileSystem.get(config);
     LOG.info("Creating " + numberOfMaps + " control files");
     boolean useSequentialLoadGenerator = config.getBoolean("test.nnmetadata.usesequentialloadgenerator", false);
@@ -617,3 +618,4 @@ private static void createControlFiles() throws IOException {
     analyzeResults();
   }
 }
+

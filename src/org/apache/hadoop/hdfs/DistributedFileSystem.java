@@ -103,7 +103,7 @@ public class DistributedFileSystem extends FileSystem {
   private Path workingDir;
   private URI uri;
 
-  DFSClient dfs;
+  public DFSClient dfs;
   private boolean verifyChecksum = true;
   
   static{

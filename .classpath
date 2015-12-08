@@ -83,7 +83,6 @@
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/common/lib/xz-1.0.jar"/>
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/common/lib/zookeeper-3.4.6.jar"/>
 	<classpathentry kind="lib" path="/Users/bikash/repos/bigdata/PDHC/lib/config-1.2.1.jar"/>
-	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar"/>
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar"/>
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar"/>
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar"/>
@@ -91,5 +90,6 @@
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar"/>
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar"/>
 	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/common/hadoop-common-2.6.0-tests.jar"/>
+	<classpathentry kind="lib" path="/Users/bikash/BigData/hadoop/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

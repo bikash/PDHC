@@ -114,17 +114,17 @@ public class CheckpointSignature extends StorageInfo
          + blockpoolID ;
   }
 
-  boolean storageVersionMatches(StorageInfo si) throws IOException {
+  public boolean storageVersionMatches(StorageInfo si) throws IOException {
     return (layoutVersion == si.layoutVersion) && (cTime == si.cTime);
   }
 
-  boolean isSameCluster(FSImage si) {
+  public boolean isSameCluster(FSImage si) {
     return namespaceID == si.getStorage().namespaceID &&
       clusterID.equals(si.getClusterID()) &&
       blockpoolID.equals(si.getBlockPoolID());
   }
 
-  boolean namespaceIdMatches(FSImage si) {
+  public boolean namespaceIdMatches(FSImage si) {
     return namespaceID == si.getStorage().namespaceID;
   }
 

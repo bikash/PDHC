@@ -403,7 +403,8 @@ public NamenodeProtocol namenode;
    */
   public static InetSocketAddress getServiceAddress(Configuration conf,
                                                         boolean fallback) {
-    String addr = conf.get(DFS_NAMENODE_SERVICE_RPC_ADDRESS_KEY);
+    //String addr = conf.get(DFS_NAMENODE_SERVICE_RPC_ADDRESS_KEY);
+	String addr = "127.0.0.1";
     if (addr == null || addr.isEmpty()) {
       return fallback ? getAddress(conf) : null;
     }

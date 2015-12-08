@@ -73,7 +73,7 @@ import org.apache.log4j.Logger;
 public class VolumeBalancer {
 
     private static final Logger LOG = Logger.getLogger(VolumeBalancer.class);
-    public static final String  DFS_DATANODE_NUMBLOCKS_KEY = "dfs.datanode.numblocks";
+
     private static void usage() {
         LOG.info("Available options: \n" + " -threshold=d, default 0.1\n -concurrency=n, default 1\n"
             + VolumeBalancer.class.getCanonicalName());
@@ -345,7 +345,7 @@ public class VolumeBalancer {
         // TODO: print some reports for your manager
 
         // Let the shutdown thread finishing
-        shutdownLatch.countDown();     
+        shutdownLatch.countDown();
 
     }
 

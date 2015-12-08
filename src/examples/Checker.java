@@ -44,13 +44,17 @@ import org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory;
 import org.apache.hadoop.hdfs.server.common.Storage.StorageState;
 import org.apache.hadoop.hdfs.server.namenode.CheckpointConf;
 import org.apache.hadoop.hdfs.server.namenode.CheckpointSignature;
+import org.apache.hadoop.hdfs.server.namenode.Checkpointer;
+import org.apache.hadoop.hdfs.server.namenode.EditLogInputStream;
 import org.apache.hadoop.hdfs.server.namenode.FSImage;
 import org.apache.hadoop.hdfs.server.namenode.FSNamesystem;
+import org.apache.hadoop.hdfs.server.namenode.FileJournalManager;
 import org.apache.hadoop.hdfs.server.namenode.FileJournalManager.EditLogFile;
 import org.apache.hadoop.hdfs.server.namenode.ImageServlet;
 import org.apache.hadoop.hdfs.server.namenode.NNStorage;
 import org.apache.hadoop.hdfs.server.namenode.NNStorage.NameNodeDirType;
 import org.apache.hadoop.hdfs.server.namenode.NNStorage.NameNodeFile;
+import org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager;
 import org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager.StoragePurger;
 import org.apache.hadoop.hdfs.server.namenode.NameNode;
 import org.apache.hadoop.hdfs.server.namenode.NameNodeLayoutVersion;
@@ -228,7 +232,7 @@ private static final String CheckpointFaultInjector = null;
     // Create connection to the namenode.
     shouldRun = true;
     nameNodeAddr = NameNode.getServiceAddress(conf, true);
-
+    //nameNodeAddr = new InetSocketAddress("127.0.0.1", "9000");
     this.conf = conf;
     this.namenode = NameNodeProxies.createNonHAProxy(conf, nameNodeAddr, 
         NamenodeProtocol.class, UserGroupInformation.getCurrentUser(),
@@ -656,7 +660,7 @@ private static final String CheckpointFaultInjector = null;
    * @exception Exception if the filesystem does not exist.
    */
   public static void main(String[] argv) throws Exception {
-    CommandLineOpts opts = SecondaryNameNode.parseArgs(argv);
+    CommandLineOpts opts = Checker.parseArgs(argv);
     if (opts == null) {
       LOG.fatal("Failed to parse options");
       terminate(1);
@@ -665,11 +669,11 @@ private static final String CheckpointFaultInjector = null;
       System.exit(0);
     }
     
-    StringUtils.startupShutdownMessage(SecondaryNameNode.class, argv, LOG);
+    StringUtils.startupShutdownMessage(Checker.class, argv, LOG);
     Configuration tconf = new HdfsConfiguration();
-    SecondaryNameNode secondary = null;
+    Checker secondary = null;
     try {
-      secondary = new SecondaryNameNode(tconf, opts);
+      secondary = new Checker(tconf, opts);
     } catch (IOException ioe) {
       LOG.fatal("Failed to start secondary namenode", ioe);
       terminate(1);
@@ -867,7 +871,6 @@ private static final String CheckpointFaultInjector = null;
         this.storage = storage;
       }
 
-      @Override
       public void purgeLogsOlderThan(long minTxIdToKeep) throws IOException {
         Iterator<StorageDirectory> iter = storage.dirIterator();
         while (iter.hasNext()) {
@@ -882,7 +885,6 @@ private static final String CheckpointFaultInjector = null;
         }
       }
 
-      @Override
       public void selectInputStreams(Collection<EditLogInputStream> streams,
           long fromTxId, boolean inProgressOk) {
         Iterator<StorageDirectory> iter = storage.dirIterator();
@@ -922,8 +924,8 @@ private static final String CheckpointFaultInjector = null;
       
       // Replace the archival manager with one that can actually work on the
       // 2NN's edits storage.
-      this.archivalManager = new NNStorageRetentionManager(conf, storage,
-          new CheckpointLogPurger(storage));
+     // this.archivalManager = new NNStorageRetentionManager(conf, storage,
+        //  new CheckpointLogPurger(storage));
     }
 
     /**
@@ -1068,7 +1070,7 @@ private static final String CheckpointFaultInjector = null;
       dstNamesystem.imageLoadComplete();
     }
     // error simulation code for junit test
-    CheckpointFaultInjector.getInstance().duringMerge();   
+    //CheckpointFaultInjector.getInstance().duringMerge();   
 
     Checkpointer.rollForwardByApplyingLogs(manifest, dstImage, dstNamesystem);
     // The following has the side effect of purging old fsimages/edit logs.

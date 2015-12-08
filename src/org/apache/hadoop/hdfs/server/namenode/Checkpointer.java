@@ -291,7 +291,7 @@ public class Checkpointer extends Daemon {
     }
   }
 
-  static void rollForwardByApplyingLogs(
+  public static void rollForwardByApplyingLogs(
       RemoteEditLogManifest manifest,
       FSImage dstImage,
       FSNamesystem dstNamesystem) throws IOException {

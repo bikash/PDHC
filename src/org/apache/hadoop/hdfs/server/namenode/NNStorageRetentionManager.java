@@ -213,7 +213,7 @@ public class NNStorageRetentionManager {
     void purgeImage(FSImageFile image);
   }
   
-  static class DeletionStoragePurger implements StoragePurger {
+  public static class DeletionStoragePurger implements StoragePurger {
     @Override
     public void purgeLog(EditLogFile log) {
       LOG.info("Purging old edit log " + log);

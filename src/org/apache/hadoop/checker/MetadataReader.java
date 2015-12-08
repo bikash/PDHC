@@ -1,4 +1,4 @@
-package examples;
+package org.apache.hadoop.checker;
 
 import java.net.InetSocketAddress;
 import org.apache.hadoop.conf.Configuration;
