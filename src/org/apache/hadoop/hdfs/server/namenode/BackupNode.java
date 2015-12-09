@@ -79,9 +79,9 @@ public class BackupNode extends NameNode {
   /** Name-node proxy */
   public NamenodeProtocol namenode;
   /** Name-node RPC address */
-  String nnRpcAddress;
+  public String nnRpcAddress;
   /** Name-node HTTP address */
-  URL nnHttpAddress;
+  public URL nnHttpAddress;
   /** Checkpoint manager */
   Checkpointer checkpointManager;
   
@@ -298,7 +298,7 @@ public class BackupNode extends NameNode {
   //////////////////////////////////////////////////////
   
 
-  boolean shouldCheckpointAtStartup() {
+  public boolean shouldCheckpointAtStartup() {
     FSImage fsImage = getFSImage();
     if(isRole(NamenodeRole.CHECKPOINT)) {
       assert fsImage.getStorage().getNumStorageDirs() > 0;

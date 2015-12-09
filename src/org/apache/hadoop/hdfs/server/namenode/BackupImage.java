@@ -361,7 +361,7 @@ public class BackupImage extends FSImage {
    * After {@link #freezeNamespaceAtNextRoll()} has been called, wait until
    * the BN receives notification of the next log roll.
    */
-  synchronized void waitUntilNamespaceFrozen() throws IOException {
+  public synchronized void waitUntilNamespaceFrozen() throws IOException {
     if (bnState != BNState.IN_SYNC) return;
 
     LOG.info("Waiting until the NameNode rolls its edit logs in order " +
