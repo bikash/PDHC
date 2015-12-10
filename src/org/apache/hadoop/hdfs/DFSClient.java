@@ -722,7 +722,7 @@ public class DFSClient implements java.io.Closeable, RemotePeerFactory,
    * @return one of the local interface addresses at random, or null if no
    *    local interfaces are configured
    */
-  SocketAddress getRandomLocalInterfaceAddr() {
+  public SocketAddress getRandomLocalInterfaceAddr() {
     if (localInterfaceAddrs.length == 0) {
       return null;
     }

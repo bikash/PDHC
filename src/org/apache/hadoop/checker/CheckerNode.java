@@ -388,7 +388,9 @@ public class CheckerNode {
 		  conf.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/hdfs-site.xml"));
 		  conf.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/mapred-site.xml"));
 		  
-		  CheckerNode c = new CheckerNode(conf);
+		  //CheckerNode c = new CheckerNode(conf);
+		  DFSClient dfs = new DFSClient(conf);
+		  dfs.getRandomLocalInterfaceAddr();
 		  //getDatanodeReport(conf);
 		  //MiniDFSCluster cluster = new MiniDFSCluster.Builder(conf).build();
 		  //getDataNodeSummaryReport(conf,cluster);
