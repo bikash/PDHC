@@ -93,9 +93,9 @@ public class CheckerNode {
     /**
      * Create a connection to the primary namenode.
      */
-	CheckerNode(Configuration conf, BackupNode bnNode)  throws IOException {
+	CheckerNode(Configuration conf)  throws IOException {
       this.conf = conf;
-      this.backupNode = bnNode;
+      this.backupNode = null;
       try {
         initialize(conf);
       } catch(IOException e) {
@@ -118,7 +118,7 @@ public class CheckerNode {
 	    // Pull out exact http address for posting url to avoid ip aliasing issues
 	    //String fullInfoAddr = conf.get(DFS_NAMENODE_BACKUP_HTTP_ADDRESS_KEY, 
 	                                 //  DFS_NAMENODE_BACKUP_HTTP_ADDRESS_DEFAULT);
-	    String fullInfoAddr = conf.get("127.0.0.1", "127.0.0.1");
+	    String fullInfoAddr = conf.get("127.0.0.1:50089", "127.0.0.1:50089");
 	    infoBindAddress = fullInfoAddr.substring(0, fullInfoAddr.indexOf(":"));
 
 	    LOG.info("Checkpoint Period : " +
@@ -346,25 +346,7 @@ public class CheckerNode {
 		return dn;
 	  }
 	  
-	  /**
-	   * Return datanode information.
-	   * @return DatanodeInfo
-	   */
-	  private void getMetadataNamenode(){
-		  
-	  }
-	  /**
-	   * Return datanode information.
-	   * @return DatanodeInfo
-	   */
-	  private static void getDataNodeBlockSummary()  throws IOException {
-		  // Make sure we're talking to the same NN!
-		    //sig.validateStorageInfo(bnImage);
 
-		    //long lastApplied = bnImage.getLastAppliedTxId();
-		   // LOG.debug("Doing checkpoint. Last applied: " + lastApplied);
-		  
-	  }
 	  private static BackupImage getFSImage() {
 		    return (BackupImage)checkerNode.getFSImage();
 		  }
@@ -405,6 +387,8 @@ public class CheckerNode {
 		  conf.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/core-site.xml"));
 		  conf.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/hdfs-site.xml"));
 		  conf.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/mapred-site.xml"));
+		  
+		  CheckerNode c = new CheckerNode(conf);
 		  //getDatanodeReport(conf);
 		  //MiniDFSCluster cluster = new MiniDFSCluster.Builder(conf).build();
 		  //getDataNodeSummaryReport(conf,cluster);
