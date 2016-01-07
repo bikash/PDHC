@@ -25,9 +25,17 @@ import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.hdfs.DistributedFileSystem;
 import org.apache.hadoop.hdfs.protocol.DatanodeInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class HDFSClient {
-    
+	private static final Logger LOGGER = LoggerFactory.getLogger(HDFSClient.class);
+
+	private static final String CORE_SITE = "/Users/bikash/BigData/hadoop/etc/hadoop/core-site.xml";
+	private static final String HDFS_SITE = "/Users/bikash/BigData/hadoop/etc/hadoop/hdfs-site.xml";
+	private static final String YARN_SITE = "/Users/bikash/BigData/hadoop/etc/hadoop/yarn-site.xml";
+	private static final String MAPRED_SITE = "/Users/bikash/BigData/hadoop/etc/hadoop/mapred-site.xml";
+
 	public HDFSClient() {
 		
 	}
@@ -45,13 +53,20 @@ public class HDFSClient {
 		System.out.println("Usage: hdfsclient gethostnames");
 	}
 	
-	public Configuration confi()
+	public static Configuration confi() throws IOException
 	{
-		Configuration config = new Configuration();
-		config.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/core-site.xml"));
-        config.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/hdfs-site.xml"));
-        config.addResource(new Path("/Users/bikash/BigData/hadoop/etc/hadoop/mapred-site.xml"));
-        return config;
+		Configuration conf= new Configuration();
+		conf.addResource(new Path(CORE_SITE));
+		conf.addResource(new Path(HDFS_SITE));
+		conf.addResource(new Path(YARN_SITE));
+		conf.addResource(new Path(MAPRED_SITE));
+		conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
+		conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
+		String hdfsPath = "hdfs://localhost:9000"; 
+		conf.set("fs.default.name", hdfsPath);
+		FileSystem fs = FileSystem.get(conf);
+		LOGGER.info("Fs Created [{}]", fs.getUri());
+        return conf;
 	}
 	
 	public boolean ifExists (Path source) throws IOException{
@@ -64,9 +79,10 @@ public class HDFSClient {
 	}
 	
 	public void getHostnames () throws IOException{
+		System.out.println("TEST");
 		Configuration config =  confi();
-        
         FileSystem fs = FileSystem.get(config);
+       
 		DistributedFileSystem hdfs = (DistributedFileSystem) fs;
 		DatanodeInfo[] dataNodeStats = hdfs.getDataNodeStats();
 		
@@ -313,7 +329,8 @@ public class HDFSClient {
             System.out.println("File " + file + " does not exists");
             return;
         }
-
+        File myFoo = new File(file);
+        SecureDelete.delete(myFoo);
         fileSystem.delete(new Path(file), true);
 
         fileSystem.close();
@@ -344,6 +361,8 @@ public class HDFSClient {
         }
 
         HDFSClient client = new HDFSClient();
+        
+        System.out.println ("args 1 " + args[0]);
         if (args[0].equals("add")) {
             if (args.length < 3) {
                 System.out.println("Usage: hdfsclient add <local_path> " + "<hdfs_path>");
@@ -367,7 +386,7 @@ public class HDFSClient {
             client.deleteFile(args[1]);
         }else if (args[0].equals("td")) {
             if (args.length < 2) {
-                System.out.println("Usage: hdfsclient  TD <hdfs_path>");
+                System.out.println("Usage: hdfsclient  td <hdfs_path>");
                 System.exit(1);
             }
 
