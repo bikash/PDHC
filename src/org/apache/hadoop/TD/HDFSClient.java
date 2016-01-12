@@ -1,6 +1,9 @@
 package org.apache.hadoop.TD;
 
 /*
+ * Author: Bikash Agrawal
+ * Date: 5th Jan 2016
+ * Email: bikash.agrawal@outlook.com
  * Basic operations on HDFS in addition
  * to the standard hadoop fs commands.
  * 
@@ -44,7 +47,7 @@ public class HDFSClient {
 		System.out.println("Usage: hdfsclient add" + "<local_path> <hdfs_path>");
 		System.out.println("Usage: hdfsclient read" + "<hdfs_path>");
 		System.out.println("Usage: hdfsclient delete" + "<hdfs_path>");
-		System.out.println("Usage: hdfsclient  TD <hdfs_path>");
+		System.out.println("Usage: hdfsclient sdel" + "<hdfs_path>");
 		System.out.println("Usage: hdfsclient mkdir" + "<hdfs_path>");
 		System.out.println("Usage: hdfsclient copyfromlocal" + "<local_path> <hdfs_path>");
 		System.out.println("Usage: hdfsclient copytolocal" + " <hdfs_path> <local_path> ");
@@ -112,9 +115,10 @@ public class HDFSClient {
       
         BlockLocation[] blkLocations = fileSystem.getFileBlockLocations(fileStatus, 0, fileStatus.getLen());
         int blkCount = blkLocations.length;
-        
+        System.out.println("Length "+ blkLocations[0].getHosts() + " "+ blkLocations[0].getNames());
         System.out.println("File :" + filename + "stored at:");
         for (int i=0; i < blkCount; i++) {
+        
           String[] hosts = blkLocations[i].getHosts();
           System.out.format("Host %d: %s %n", i, hosts);
         }
@@ -330,8 +334,8 @@ public class HDFSClient {
             return;
         }
         File myFoo = new File(file);
-        SecureDelete.delete(myFoo);
-        fileSystem.delete(new Path(file), true);
+        SecureDelete.delete(file,7, conf);
+        //fileSystem.delete(new Path(file), true);
 
         fileSystem.close();
     }
@@ -384,9 +388,9 @@ public class HDFSClient {
             }
 
             client.deleteFile(args[1]);
-        }else if (args[0].equals("td")) {
+        }else if (args[0].equals("sdel")) {
             if (args.length < 2) {
-                System.out.println("Usage: hdfsclient  td <hdfs_path>");
+                System.out.println("Usage: hdfsclient  sdel <hdfs_path>");
                 System.exit(1);
             }
 
