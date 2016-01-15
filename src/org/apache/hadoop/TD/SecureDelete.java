@@ -180,7 +180,7 @@ public class SecureDelete {
             System.out.println("Number of blocks" + locations.toString() +" Leng "+ locations.length); 
             FSDataInputStream stm = fileSys.open(srcPath); 
             stm.seek(0);
-            //FSDataOutputStream ostm = fileSys.create(srcPath, true); 
+            FSDataOutputStream ostm = fileSys.create(srcPath, true); 
             byte[] expected = new byte[(int) fileStatus.getLen()]; 
             Random rand = new Random(); 
             String content ="";
@@ -190,23 +190,23 @@ public class SecureDelete {
             	content = content + randomNum;
             }
            
-            FSDataOutputStream fsout = fileSys.create(srcPath);
+            //FSDataOutputStream fsout = fileSys.create(srcPath);
                // wrap the outputstream with a writer
-            PrintWriter writer = new PrintWriter(fsout);
-            writer.append(content);
-            writer.close();
+            //PrintWriter writer = new PrintWriter(fsout);
+            //writer.append(content);
+            //writer.close();
 
-            stm.close(); 
+            //stm.close(); 
             //stm.write(content); 
-            //ostm.writeUTF(content);
+             ostm.writeUTF(content);
             //rand.nextBytes(expected); 
             //ostm.write((byte)content); 
             // do a sanity check. Read the file 
             //byte[] actual = new byte[(int) fileStatus.getLen()]; 
             //stm.readFully(0, actual); 
             //checkAndOverWriteData(actual, 0, expected, "Read Sanity Test"); 
-           // stm.close(); 
-            //ostm.close();
+            stm.close(); 
+            ostm.close();
           } 
         /**
          * Overwrite the file
@@ -242,7 +242,7 @@ public class SecureDelete {
         	if (fs.exists(new Path(file))) {
         		System.out.println("File " + file1 + " does exists");
         		//getBlockLocations(file,conf);
-        		for(int i=0;i<pass;i++){        
+        		for(int i=0;i<1;i++){        
         				//System.out.println("File " + i);
         				DeleteFile(file,conf);
         				LOGGER.info(TAG, "Number of Pass ", i);

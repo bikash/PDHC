@@ -65,8 +65,8 @@ public class HDFSClient {
 		//conf.addResource(new Path(MAPRED_SITE));
 		conf.set("fs.hdfs.impl", org.apache.hadoop.hdfs.DistributedFileSystem.class.getName());
 		conf.set("fs.file.impl", org.apache.hadoop.fs.LocalFileSystem.class.getName());
-		//String hdfsPath = "hdfs://128.210.139.79:9000"; 
-		String hdfsPath = "hdfs://localhost:9000"; 
+		String hdfsPath = "hdfs://128.210.139.79:9000"; 
+		//String hdfsPath = "hdfs://localhost:9000"; 
 		conf.set("fs.default.name", hdfsPath);
 		FileSystem fs = FileSystem.get(conf);
 		LOGGER.info("Fs Created [{}]", fs.getUri());
