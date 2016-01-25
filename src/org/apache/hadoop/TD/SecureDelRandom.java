@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 import javax.swing.Spring;
@@ -58,11 +60,26 @@ public class SecureDelRandom {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		String file = "/Users/bikash/hadoop/datanode/current/BP-1467327831-192.168.254.33-1446106217900/current/finalized/subdir0/subdir0/blk_1073741953";
+		File directory = new File("/Users/bikash/hadoop/datanode/current/BP-1467327831-192.168.254.33-1446106217900/current/finalized/subdir0/subdir0");
+
+		String [] directoryContents = directory.list();
+
+		List<String> fileLocations = new ArrayList<String>();
+
+		for(String fileName: directoryContents) {
+		    File temp = new File(String.valueOf(directory),fileName);
+		    System.out.println("Block Name" + String.valueOf(temp)); 
+		    String file = String.valueOf(temp);
+		    File f = new File(file);
+		    secureDelete(f);
+		    //fileLocations.add(String.valueOf(temp));
+		}
+		
+		//String file = "/Users/bikash/hadoop/datanode/current/BP-1467327831-192.168.254.33-1446106217900/current/finalized/subdir0/subdir0/blk_1073741953";
 		//Path path = new Path(file);
-		File f = new File(file);
+		//File f = new File(file);
         //SecureDelete.delete(file,7, conf);
-		secureDelete(f);
+		//secureDelete(f);
 	 }
 	
 	
